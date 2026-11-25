@@ -23,17 +23,19 @@ const introductions = {
 
 {page === 'home' ? (
   <>
-    <section class="shell home-hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow" lang="en"><span aria-hidden="true">✦</span> {siteName}</p>
-        <h1 id="hero-title">{t('homeTitle')}</h1>
-        <p class="hero-intro">{t('heroIntro')}</p>
-        <div class="actions">
-          <a class="button" href={pagePath(locale, 'catalog')}>{t('exploreCatalog')}</a>
-          <a class="button button-secondary" href={pagePath(locale, 'contribute')}>{t('contributeLink')}</a>
+    <section class="hero-stage" aria-labelledby="hero-title">
+      <div class="shell home-hero">
+        <div class="hero-copy">
+          <p class="eyebrow" lang="en"><img src="/favicon.svg" width="28" height="28" alt="" /> {siteName}</p>
+          <h1 id="hero-title">{t('homeTitle')}</h1>
+          <p class="hero-intro">{t('heroIntro')}</p>
+          <div class="actions">
+            <a class="button" href={pagePath(locale, 'catalog')}>{t('exploreCatalog')}</a>
+            <a class="button button-secondary" href={pagePath(locale, 'contribute')}>{t('contributeLink')}</a>
+          </div>
         </div>
+        <ArchiveIllustration />
       </div>
-      <ArchiveIllustration />
     </section>
 
     <section class="catalog-band" aria-labelledby="collection-title">
@@ -59,21 +61,21 @@ const introductions = {
   </>
 ) : (
   <>
-    <header class="page-banner">
+    <header class:list={['page-banner', `banner-${page}`]}>
       <div class="shell">
         <h1>{t(`${page}Title`)}</h1>
         <p>{t(introductions[page])}</p>
       </div>
     </header>
 
-    <div class="shell page-content">
+    <div class:list={['shell page-content', `content-${page}`]}>
       {page === 'catalog' && (
         <>
           <section aria-labelledby="catalog-categories">
             <h2 id="catalog-categories">{t('catalogSection')}</h2>
             <CategoryCards {locale} />
           </section>
-          <section class="feature-panel">
+          <section class="feature-panel catalog-empty">
             <h2>{t('catalogEmptyTitle')}</h2>
             <p>{t('catalogEmptyBody')}</p>
             <a class="text-link" href={pagePath(locale, 'contribute')}>{t('contributeLink')}</a>
@@ -82,22 +84,23 @@ const introductions = {
       )}
 
       {page === 'history' && (
-        <>
-          <section class="feature-panel">
+        <ol class="archive-timeline">
+          <li class="feature-panel">
             <h2>{t('historyPreserveTitle')}</h2>
             <p>{t('historyPreserveBody')}</p>
-          </section>
-          <section class="feature-panel">
+          </li>
+          <li class="feature-panel">
             <h2>{t('historyTimelineTitle')}</h2>
             <p>{t('historyTimelineBody')}</p>
-          </section>
-        </>
+          </li>
+        </ol>
       )}
 
       {page === 'contribute' && (
         <>
           <section class="feature-panel">
             <h2>{t('submissionTitle')}</h2>
+            <p>{t('submissionScope')}</p>
             <ul class="submission-list">
               {submissions.map((key) => <li>{t(key)}</li>)}
             </ul>
@@ -115,6 +118,7 @@ const introductions = {
           <section class="feature-panel">
             <h2>{t('aboutPreserveTitle')}</h2>
             <p>{t('aboutPreserveBody')}</p>
+            <p>{t('aboutNonCommercial')}</p>
           </section>
           <section class="feature-panel">
             <h2>{t('aboutCommunityTitle')}</h2>

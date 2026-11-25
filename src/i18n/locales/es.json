@@ -60,5 +60,7 @@
   "aboutCommunityBody": "El archivo se dirige a los aficionados a My Little Pony y a cualquier persona interesada en el software creado por fans. La comunidad puede compartir fuentes, proponer proyectos o corregir fichas.",
   "disclaimer": "Este es un proyecto no oficial mantenido de forma independiente por aficionados. Carece de afiliación, respaldo o patrocinio de Hasbro y sus filiales.",
   "footerNote": "Un archivo independiente de aficionados",
-  "socialImageAlt": "MLP OS Archive junto a una ilustración de un ordenador, un disquete y estrellas"
+  "socialImageAlt": "MLP OS Archive junto a un ordenador de biblioteca mágica, un poni y un castillo al atardecer",
+  "submissionScope": "Damos la bienvenida tanto a los proyectos con núcleo propio como a las distribuciones Linux temáticas.",
+  "aboutNonCommercial": "El archivo es un proyecto de preservación sin fines comerciales."
 }

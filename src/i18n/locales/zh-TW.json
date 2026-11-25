@@ -60,5 +60,7 @@
   "aboutCommunityBody": "檔案庫服務《彩虹小馬》粉絲，以及對粉絲軟體感興趣的人。社群成員可以分享來源、推薦專案或修正紀錄。",
   "disclaimer": "本專案由粉絲獨立維護，屬非官方性質，與孩之寶及其子公司無關聯，亦未獲其認可或贊助。",
   "footerNote": "獨立粉絲檔案庫",
-  "socialImageAlt": "MLP OS Archive 字樣，旁邊是電腦、磁片與星星的插圖"
+  "socialImageAlt": "MLP OS Archive 字樣，旁邊是暮色中的魔法圖書館電腦、小馬與城堡",
+  "submissionScope": "我們歡迎採用自行開發核心的專案，也歡迎主題 Linux 發行版。",
+  "aboutNonCommercial": "本檔案庫是非商業性的資料保存專案。"
 }

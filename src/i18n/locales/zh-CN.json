@@ -60,5 +60,7 @@
   "aboutCommunityBody": "档案面向《小马宝莉》粉丝和对粉丝软件感兴趣的人。社群成员可以分享资料、推荐项目或纠正记录。",
   "disclaimer": "这是一个由粉丝独立维护的非官方项目，与孩之宝及其子公司无关联，也未获得其认可或赞助。",
   "footerNote": "独立粉丝档案",
-  "socialImageAlt": "MLP OS Archive 字样，旁边是电脑、软盘和星星的插图"
+  "socialImageAlt": "MLP OS Archive 字样，旁边是暮色中的魔法图书馆电脑、小马和城堡",
+  "submissionScope": "我们欢迎采用自研内核的项目，也欢迎主题 Linux 发行版。",
+  "aboutNonCommercial": "本档案是一个非商业性的资料保存项目。"
 }

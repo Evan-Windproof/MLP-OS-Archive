@@ -1,4 +1,5 @@
 ---
+import CategoryIcon from './CategoryIcon.astro';
 import { projectCategories, type ProjectCategory } from '../data/projects';
 import { type Locale, translate } from '../i18n';
 
@@ -19,7 +20,7 @@ const messagePrefixes = {
     const prefix = messagePrefixes[category];
     return (
       <li class:list={['category-card', category]}>
-        <span class="category-icon" aria-hidden="true"><span></span></span>
+        <span class="category-icon"><CategoryIcon {category} /></span>
         <h3>{t(`${prefix}Name`)}</h3>
         <p>{t(`${prefix}Description`)}</p>
       </li>

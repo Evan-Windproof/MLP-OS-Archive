@@ -60,5 +60,7 @@
   "aboutCommunityBody": "The archive serves My Little Pony fans and anyone interested in fan-made software. Community members can help by sharing sources, suggesting projects, or correcting records.",
   "disclaimer": "This is an unofficial, independently maintained fan project. It is not affiliated with, endorsed by, or sponsored by Hasbro or its subsidiaries.",
   "footerNote": "An independent fan archive",
-  "socialImageAlt": "MLP OS Archive beside an illustration of a computer, a floppy disk, and stars"
+  "socialImageAlt": "MLP OS Archive beside a magical library workstation, a pony, and a castle at twilight",
+  "submissionScope": "Projects with independently developed kernels and themed Linux distributions are both welcome.",
+  "aboutNonCommercial": "The archive is a non-commercial preservation project."
 }
