@@ -1,0 +1,99 @@
+name: "提交项目"
+description: "推荐一个《小马宝莉》主题项目供档案收录。"
+body:
+  - type: markdown
+    attributes:
+      value: "欢迎历史、已停更、未完成和实验项目。请使用原始语言，无法确定的选填信息可留空。议题是公开的，请只分享可以公开的链接和资料。"
+  - type: input
+    id: name
+    attributes:
+      label: "项目名称"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "项目类别"
+      options:
+        - "独立操作系统"
+        - "Linux 发行版"
+        - "操作系统主题与定制"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "项目简介"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "来源或参考资料链接"
+      description: "请至少提供一个公开的 HTTP 或 HTTPS 链接。网页存档、发布记录和当时的文档均可。"
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: "其他名称"
+  - type: input
+    id: developer
+    attributes:
+      label: "开发者或团队"
+  - type: input
+    id: developmentYear
+    attributes:
+      label: "开始开发的年份"
+  - type: input
+    id: lastUpdated
+    attributes:
+      label: "最后一次已知更新"
+  - type: input
+    id: baseSystem
+    attributes:
+      label: "基础操作系统"
+  - type: input
+    id: kernel
+    attributes:
+      label: "内核信息"
+  - type: input
+    id: sourceCodeUrl
+    attributes:
+      label: "GitHub 或 GitLab 仓库"
+  - type: input
+    id: officialWebsite
+    attributes:
+      label: "官方网站"
+  - type: textarea
+    id: downloadUrl
+    attributes:
+      label: "下载链接"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "历史截图"
+      description: "请提供链接、创作者或来源的署名，以及已知的使用条款。"
+  - type: textarea
+    id: documentation
+    attributes:
+      label: "文档"
+  - type: input
+    id: license
+    attributes:
+      label: "许可证"
+  - type: dropdown
+    id: developmentStatus
+    attributes:
+      label: "开发状态"
+      options:
+        - "活跃"
+        - "维护中"
+        - "已停更"
+        - "已归档"
+        - "实验性"
+        - "未知"
+  - type: textarea
+    id: historicalNotes
+    attributes:
+      label: "其他历史资料"

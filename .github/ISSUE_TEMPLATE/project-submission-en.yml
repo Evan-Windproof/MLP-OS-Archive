@@ -1,0 +1,99 @@
+name: "Submit a project"
+description: "Propose a My Little Pony-themed project for the archive."
+body:
+  - type: markdown
+    attributes:
+      value: "Historical, discontinued, incomplete, and experimental projects are welcome. Use the original language and leave optional fields blank when details are uncertain. Issues are public. Only share links and material you can share publicly."
+  - type: input
+    id: name
+    attributes:
+      label: "Project name"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Project category"
+      options:
+        - "Independent operating systems"
+        - "Linux distributions"
+        - "OS themes & customizations"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Short project description"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "Source or reference URLs"
+      description: "Include at least one public HTTP or HTTPS URL. Archived pages, releases, and contemporaneous documents are welcome."
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: "Alternative names"
+  - type: input
+    id: developer
+    attributes:
+      label: "Developer or team"
+  - type: input
+    id: developmentYear
+    attributes:
+      label: "Original development year"
+  - type: input
+    id: lastUpdated
+    attributes:
+      label: "Last known update"
+  - type: input
+    id: baseSystem
+    attributes:
+      label: "Base operating system"
+  - type: input
+    id: kernel
+    attributes:
+      label: "Kernel information"
+  - type: input
+    id: sourceCodeUrl
+    attributes:
+      label: "GitHub or GitLab repository"
+  - type: input
+    id: officialWebsite
+    attributes:
+      label: "Official website"
+  - type: textarea
+    id: downloadUrl
+    attributes:
+      label: "Download links"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Historical screenshots"
+      description: "Provide URLs, creator or source credits, and any known usage terms."
+  - type: textarea
+    id: documentation
+    attributes:
+      label: "Documentation"
+  - type: input
+    id: license
+    attributes:
+      label: "License"
+  - type: dropdown
+    id: developmentStatus
+    attributes:
+      label: "Development status"
+      options:
+        - "Active"
+        - "Maintenance"
+        - "Discontinued"
+        - "Archived"
+        - "Experimental"
+        - "Unknown"
+  - type: textarea
+    id: historicalNotes
+    attributes:
+      label: "Additional historical information"

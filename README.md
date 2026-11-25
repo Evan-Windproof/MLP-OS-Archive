@@ -12,8 +12,9 @@ or downloads may disappear.
 - My Little Pony-themed Linux distributions
 - Desktop environments, themes, and operating system customizations
 
-The Phase 1 catalog defines these categories. Project records will be published
-during Phase 2 as the catalog is developed.
+Project records appear in the catalog after repository review, merge, and a
+static build. Use the [contribution guide](.github/CONTRIBUTING.md) to submit
+a project through GitHub Issues or add a record through a pull request.
 
 ## Languages and routes
 
@@ -60,7 +61,8 @@ The configured production origin is `https://mlpos.evanwindproof.top/`.
 public/             Static assets
 src/
   components/       Page content, category cards, and the CSS illustration
-  data/             Site constants and future project record types
+  content/projects/ Reviewed project records as JSON
+  data/             Site constants, project validation, and record loading
   i18n/             Locale registry, dictionaries, and localized route definitions
   layouts/          Shared navigation, footer, and metadata
   pages/            Prerendered pages, robots.txt, and sitemap.xml
@@ -70,14 +72,14 @@ astro.config.mjs    Static build and production site configuration
 
 Localized page routes drive page generation, navigation, alternate-language
 metadata, and the sitemap. Interface copy lives in `src/i18n/locales/`.
-`src/data/projects.ts` defines the future project schema, including
+`src/data/projects.ts` defines the build-time project schema, including
 localized descriptions and verification status.
 
 ## Development phases
 
 1. Establish the multilingual website and static build, page foundations, and SEO metadata.
-2. Develop the project catalog, project detail pages, search, and filters.
-3. Add a dedicated community submission workflow.
+2. Establish the archive’s visual identity and static deployment configuration.
+3. Add multilingual submission forms, contribution review, and catalog records.
 
 Detailed historical timelines are planned as sources and release dates are verified.
 

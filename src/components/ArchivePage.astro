@@ -4,6 +4,7 @@ import { translate, type Locale } from '../i18n';
 import { pagePath, type Page } from '../i18n/routes';
 import ArchiveIllustration from './ArchiveIllustration.astro';
 import CategoryCards from './CategoryCards.astro';
+import ProjectCatalog from './ProjectCatalog.astro';
 
 interface Props {
   locale: Locale;
@@ -75,11 +76,7 @@ const introductions = {
             <h2 id="catalog-categories">{t('catalogSection')}</h2>
             <CategoryCards {locale} />
           </section>
-          <section class="feature-panel catalog-empty">
-            <h2>{t('catalogEmptyTitle')}</h2>
-            <p>{t('catalogEmptyBody')}</p>
-            <a class="text-link" href={pagePath(locale, 'contribute')}>{t('contributeLink')}</a>
-          </section>
+          <ProjectCatalog {locale} />
         </>
       )}
 
@@ -105,11 +102,22 @@ const introductions = {
               {submissions.map((key) => <li>{t(key)}</li>)}
             </ul>
           </section>
-          <section class="feature-panel contribution-panel">
-            <h2>{t('githubTitle')}</h2>
-            <p>{t('githubBody')}</p>
-            <a class="button" href={repositoryUrl}>{t('githubLink')}</a>
-          </section>
+          <div class="contribution-methods">
+            <section class="feature-panel contribution-panel">
+              <h2>{t('issueTitle')}</h2>
+              <p>{t('issueBody')}</p>
+              <a class="button" href={`${repositoryUrl}/issues/new?template=project-submission-${locale.toLowerCase()}.yml`}>
+                {t('issueLink')}
+              </a>
+            </section>
+            <section class="feature-panel">
+              <h2>{t('pullRequestTitle')}</h2>
+              <p>{t('pullRequestBody')}</p>
+              <a class="button button-secondary" href={`${repositoryUrl}/blob/main/docs/PROJECT_SUBMISSION_GUIDE.md`}>
+                {t('pullRequestLink')}
+              </a>
+            </section>
+          </div>
         </>
       )}
 

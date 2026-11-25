@@ -1,0 +1,99 @@
+name: "提交專案"
+description: "推薦一個《彩虹小馬》主題專案供檔案庫收錄。"
+body:
+  - type: markdown
+    attributes:
+      value: "歡迎歷史、已停止維護、未完成及實驗性專案。請使用原始語言，無法確認的選填資訊可留空。議題是公開的，請只分享可以公開的連結與資料。"
+  - type: input
+    id: name
+    attributes:
+      label: "專案名稱"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "專案類別"
+      options:
+        - "獨立作業系統"
+        - "Linux 發行版"
+        - "作業系統主題與自訂"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "專案簡介"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "來源或參考資料連結"
+      description: "請至少提供一個公開的 HTTP 或 HTTPS 連結。網頁快照、版本發布紀錄與當時的文件均可。"
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: "其他名稱"
+  - type: input
+    id: developer
+    attributes:
+      label: "開發者或團隊"
+  - type: input
+    id: developmentYear
+    attributes:
+      label: "開始開發的年份"
+  - type: input
+    id: lastUpdated
+    attributes:
+      label: "最後一次已知更新"
+  - type: input
+    id: baseSystem
+    attributes:
+      label: "基礎作業系統"
+  - type: input
+    id: kernel
+    attributes:
+      label: "核心資訊"
+  - type: input
+    id: sourceCodeUrl
+    attributes:
+      label: "GitHub 或 GitLab 存放庫"
+  - type: input
+    id: officialWebsite
+    attributes:
+      label: "官方網站"
+  - type: textarea
+    id: downloadUrl
+    attributes:
+      label: "下載連結"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "歷史螢幕擷取畫面"
+      description: "請提供連結、創作者或來源的標註，以及已知的使用條款。"
+  - type: textarea
+    id: documentation
+    attributes:
+      label: "文件"
+  - type: input
+    id: license
+    attributes:
+      label: "授權條款"
+  - type: dropdown
+    id: developmentStatus
+    attributes:
+      label: "開發狀態"
+      options:
+        - "活躍"
+        - "維護中"
+        - "已停止維護"
+        - "已封存"
+        - "實驗性"
+        - "未知"
+  - type: textarea
+    id: historicalNotes
+    attributes:
+      label: "其他歷史資料"

@@ -1,0 +1,99 @@
+name: "プロジェクトを投稿する"
+description: "『マイリトルポニー』をテーマにしたプロジェクトをアーカイブに推薦します。"
+body:
+  - type: markdown
+    attributes:
+      value: "過去の作品や開発が終了したもの、未完成・実験的なものも歓迎します。元の言語で記入し、不明な任意項目は空欄にしてください。Issueは公開されます。公開できるリンクと資料だけを共有してください。"
+  - type: input
+    id: name
+    attributes:
+      label: "プロジェクト名"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "プロジェクトの分類"
+      options:
+        - "独自開発のOS"
+        - "Linuxディストリビューション"
+        - "OSのテーマとカスタマイズ"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "プロジェクトの短い説明"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "出典または参考資料のURL"
+      description: "公開されているHTTPまたはHTTPSのURLを少なくとも1件記入してください。ウェブアーカイブ、リリース記録、当時の文書などを利用できます。"
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: "別名"
+  - type: input
+    id: developer
+    attributes:
+      label: "開発者またはチーム"
+  - type: input
+    id: developmentYear
+    attributes:
+      label: "開発開始年"
+  - type: input
+    id: lastUpdated
+    attributes:
+      label: "確認できる最終更新"
+  - type: input
+    id: baseSystem
+    attributes:
+      label: "ベースのOS"
+  - type: input
+    id: kernel
+    attributes:
+      label: "カーネル情報"
+  - type: input
+    id: sourceCodeUrl
+    attributes:
+      label: "GitHubまたはGitLabリポジトリ"
+  - type: input
+    id: officialWebsite
+    attributes:
+      label: "公式サイト"
+  - type: textarea
+    id: downloadUrl
+    attributes:
+      label: "ダウンロードリンク"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "過去のスクリーンショット"
+      description: "URLと、作成者または出典、分かる範囲で利用条件を記入してください。"
+  - type: textarea
+    id: documentation
+    attributes:
+      label: "ドキュメント"
+  - type: input
+    id: license
+    attributes:
+      label: "ライセンス"
+  - type: dropdown
+    id: developmentStatus
+    attributes:
+      label: "開発状況"
+      options:
+        - "開発中"
+        - "保守中"
+        - "開発終了"
+        - "アーカイブ済み"
+        - "実験的"
+        - "不明"
+  - type: textarea
+    id: historicalNotes
+    attributes:
+      label: "その他の歴史資料"

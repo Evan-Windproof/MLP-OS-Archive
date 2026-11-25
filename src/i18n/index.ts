@@ -1,3 +1,4 @@
+import type { ProjectCategory } from '../data/projects';
 import en from './locales/en.json';
 import zhCN from './locales/zh-CN.json';
 import zhTW from './locales/zh-TW.json';
@@ -17,6 +18,12 @@ export const languages = {
 export type Locale = keyof typeof languages;
 export const locales = Object.keys(languages) as Locale[];
 export const defaultLocale: Locale = 'en';
+
+export const projectCategoryLabels = {
+  'independent-os': 'independent',
+  'linux-distribution': 'linux',
+  'desktop-customization': 'desktop',
+} as const satisfies Record<ProjectCategory, string>;
 
 type Messages = Partial<Record<keyof typeof en, string>>;
 

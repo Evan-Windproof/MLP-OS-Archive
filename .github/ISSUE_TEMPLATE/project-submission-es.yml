@@ -1,0 +1,99 @@
+name: "Proponer un proyecto"
+description: "Propón un proyecto inspirado en My Little Pony para el archivo."
+body:
+  - type: markdown
+    attributes:
+      value: "Se admiten proyectos históricos, abandonados, incompletos y experimentales. Usa el idioma original y deja en blanco los campos opcionales si hay dudas. Las propuestas son públicas. Comparte solo enlaces y materiales aptos para su difusión pública."
+  - type: input
+    id: name
+    attributes:
+      label: "Nombre del proyecto"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Categoría del proyecto"
+      options:
+        - "Sistemas operativos independientes"
+        - "Distribuciones Linux"
+        - "Temas y personalizaciones del sistema"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descripción breve del proyecto"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "URL de las fuentes o referencias"
+      description: "Incluye al menos una URL pública HTTP o HTTPS. Se aceptan páginas archivadas, publicaciones de versiones y documentos de la época."
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: "Nombres alternativos"
+  - type: input
+    id: developer
+    attributes:
+      label: "Desarrollador o equipo"
+  - type: input
+    id: developmentYear
+    attributes:
+      label: "Año de inicio del desarrollo"
+  - type: input
+    id: lastUpdated
+    attributes:
+      label: "Última actualización conocida"
+  - type: input
+    id: baseSystem
+    attributes:
+      label: "Sistema operativo base"
+  - type: input
+    id: kernel
+    attributes:
+      label: "Información sobre el núcleo"
+  - type: input
+    id: sourceCodeUrl
+    attributes:
+      label: "Repositorio de GitHub o GitLab"
+  - type: input
+    id: officialWebsite
+    attributes:
+      label: "Sitio oficial"
+  - type: textarea
+    id: downloadUrl
+    attributes:
+      label: "Enlaces de descarga"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Capturas de pantalla históricas"
+      description: "Incluye las URL, los créditos de autoría o procedencia y las condiciones de uso conocidas."
+  - type: textarea
+    id: documentation
+    attributes:
+      label: "Documentación"
+  - type: input
+    id: license
+    attributes:
+      label: "Licencia"
+  - type: dropdown
+    id: developmentStatus
+    attributes:
+      label: "Estado de desarrollo"
+      options:
+        - "Activo"
+        - "En mantenimiento"
+        - "Abandonado"
+        - "Archivado"
+        - "Experimental"
+        - "Desconocido"
+  - type: textarea
+    id: historicalNotes
+    attributes:
+      label: "Información histórica adicional"

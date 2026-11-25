@@ -1,23 +1,18 @@
 ---
 import CategoryIcon from './CategoryIcon.astro';
-import { projectCategories, type ProjectCategory } from '../data/projects';
-import { type Locale, translate } from '../i18n';
+import { projectCategories } from '../data/projects';
+import { type Locale, projectCategoryLabels, translate } from '../i18n';
 
 interface Props {
   locale: Locale;
 }
 
 const t = translate(Astro.props.locale);
-const messagePrefixes = {
-  'independent-os': 'independent',
-  'linux-distribution': 'linux',
-  'desktop-customization': 'desktop',
-} as const satisfies Record<ProjectCategory, string>;
 ---
 
 <ul class="category-grid">
   {projectCategories.map((category) => {
-    const prefix = messagePrefixes[category];
+    const prefix = projectCategoryLabels[category];
     return (
       <li class:list={['category-card', category]}>
         <span class="category-icon"><CategoryIcon {category} /></span>

@@ -420,3 +420,14 @@ img { display: block; max-width: 100%; }
   .footer-inner nav { margin-inline-start: -.55rem; }
   .footer-inner nav a { padding-inline: .55rem; }
 }
+
+.contribution-methods {
+  display: grid;
+  gap: 1.15rem;
+}
+.project-record { overflow-wrap: anywhere; }
+.project-record dl { margin-block: 1rem; }
+.project-record dt { font-weight: 700; }
+.project-record dd { margin-inline-start: 0; color: var(--muted); }
+.project-record dd + dt { margin-top: .4rem; }
+.record-links { display: flex; flex-wrap: wrap; gap: .3rem 1rem; margin: 0; padding: 0; list-style: none; }
