@@ -1,0 +1,102 @@
+---
+import '../styles/global.css';
+import { siteName } from '../data/site';
+import { defaultLocale, languages, type Locale, translate } from '../i18n';
+import { pagePath, pages, publicRoutes, type Page } from '../i18n/routes';
+
+interface Props {
+  locale: Locale;
+  page: Page;
+}
+
+const { locale, page } = Astro.props;
+const t = translate(locale);
+const title = `${t(`${page}Title`)} | ${siteName}`;
+const description = t(`${page}Meta`);
+const canonical = new URL(pagePath(locale, page), Astro.site);
+const alternates = publicRoutes.filter((route) => route.page === page);
+const openGraphLocales = {
+  en: 'en_US', 'zh-CN': 'zh_CN', 'zh-TW': 'zh_TW', ja: 'ja_JP', es: 'es_ES', fr: 'fr_FR',
+} satisfies Record<Locale, string>;
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(pagePath(defaultLocale, page), Astro.site).href} />
+    {alternates.map(({ locale, path }) => (
+      <link rel="alternate" hreflang={locale} href={new URL(path, Astro.site).href} />
+    ))}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={new URL('/social-card.jpg', Astro.site).href} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={t('socialImageAlt')} />
+    <meta property="og:locale" content={openGraphLocales[locale]} />
+    {alternates.filter((route) => route.locale !== locale).map(({ locale }) => (
+      <meta property="og:locale:alternate" content={openGraphLocales[locale]} />
+    ))}
+  </head>
+  <body>
+    <a class="skip" href="#main">{t('skip')}</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href={pagePath(locale, 'home')}>
+          <img src="/favicon.svg" width="34" height="34" alt="" />
+          <span lang="en">{siteName}</span>
+        </a>
+        <nav class="primary-nav" aria-label={t('primaryNav')}>
+          {pages.map((item) => (
+            <a href={pagePath(locale, item)} aria-current={item === page ? 'page' : undefined}>{t(item)}</a>
+          ))}
+        </nav>
+        <details class="language-picker">
+          <summary>
+            <span class="globe" aria-hidden="true"></span>
+            <span class="visually-hidden">{t('language')} </span>
+            <span lang={locale}>{languages[locale]}</span>
+          </summary>
+          <ul>
+            {alternates.map(({ locale: target, path }) => (
+              <li>
+                <a href={path} lang={target} hreflang={target} aria-current={target === locale ? 'page' : undefined}>
+                  {languages[target]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <a class="brand" href={pagePath(locale, 'home')}>
+            <img src="/favicon.svg" width="28" height="28" alt="" />
+            <span lang="en">{siteName}</span>
+          </a>
+          <p>{t('footerNote')}</p>
+        </div>
+        <nav aria-label={t('footerNavigation')}>
+          {pages.slice(1).map((item) => (
+            <a href={pagePath(locale, item)} aria-current={item === page ? 'page' : undefined}>{t(item)}</a>
+          ))}
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

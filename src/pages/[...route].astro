@@ -1,0 +1,18 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ArchivePage from '../components/ArchivePage.astro';
+import { publicRoutes } from '../i18n/routes';
+
+export function getStaticPaths() {
+  return publicRoutes.map(({ segments, locale, page }) => ({
+    params: { route: segments.join('/') || undefined },
+    props: { locale, page },
+  }));
+}
+
+const { locale, page } = Astro.props;
+---
+
+<PageLayout {locale} {page}>
+  <ArchivePage {locale} {page} />
+</PageLayout>
