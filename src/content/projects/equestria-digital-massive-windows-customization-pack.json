@@ -1,0 +1,66 @@
+{
+  "id": "equestria-digital-massive-windows-customization-pack",
+  "name": "Equestria Digital Massive Windows Customization Pack",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A large collection of Windows desktop customizations released by the DeviantArt community Equestria Digital.",
+    "zh-CN": "DeviantArt 社群 Equestria Digital 发布的大型 Windows 桌面定制合集。",
+    "zh-TW": "DeviantArt 社群 Equestria Digital 發布的大型 Windows 桌面自訂合集。",
+    "ja": "DeviantArt のグループ Equestria Digital が公開した大規模な Windows デスクトップカスタマイズ集。",
+    "es": "Amplia colección de personalización de Windows publicada por la comunidad Equestria Digital de DeviantArt.",
+    "fr": "Vaste collection de personnalisation du bureau Windows publiée par la communauté Equestria Digital de DeviantArt."
+  },
+  "developer": "Equestria Digital",
+  "platform": "Windows",
+  "historicalDate": {
+    "date": {
+      "precision": "day",
+      "value": "2013-04-12"
+    },
+    "kind": "report-date"
+  },
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "mixed",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "localizedHistory": {
+    "en": "Equestria Daily reported on the group’s 2013 collection on April 12. The report documents the pack’s existence and group attribution.",
+    "zh-CN": "Equestria Daily 于 4 月 12 日报道了这套 2013 年合集，记录了合集的存在和社群署名。",
+    "zh-TW": "Equestria Daily 於 4 月 12 日報導了這套 2013 年合集，留下合集存在和社群署名的記錄。",
+    "ja": "Equestria Daily は 4 月 12 日に 2013 年のパックを紹介し、グループの作品として記録しています。",
+    "es": "Equestria Daily informó de la colección de 2013 el 12 de abril y atribuyó el paquete al grupo.",
+    "fr": "Equestria Daily a signalé la collection de 2013 le 12 avril et a attribué le pack au groupe."
+  },
+  "references": [
+    "https://www.equestriadaily.com/2013/04/equestria-digital-massive-windows.html",
+    "https://elalition.deviantart.com/art/Equestria-Digital-Project-2013-364196770",
+    "https://www.tumgik.com/equestriadigital",
+    "https://equestriadigital.tumblr.com/"
+  ],
+  "evidence": [
+    {
+      "kind": "community",
+      "url": "https://www.equestriadaily.com/2013/04/equestria-digital-massive-windows.html"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://elalition.deviantart.com/art/Equestria-Digital-Project-2013-364196770",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "archived",
+      "url": "https://www.tumgik.com/equestriadigital"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://equestriadigital.tumblr.com/",
+      "accessUnconfirmed": true
+    }
+  ],
+  "developerIsGroup": true,
+  "officialWebsite": "https://elalition.deviantart.com/art/Equestria-Digital-Project-2013-364196770",
+  "developerUrl": "https://equestriadigital.tumblr.com/"
+}

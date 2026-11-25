@@ -4,20 +4,24 @@
   "category": "linux-distribution",
   "originalLanguage": "en",
   "description": {
-    "en": "A historical My Little Pony-related Linux distribution developed by Adrian Siekierka as an experimental Linux From Scratch project."
+    "en": "An experimental My Little Pony-themed distribution based on Linux From Scratch, documented in 2012.",
+    "zh-CN": "一个基于 Linux From Scratch 的《小马宝莉》主题实验性发行版，相关记载见于 2012 年。",
+    "zh-TW": "一個以 Linux From Scratch 為基礎的《彩虹小馬》主題實驗性發行版，相關記錄見於 2012 年。",
+    "ja": "2012 年に記録された、Linux From Scratch ベースの『マイリトルポニー』を題材とした実験的なディストリビューション。",
+    "es": "Distribución experimental de temática My Little Pony basada en Linux From Scratch y documentada en 2012.",
+    "fr": "Distribution expérimentale sur le thème de My Little Pony, basée sur Linux From Scratch et documentée en 2012."
   },
-  "developer": "Adrian Siekierka",
+  "developer": "Adrian \"asie\" Siekierka",
   "baseSystem": "Linux From Scratch (LFS)",
   "kernel": "Linux",
   "developmentYear": 2012,
   "lastUpdated": "2012-07-13",
-  "developmentStatus": "discontinued",
+  "developmentStatus": "experimental",
   "verificationStatus": "verified",
   "recordCompleteness": "incomplete",
   "evidenceProvenance": "mixed",
   "testingStatus": "unknown",
   "sourceCodeUrl": "https://github.com/asiekierka/twili",
-  "historicalNotes": "The available records span approximately 2012–2013. The earliest and latest visible repository activity dates are July 10 and July 13, 2012. Siekierka retrospectively lists the project under 2013; that heading does not establish a later commit or a discontinuation date. The repository contains packaging and installation tooling. Its README describes installation through a chroot and lists non-kdrive X server support as unfinished. GitHub lists no official releases. The README’s chroot archive and installer URLs survive as historical references with unconfirmed availability.",
   "events": [
     {
       "category": "other",
@@ -115,5 +119,16 @@
       "url": "http://twi.asiekierka.pl/installer.tar.bz2",
       "note": "Installer archive cited by the README. Availability is unknown."
     }
-  ]
+  ],
+  "developerUrl": "https://github.com/asiekierka",
+  "platform": "Linux",
+  "downloadAvailability": "unknown",
+  "localizedHistory": {
+    "en": "The available records span approximately 2012–2013. The earliest and latest visible repository activity dates are July 10 and July 13, 2012. Siekierka retrospectively lists the project under 2013; that heading does not establish a later commit or a discontinuation date. The repository contains packaging and installation tooling. Its README describes installation through a chroot and lists non-kdrive X server support as unfinished. GitHub lists no official releases. The README’s chroot archive and installer URLs survive as historical references with unconfirmed availability.",
+    "zh-CN": "公开仓库可见的活动日期为 2012 年 7 月 10 日至 13 日。开发者在回顾中将项目列在 2013 年名下。仓库包含打包和安装工具，README 介绍了通过 chroot 安装的方法，并记录了未完成的 X 服务器支持。GitHub 没有正式发行版，历史安装链接的可用性仍待核实。",
+    "zh-TW": "公開儲存庫中可見的活動日期為 2012 年 7 月 10 日至 13 日。開發者在回顧中將專案列在 2013 年名下。儲存庫包含打包與安裝工具，README 說明了透過 chroot 安裝的方法，也記錄了尚未完成的 X 伺服器支援。GitHub 未列出正式發行版，歷史安裝連結是否可用仍待查證。",
+    "ja": "公開リポジトリで確認できる活動は 2012 年 7 月 10 日から 13 日までです。開発者による回顧では 2013 年に分類されています。リポジトリにはパッケージ作成とインストールのツールがあり、README には chroot を使う導入手順と未完成の X サーバー対応が記録されています。GitHub に公式リリースはなく、当時のインストール用リンクの利用可否は未確認です。",
+    "es": "La actividad visible del repositorio abarca del 10 al 13 de julio de 2012. El desarrollador agrupó el proyecto bajo 2013 en su retrospectiva. El repositorio contiene herramientas de empaquetado e instalación y el README describe el uso de chroot y el soporte incompleto del servidor X. GitHub no registra publicaciones oficiales. Los enlaces de instalación históricos siguen sin verificarse.",
+    "fr": "L’activité visible dans le dépôt va du 10 au 13 juillet 2012. Le développeur classe le projet sous 2013 dans sa rétrospective. Le dépôt contient des outils de création de paquets et d’installation. Le README décrit l’installation par chroot et le travail inachevé sur le serveur X. GitHub ne répertorie aucune version officielle. La disponibilité des liens d’installation historiques reste à vérifier."
+  }
 }

@@ -1,0 +1,75 @@
+{
+  "id": "pony-meter",
+  "name": "Pony Meter",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A My Little Pony Rainmeter skin with widgets for the time and date, RAM, network activity, disk space, battery level and Recycle Bin.",
+    "zh-CN": "《小马宝莉》Rainmeter 皮肤，提供时间、日期、内存、网络活动、磁盘空间、电量和回收站小组件。",
+    "zh-TW": "《彩虹小馬》Rainmeter 外觀，內含時間、日期、記憶體、網路活動、磁碟空間、電量與資源回收筒小工具。",
+    "ja": "時刻と日付、メモリ、ネットワーク、ディスク容量、バッテリー、ごみ箱のウィジェットを備えた『マイリトルポニー』の Rainmeter スキン。",
+    "es": "Piel de Rainmeter de My Little Pony con widgets de hora y fecha, memoria RAM, red, disco, batería y papelera.",
+    "fr": "Habillage Rainmeter My Little Pony avec des widgets pour la date et l’heure, la mémoire vive, le réseau, le stockage, la batterie et la corbeille."
+  },
+  "developer": "Really-unimportant",
+  "platform": "Windows / Rainmeter",
+  "historicalDate": {
+    "date": {
+      "precision": "day",
+      "value": "2018-08-31"
+    },
+    "kind": "catalog-date"
+  },
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "independent-third-party",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "localizedHistory": {
+    "en": "VisualSkins added this entry on August 31, 2018 and credits Really-unimportant. The original publication date is unknown.",
+    "zh-CN": "VisualSkins 于 2018 年 8 月 31 日收录此条目，并注明作者为 Really-unimportant。作品最初的发布日期待查。",
+    "zh-TW": "VisualSkins 於 2018 年 8 月 31 日收錄此條目，並註明作者為 Really-unimportant。作品最早的發布日期待查。",
+    "ja": "VisualSkins は 2018 年 8 月 31 日に掲載し、制作者を Really-unimportant と記しています。初回公開日は不明です。",
+    "es": "VisualSkins incorporó la ficha el 31 de agosto de 2018 y atribuye la piel a Really-unimportant. Se desconoce la fecha de publicación original.",
+    "fr": "VisualSkins a ajouté sa fiche le 31 août 2018 et crédite Really-unimportant. La date de publication initiale reste inconnue."
+  },
+  "references": [
+    "https://visualskins.com/skin/pony-meter"
+  ],
+  "evidence": [
+    {
+      "kind": "independent",
+      "url": "https://visualskins.com/skin/pony-meter"
+    }
+  ],
+  "developerUrl": "https://www.deviantart.com/really-unimportant",
+  "screenshots": [
+    {
+      "url": "https://visualskins.com/i/c/600x400/media/p/494/pony-meter-rainmeter.jpg",
+      "credit": "Really-unimportant / VisualSkins",
+      "sourceUrl": "https://visualskins.com/skin/pony-meter",
+      "captions": {
+        "en": "Desktop preview of the Pony Meter character widgets and system monitors.",
+        "zh-CN": "Pony Meter 角色小组件与系统监控的桌面预览。",
+        "zh-TW": "Pony Meter 角色小工具與系統監控的桌面預覽。",
+        "ja": "Pony Meter のキャラクターウィジェットとシステム表示のデスクトッププレビュー。",
+        "es": "Vista del escritorio con los widgets de personajes y los indicadores del sistema de Pony Meter.",
+        "fr": "Aperçu du bureau avec les widgets de personnages et les indicateurs système de Pony Meter."
+      }
+    },
+    {
+      "url": "https://visualskins.com/i/c/600x400/media/p/494/pony-meter-rainmeter-2.jpg",
+      "credit": "Really-unimportant / VisualSkins",
+      "sourceUrl": "https://visualskins.com/skin/pony-meter",
+      "captions": {
+        "en": "Second desktop view of the Pony Meter widget layout.",
+        "zh-CN": "Pony Meter 小组件布局的第二张桌面预览。",
+        "zh-TW": "Pony Meter 小工具配置的第二張桌面預覽。",
+        "ja": "Pony Meter のウィジェット配置を示す二枚目のデスクトップ画像。",
+        "es": "Segunda vista del escritorio con la disposición de widgets de Pony Meter.",
+        "fr": "Seconde vue du bureau montrant la disposition des widgets de Pony Meter."
+      }
+    }
+  ]
+}

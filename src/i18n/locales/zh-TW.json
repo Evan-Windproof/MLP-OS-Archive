@@ -155,5 +155,15 @@
   "heroImageAlt": "在月光下的圖書館裡，長著翅膀、擁有藍金色鬃毛的獨角獸 Evan 坐在復古電腦與書籍旁。",
   "authorBlog": "作者部落格",
   "notFoundTitle": "找不到頁面",
-  "notFoundMeta": "你要瀏覽的頁面可能已移動，也可能是網址有誤。"
+  "notFoundMeta": "你要瀏覽的頁面可能已移動，也可能是網址有誤。",
+  "projectPlatform": "平台",
+  "projectCreatorGroup": "創作團體",
+  "catalog-date": "目錄記錄日期",
+  "report-date": "報導日期",
+  "screenshotOpen": "查看原始預覽",
+  "screenshotUnavailable": "暫無預覽",
+  "screenshotRights": "預覽連結指向原始來源。《彩虹小馬》及相關作品的權利歸 Hasbro 等各權利人所有。",
+  "download-unknown": "下載是否可用尚待查證。",
+  "download-unavailable": "目前沒有可用的下載。",
+  "sourceAccessUnconfirmed": "可存取性未確認"
 }

@@ -1,0 +1,53 @@
+{
+  "id": "high-res-pony-icon-set",
+  "name": "High-Res Pony Icon Set",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A collection of high-resolution My Little Pony desktop icons for customizing application shortcuts.",
+    "zh-CN": "一套用于定制应用程序快捷方式的《小马宝莉》高分辨率桌面图标。",
+    "zh-TW": "一套用於自訂應用程式捷徑的《彩虹小馬》高解析度桌面圖示。",
+    "ja": "アプリケーションのショートカットをカスタマイズできる『マイリトルポニー』の高解像度デスクトップアイコン集。",
+    "es": "Colección de iconos de escritorio de alta resolución de My Little Pony para personalizar accesos directos de aplicaciones.",
+    "fr": "Collection d’icônes de bureau My Little Pony en haute résolution pour personnaliser les raccourcis d’applications."
+  },
+  "developer": "spikeslashrarity",
+  "historicalDate": {
+    "date": {
+      "precision": "day",
+      "value": "2011-09-19"
+    },
+    "kind": "report-date"
+  },
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "mixed",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "localizedHistory": {
+    "en": "Equestria Daily’s September 2011 article links directly to the icon gallery and credits spikeslashrarity. Cereal Velocity wrote the article.",
+    "zh-CN": "Equestria Daily 在 2011 年 9 月的文章中直接链接了图标图库，并注明创作者为 spikeslashrarity。文章由 Cereal Velocity 撰写。",
+    "zh-TW": "Equestria Daily 在 2011 年 9 月的文章中直接連結圖示作品集，並註明創作者為 spikeslashrarity。文章由 Cereal Velocity 撰寫。",
+    "ja": "Equestria Daily の 2011 年 9 月の記事は作品ギャラリーに直接リンクし、制作者に spikeslashrarity を挙げています。記事の執筆者は Cereal Velocity です。",
+    "es": "El artículo de Equestria Daily de septiembre de 2011 enlaza a la galería y atribuye los iconos a spikeslashrarity. Cereal Velocity escribió el artículo.",
+    "fr": "L’article d’Equestria Daily de septembre 2011 renvoie directement à la galerie et attribue les icônes à spikeslashrarity. Cereal Velocity a signé l’article."
+  },
+  "references": [
+    "https://spikeslashrarity.deviantart.com/gallery/32665720?offset=0",
+    "https://www.equestriadaily.com/2011/09/high-res-pony-icon-set.html"
+  ],
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://spikeslashrarity.deviantart.com/gallery/32665720?offset=0",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "community",
+      "url": "https://www.equestriadaily.com/2011/09/high-res-pony-icon-set.html"
+    }
+  ],
+  "developerUrl": "https://www.deviantart.com/spikeslashrarity",
+  "officialWebsite": "https://spikeslashrarity.deviantart.com/gallery/32665720?offset=0"
+}

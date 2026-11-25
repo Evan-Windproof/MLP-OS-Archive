@@ -1,0 +1,62 @@
+{
+  "id": "rainbow-dash-rainmeter",
+  "name": "Rainbow Dash Rainmeter Skin",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A Windows Rainmeter skin featuring a Rainbow Dash calendar widget and a themed desktop background.",
+    "zh-CN": "一款 Windows Rainmeter 皮肤，含云宝日历小组件和配套桌面背景。",
+    "zh-TW": "一款 Windows Rainmeter 外觀，內含雲寶行事曆小工具與配套桌布。",
+    "ja": "レインボーダッシュのカレンダーとテーマに合わせた壁紙を備えた Windows 向け Rainmeter スキン。",
+    "es": "Piel de Rainmeter para Windows con un calendario de Rainbow Dash y un fondo de escritorio a juego.",
+    "fr": "Habillage Rainmeter pour Windows avec un calendrier Rainbow Dash et un fond d’écran assorti."
+  },
+  "developer": "SNX11",
+  "platform": "Windows / Rainmeter",
+  "historicalDate": {
+    "date": {
+      "precision": "day",
+      "value": "2018-07-16"
+    },
+    "kind": "catalog-date"
+  },
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "independent-third-party",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "localizedHistory": {
+    "en": "VisualSkins added this entry on July 16, 2018 and credits SNX11. The original publication date is unknown.",
+    "zh-CN": "VisualSkins 于 2018 年 7 月 16 日收录此条目，并注明作者为 SNX11。作品最初的发布日期待查。",
+    "zh-TW": "VisualSkins 於 2018 年 7 月 16 日收錄此條目，並註明作者為 SNX11。作品最早的發布日期待查。",
+    "ja": "VisualSkins は 2018 年 7 月 16 日に掲載し、制作者を SNX11 と記しています。初回公開日は不明です。",
+    "es": "VisualSkins incorporó la ficha el 16 de julio de 2018 y atribuye la piel a SNX11. Se desconoce la fecha de publicación original.",
+    "fr": "VisualSkins a ajouté sa fiche le 16 juillet 2018 et crédite SNX11. La date de publication initiale reste inconnue."
+  },
+  "references": [
+    "https://visualskins.com/skin/rainbow-dash"
+  ],
+  "evidence": [
+    {
+      "kind": "independent",
+      "url": "https://visualskins.com/skin/rainbow-dash"
+    }
+  ],
+  "developerUrl": "https://www.deviantart.com/snx11",
+  "screenshots": [
+    {
+      "url": "https://visualskins.com/i/c/600x400/media/p/252/rainbow-dash-rainmeter.jpg",
+      "credit": "SNX11 / VisualSkins",
+      "sourceUrl": "https://visualskins.com/skin/rainbow-dash",
+      "captions": {
+        "en": "Rainbow Dash calendar widget against a landscape wallpaper.",
+        "zh-CN": "风景壁纸上的云宝日历小组件。",
+        "zh-TW": "風景桌布上的雲寶行事曆小工具。",
+        "ja": "風景の壁紙に重ねたレインボーダッシュのカレンダー。",
+        "es": "Widget de calendario de Rainbow Dash sobre un fondo de paisaje.",
+        "fr": "Widget de calendrier Rainbow Dash sur un fond d’écran de paysage."
+      }
+    }
+  ]
+}

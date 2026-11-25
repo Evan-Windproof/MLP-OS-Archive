@@ -1,0 +1,57 @@
+{
+  "id": "equestria-digital-winter-release",
+  "name": "Equestria Digital Winter Release",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A Windows customization collection with media player skins, wallpapers, Rainmeter themes, a 3D pony game, cursors, screensavers and desktop icons.",
+    "zh-CN": "一套 Windows 桌面定制合集，包含播放器皮肤、壁纸、Rainmeter 主题、3D 小马游戏、光标、屏幕保护程序和桌面图标。",
+    "zh-TW": "一套 Windows 桌面自訂合集，包含播放器外觀、桌布、Rainmeter 主題、3D 小馬遊戲、游標、螢幕保護程式與桌面圖示。",
+    "ja": "メディアプレーヤーのスキン、壁紙、Rainmeter テーマ、3D ポニーゲーム、カーソル、スクリーンセーバー、アイコンを集めた Windows 向けパック。",
+    "es": "Colección de personalización de Windows con pieles para reproductores, fondos, temas de Rainmeter, un juego de ponis en 3D, cursores, salvapantallas e iconos.",
+    "fr": "Collection pour personnaliser Windows avec des habillages de lecteurs multimédias, des fonds d’écran, des thèmes Rainmeter, un jeu de poneys en 3D, des curseurs, des écrans de veille et des icônes."
+  },
+  "developer": "EphemeralBlue",
+  "platform": "Windows",
+  "historicalDate": {
+    "date": {
+      "precision": "day",
+      "value": "2012-01-01"
+    },
+    "kind": "report-date"
+  },
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "mixed",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "localizedHistory": {
+    "en": "Equestria Daily covered the same collection under the title Pony Customization Compilation and linked to EphemeralBlue’s DeviantArt submission.",
+    "zh-CN": "Equestria Daily 以 Pony Customization Compilation 为标题报道了同一套合集，并链接到 EphemeralBlue 的 DeviantArt 作品页。",
+    "zh-TW": "Equestria Daily 以 Pony Customization Compilation 為標題報導了同一套合集，並連結至 EphemeralBlue 的 DeviantArt 作品頁。",
+    "ja": "Equestria Daily は同じ作品を Pony Customization Compilation の見出しで紹介し、EphemeralBlue の DeviantArt 投稿へリンクしました。",
+    "es": "Equestria Daily reseñó la misma colección con el título Pony Customization Compilation y enlazó a la publicación de EphemeralBlue en DeviantArt.",
+    "fr": "Equestria Daily a présenté la même collection sous le titre Pony Customization Compilation et a renvoyé vers la publication DeviantArt d’EphemeralBlue."
+  },
+  "references": [
+    "https://www.deviantart.com/ephemeralblue/art/Equestria-Digital-Winter-Release-277120450",
+    "https://www.equestriadaily.com/2012/01/pony-customization-compilation.html"
+  ],
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/ephemeralblue/art/Equestria-Digital-Winter-Release-277120450",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "community",
+      "url": "https://www.equestriadaily.com/2012/01/pony-customization-compilation.html"
+    }
+  ],
+  "developerUrl": "https://www.deviantart.com/ephemeralblue",
+  "officialWebsite": "https://www.deviantart.com/ephemeralblue/art/Equestria-Digital-Winter-Release-277120450",
+  "aliases": [
+    "Pony Customization Compilation"
+  ]
+}

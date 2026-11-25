@@ -6,7 +6,7 @@
   "description": {
     "en": "A desktop customization application that places animated My Little Pony characters on the desktop. The .NET project documents support for Windows, macOS, and Linux."
   },
-  "developer": "Desktop Ponies team (repository maintained by RoosterDragon)",
+  "developer": "Desktop Ponies team",
   "developmentStatus": "unknown",
   "verificationStatus": "verified",
   "references": [
@@ -18,7 +18,7 @@
   "sourceCodeUrl": "https://github.com/RoosterDragon/Desktop-Ponies",
   "downloadUrl": "https://github.com/RoosterDragon/Desktop-Ponies/releases",
   "lastUpdated": "2025-03-22",
-  "historicalNotes": "The 2012 SourceForge files document an early Windows build. The later repository describes cross-platform support. This record covers the desktop overlay, not the separately maintained browser and Linux reimplementations.",
+  "historicalNotes": "The 2012 SourceForge files document an early Windows build. The later repository describes cross-platform support. This record covers the desktop overlay, not the separately maintained browser and Linux reimplementations. The later GitHub repository is maintained by RoosterDragon.",
   "releases": [
     {
       "version": "1.69",
@@ -62,5 +62,7 @@
         "value": "2025-03-22"
       }
     }
-  ]
+  ],
+  "developerIsGroup": true,
+  "platform": "Windows / macOS / Linux"
 }

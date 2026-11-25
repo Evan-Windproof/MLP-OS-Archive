@@ -155,5 +155,15 @@
   "heroImageAlt": "Evan, une licorne ailée à la crinière bleue et dorée, aux côtés d’un ordinateur ancien et de livres dans une bibliothèque au clair de lune.",
   "authorBlog": "Blog de l’auteur",
   "notFoundTitle": "Page introuvable",
-  "notFoundMeta": "La page a peut-être été déplacée ou l’adresse est incorrecte."
+  "notFoundMeta": "La page a peut-être été déplacée ou l’adresse est incorrecte.",
+  "projectPlatform": "Plateforme",
+  "projectCreatorGroup": "Collectif créateur",
+  "catalog-date": "Date dans le catalogue",
+  "report-date": "Date de l’article",
+  "screenshotOpen": "Ouvrir l’aperçu original",
+  "screenshotUnavailable": "Aperçu indisponible",
+  "screenshotRights": "Les aperçus renvoient à leur source. My Little Pony et les œuvres associées appartiennent à leurs ayants droit respectifs, dont Hasbro.",
+  "download-unknown": "La disponibilité du téléchargement reste à vérifier.",
+  "download-unavailable": "Aucun téléchargement n’est actuellement disponible.",
+  "sourceAccessUnconfirmed": "Accès à confirmer"
 }

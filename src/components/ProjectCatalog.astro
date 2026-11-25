@@ -1,9 +1,10 @@
 ---
 import { projectsByCategory } from '../data/project-records';
 import type { ProjectCategory } from '../data/projects';
-import { formatProjectPeriod, projectDescription } from '../i18n/archive';
+import { formatProjectPeriod, localizedArchiveText, projectDescription } from '../i18n/archive';
 import { translate, type Locale } from '../i18n';
 import { pagePath, projectPath } from '../i18n/routes';
+import ProjectCreator from './ProjectCreator.astro';
 
 interface Props {
   locale: Locale;
@@ -19,11 +20,24 @@ const records = projectsByCategory[category];
     {records.map((project) => {
       const description = projectDescription(project, locale);
       const period = formatProjectPeriod(project, locale);
+      const screenshot = project.screenshots?.[0];
+      const caption = localizedArchiveText(screenshot?.captions ?? {}, locale, project.originalLanguage);
       return (
         <li class:list={['category-card', 'project-record', category]} id={`project-${project.id}`}>
           <h3><a href={projectPath(locale, project.id)}>{project.name}</a></h3>
+          {screenshot?.embed ? (
+            <img class="screenshot-frame" src={screenshot.url} alt={caption?.text ?? screenshot.alt ?? t('projectScreenshot')} lang={caption?.language ?? screenshot.language} loading="lazy" decoding="async" />
+          ) : (
+            <p class="screenshot-frame">
+              {screenshot
+                ? <a href={`${projectPath(locale, project.id)}#screenshots`}>{t('projectScreenshots')}</a>
+                : t('screenshotUnavailable')}
+            </p>
+          )}
           <p lang={description.language}>{description.text}</p>
           <dl>
+            {project.developer && <><dt>{t(project.developerIsGroup ? 'projectCreatorGroup' : 'projectDeveloper')}</dt><dd><ProjectCreator {project} {locale} /></dd></>}
+            {project.platform && <><dt>{t('projectPlatform')}</dt><dd>{project.platform}</dd></>}
             <dt>{t('developmentLabel')}</dt><dd>{t(`status-${project.developmentStatus}`)}</dd>
             <dt>{t('verificationLabel')}</dt><dd>{t(`status-${project.verificationStatus}`)}</dd>
             {period && <><dt>{t('documentedPeriod')}</dt><dd>{period}</dd></>}

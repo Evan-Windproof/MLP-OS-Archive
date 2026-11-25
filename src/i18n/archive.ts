@@ -1,9 +1,13 @@
 import type { ArchiveDate, Project } from '../data/projects';
 import { translate, type Locale } from './index';
 
+export function localizedArchiveText(values: Record<string, string>, locale: Locale, originalLanguage: string) {
+  const language = [locale, 'en', originalLanguage].find((tag) => Object.hasOwn(values, tag));
+  return language ? { language, text: values[language] } : undefined;
+}
+
 export function projectDescription(project: Project, locale: Locale) {
-  const language = Object.hasOwn(project.description, locale) ? locale : project.originalLanguage;
-  return { language, text: project.description[language] };
+  return localizedArchiveText(project.description, locale, project.originalLanguage)!;
 }
 
 export function formatArchiveDate(date: ArchiveDate, locale: Locale) {
@@ -27,6 +31,7 @@ export function formatProjectPeriod(project: Project, locale: Locale) {
   const dates = [
     project.developmentYear?.toString().padStart(4, '0'),
     project.lastUpdated,
+    project.historicalDate?.date.value,
     ...(project.events ?? []).map((event) => event.date?.value),
     ...(project.releases ?? []).map((release) => release.date?.value),
   ];

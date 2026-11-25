@@ -155,5 +155,15 @@
   "heroImageAlt": "月明かりの図書館で、青と金のたてがみを持つ翼のあるユニコーン、Evanが、レトロなコンピューターと本のそばに座っています。",
   "authorBlog": "作者のブログ",
   "notFoundTitle": "ページが見つかりません",
-  "notFoundMeta": "ページが移動したか、URLに誤りがある可能性があります。"
+  "notFoundMeta": "ページが移動したか、URLに誤りがある可能性があります。",
+  "projectPlatform": "プラットフォーム",
+  "projectCreatorGroup": "制作グループ",
+  "catalog-date": "カタログ掲載情報の日付",
+  "report-date": "報道日",
+  "screenshotOpen": "配信元でプレビューを開く",
+  "screenshotUnavailable": "プレビューなし",
+  "screenshotRights": "プレビューは掲載元へのリンクです。『マイリトルポニー』と関連作品の権利は、Hasbro を含む各権利者に帰属します。",
+  "download-unknown": "ダウンロードの可否は未確認です。",
+  "download-unavailable": "現在利用できるダウンロードはありません。",
+  "sourceAccessUnconfirmed": "アクセス可否未確認"
 }

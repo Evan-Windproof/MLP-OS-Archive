@@ -67,5 +67,7 @@
         "value": "2026-04-01"
       }
     }
-  ]
+  ],
+  "developerUrl": "https://github.com/klange",
+  "platform": "x86-64 / AArch64"
 }

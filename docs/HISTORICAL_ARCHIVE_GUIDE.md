@@ -41,9 +41,16 @@ with unknown availability.
 
 Record the original screenshot URL, source page, creator or publisher
 credit, accessible description, known permission terms, and capture date
-when supported. The site's screenshot archive links out to the original
-image. Get permission or verify the applicable license before copying an
-image, ISO, or other binary into any archive storage.
+when supported. Use `captions` for localized screenshot descriptions. The
+gallery links to the original preview by default. Set `embed` only when
+the host and rights holder permit embedding. Get permission or verify the
+applicable license before copying an image, ISO, or other binary into archive
+storage.
+
+Use `developerUrl` for a profile tied to the credited creator through
+project evidence. Use `developerIsGroup` for a credited collective. A
+`historicalDate` with kind `report-date` or `catalog-date` identifies the
+date's source. Record an actual software release in `releases` when verified.
 
 Record a release's version, type, publisher URL, and any third-party archive
 URL separately. Mark an old listing with unconfirmed availability as

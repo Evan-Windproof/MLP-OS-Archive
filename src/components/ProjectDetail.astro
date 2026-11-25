@@ -1,9 +1,11 @@
 ---
 import type { Project } from '../data/projects';
-import { formatArchiveDate, projectDescription } from '../i18n/archive';
+import { formatArchiveDate, localizedArchiveText, projectDescription } from '../i18n/archive';
 import { projectCategoryLabels, translate, type Locale } from '../i18n';
 import { categoryPath, pagePath } from '../i18n/routes';
 import ArchiveTimeline from './ArchiveTimeline.astro';
+import ProjectCreator from './ProjectCreator.astro';
+import ScreenshotGallery from './ScreenshotGallery.astro';
 import SourceLinks from './SourceLinks.astro';
 
 interface Props {
@@ -13,6 +15,8 @@ interface Props {
 const { locale, project } = Astro.props;
 const t = translate(locale);
 const description = projectDescription(project, locale);
+const history = localizedArchiveText(project.localizedHistory ?? {}, locale, project.originalLanguage);
+const historicalDate = project.historicalDate;
 const affiliation = project.sharedMaintainerAccount && t('sharedMaintainerEvidence')
   .replace('{project}', () => project.name)
   .replace('{account}', () => project.sharedMaintainerAccount ?? '');
@@ -22,7 +26,7 @@ const evidence = project.evidence ?? [];
 const remainingReferences = project.references.filter((url) => !evidence.some((source) => source.url === url));
 const technical = [
   ...(project.aliases?.length ? [{ label: t('projectAliases'), value: project.aliases.join(', ') }] : []),
-  { label: t('projectDeveloper'), value: project.developer },
+  ...(project.platform ? [{ label: t('projectPlatform'), value: project.platform }] : []),
   { label: t('projectDevelopmentYear'), value: project.developmentYear?.toString() },
   { label: t('projectLastUpdated'), value: project.lastUpdated && formatArchiveDate({ precision: 'day', value: project.lastUpdated }, locale) },
   { label: t('projectBase'), value: project.baseSystem },
@@ -74,32 +78,28 @@ const projectLinks = [
   <section class="feature-panel">
     <h2>{t('technicalInformation')}</h2>
     <dl class="archive-facts">
+      <dt>{t(project.developerIsGroup ? 'projectCreatorGroup' : 'projectDeveloper')}</dt>
+      <dd><ProjectCreator {project} {locale} /></dd>
+      {historicalDate && <>
+        <dt>{t(historicalDate.kind)}</dt>
+        <dd><time datetime={historicalDate.date.value}>{formatArchiveDate(historicalDate.date, locale)}</time></dd>
+      </>}
       {technical.map(({ label, value }) => <><dt>{label}</dt><dd>{value ?? t('status-unknown')}</dd></>)}
     </dl>
   </section>
 
   <section class="feature-panel">
     <h2>{t('developmentHistory')}</h2>
-    {project.historicalNotes && <p lang={project.originalLanguage}>{project.historicalNotes}</p>}
-    {project.events?.length ? <ArchiveTimeline {locale} projectId={project.id} /> : <p>{t('timelineEmpty')}</p>}
+    {history
+      ? <p lang={history.language}>{history.text}</p>
+      : project.historicalNotes && <p lang={project.originalLanguage}>{project.historicalNotes}</p>}
+    {project.events?.length ? <ArchiveTimeline {locale} projectId={project.id} /> : !history && <p>{t('timelineEmpty')}</p>}
   </section>
 
-  <section class="feature-panel">
+  <section class="feature-panel" id="screenshots">
     <h2>{t('projectScreenshots')}</h2>
-    {project.screenshots?.length ? (
-      <ul class="archive-items">
-        {project.screenshots.map((item) => (
-          <li>
-            <h3><a href={item.url} lang={item.alt ? item.language ?? project.originalLanguage : locale}>{item.alt ?? t('projectScreenshot')}</a></h3>
-            {item.description && <p lang={item.language ?? project.originalLanguage}>{item.description}</p>}
-            <p>{t('screenshotCredit')} {item.credit}</p>
-            {item.license && <p>{t('projectLicense')} {item.license}</p>}
-            {item.capturedAt && <p><time datetime={item.capturedAt.value}>{formatArchiveDate(item.capturedAt, locale)}</time></p>}
-            {item.sourceUrl && <a href={item.sourceUrl}>{t('projectSource')}</a>}
-          </li>
-        ))}
-      </ul>
-    ) : <p>{t('screenshotsIncomplete')}</p>}
+    <ScreenshotGallery {project} {locale} />
+    {project.screenshots?.length && project.screenshots.some((item) => !item.embed) && <p>{t('screenshotRights')}</p>}
   </section>
 
   <section class="feature-panel">
@@ -127,18 +127,19 @@ const projectLinks = [
           </li>
         ))}
       </ul>
-    ) : <p>{t('archiveEmpty')}</p>}
+    ) : <p>{project.downloadAvailability ? t(`download-${project.downloadAvailability}`) : t('archiveEmpty')}</p>}
   </section>
 
   <section class="feature-panel">
     <h2>{t('projectReferences')}</h2>
     {evidence.length > 0 && (
       <ul class="archive-items">
-        {evidence.map(({ kind, url, note, language }) => (
+        {evidence.map(({ kind, url, note, language, accessUnconfirmed }) => (
           <li>
             {url
               ? <a href={url}>{t(`evidence-${kind}`)} <small>({new URL(url).hostname})</small></a>
               : <strong>{t(`evidence-${kind}`)}</strong>}
+            {accessUnconfirmed && <small> · {t('sourceAccessUnconfirmed')}</small>}
             {note && <p lang={language ?? project.originalLanguage}>{note}</p>}
           </li>
         ))}

@@ -113,5 +113,7 @@
       "kind": "official-release",
       "url": "https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0"
     }
-  ]
+  ],
+  "developerUrl": "https://github.com/Evan-Windproof",
+  "platform": "x86-64"
 }

@@ -355,7 +355,11 @@ img { display: block; max-width: 100%; }
   opacity: .15;
   pointer-events: none;
 }
-.page-banner h1 { font-size: clamp(2.35rem, 5vw, 4.45rem); }
+.page-banner h1 {
+  font-size: clamp(2.35rem, 5vw, 4.45rem);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .page-banner p { margin-top: .8rem; max-width: 67ch; font-size: clamp(1rem, 2vw, 1.16rem); }
 .page-content { display: grid; gap: 1.35rem; }
 .catalog-empty {
@@ -447,6 +451,24 @@ img { display: block; max-width: 100%; }
 .archive-facts dd { margin: 0 0 .6rem; }
 .archive-items { margin: 1rem 0 0; padding: 0; list-style: none; }
 .archive-items > li + li { border-top: 1px solid var(--line); margin-top: 1.15rem; padding-top: 1.15rem; }
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+.screenshot-frame {
+  padding: .85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  overflow-wrap: anywhere;
+}
+.screenshot-frame figure { margin: 0; }
+.screenshot-frame img,
+img.screenshot-frame { display: block; width: 100%; height: auto; }
+.screenshot-frame figcaption a { display: inline-block; margin-inline-end: 1rem; }
 .project-detail .record-links { margin-top: .65rem; }
 
 .category-link {

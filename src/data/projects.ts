@@ -26,6 +26,8 @@ const languageTag = text.refine((value) => {
   }
 }, 'Use a canonical language tag, such as en, zh-TW, or und.');
 
+const localizedText = z.record(languageTag, text);
+
 export const eventCategories = [
   'project-created', 'first-release', 'major-release', 'development-update',
   'discontinued', 'archived', 'other',
@@ -66,6 +68,7 @@ const evidence = z.strictObject({
     'community', 'archived', 'historical-installer', 'recollection',
   ]),
   url: webUrl.optional(),
+  accessUnconfirmed: z.literal(true).optional(),
   note: text.optional(),
   language: languageTag.optional(),
 }).refine((source) => source.url || (source.kind === 'recollection' && source.note), {
@@ -80,8 +83,15 @@ export const projectSchema = z.strictObject({
   aliases: z.array(text).optional(),
   category: z.enum(projectCategories),
   originalLanguage: languageTag,
-  description: z.record(languageTag, text),
+  description: localizedText,
   developer: text.optional(),
+  developerUrl: webUrl.optional(),
+  developerIsGroup: z.literal(true).optional(),
+  platform: text.optional(),
+  historicalDate: z.strictObject({
+    date,
+    kind: z.enum(['catalog-date', 'report-date']),
+  }).optional(),
   baseSystem: text.optional(),
   kernel: text.optional(),
   developmentYear: z.number().int().min(1).max(9999).optional(),
@@ -99,6 +109,7 @@ export const projectSchema = z.strictObject({
   sourceCodeUrl: webUrl.optional(),
   officialWebsite: webUrl.optional(),
   downloadUrl: webUrl.optional(),
+  downloadAvailability: z.enum(['unavailable', 'unknown']).optional(),
   documentation: z.array(webUrl).optional(),
   license: text.optional(),
   screenshots: z.array(z.strictObject({
@@ -106,6 +117,8 @@ export const projectSchema = z.strictObject({
     credit: text,
     license: text.optional(),
     alt: text.optional(),
+    captions: localizedText.optional(),
+    embed: z.literal(true).optional(),
     sourceUrl: webUrl.optional(),
     capturedAt: date.optional(),
     description: text.optional(),
@@ -115,6 +128,7 @@ export const projectSchema = z.strictObject({
   events: z.array(event).optional(),
   references: z.array(webUrl).min(1),
   historicalNotes: text.optional(),
+  localizedHistory: localizedText.optional(),
 }).refine((record) => Object.hasOwn(record.description, record.originalLanguage), {
   path: ['description'],
   message: 'Include a description under the originalLanguage tag.',

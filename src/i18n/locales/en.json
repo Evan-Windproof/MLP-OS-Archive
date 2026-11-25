@@ -155,5 +155,15 @@
   "heroImageAlt": "Evan, a winged unicorn with a blue and gold mane, beside a vintage computer and books in a moonlit library.",
   "authorBlog": "Author's Blog",
   "notFoundTitle": "Page not found",
-  "notFoundMeta": "The page you requested may have moved or the address may be incorrect."
+  "notFoundMeta": "The page you requested may have moved or the address may be incorrect.",
+  "projectPlatform": "Platform",
+  "projectCreatorGroup": "Creator group",
+  "catalog-date": "Catalog date",
+  "report-date": "Report date",
+  "screenshotOpen": "Open original preview",
+  "screenshotUnavailable": "Preview unavailable",
+  "screenshotRights": "Previews are linked to their sources. My Little Pony and related artwork belong to their respective rights holders, including Hasbro.",
+  "download-unknown": "Download availability has not been verified.",
+  "download-unavailable": "No download is currently available.",
+  "sourceAccessUnconfirmed": "Access unconfirmed"
 }

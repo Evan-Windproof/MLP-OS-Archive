@@ -1,0 +1,74 @@
+{
+  "id": "rainbow-dash-cinnamon",
+  "name": "Rainbow Dash 1.0 — Cinnamon Theme",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A Rainbow Dash-inspired theme for the Cinnamon desktop on Linux.",
+    "zh-CN": "以云宝为灵感的 Linux Cinnamon 桌面主题。",
+    "zh-TW": "以雲寶為靈感的 Linux Cinnamon 桌面主題。",
+    "ja": "レインボーダッシュをモチーフにした Linux の Cinnamon デスクトップテーマ。",
+    "es": "Tema para el escritorio Cinnamon de Linux inspirado en Rainbow Dash.",
+    "fr": "Thème pour le bureau Cinnamon sous Linux, inspiré de Rainbow Dash."
+  },
+  "developer": "Shujin",
+  "platform": "Linux / Cinnamon",
+  "historicalDate": {
+    "date": {
+      "precision": "day",
+      "value": "2013-05-05"
+    },
+    "kind": "catalog-date"
+  },
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "mixed",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "localizedHistory": {
+    "en": "Softpedia lists version 1.0 with an update date of May 5, 2013 and includes a desktop screenshot. Its homepage link points to the original submission by shujin97 on DeviantArt. The initial release date remains unverified.",
+    "zh-CN": "Softpedia 将 1.0 版的更新日期标为 2013 年 5 月 5 日，并附有桌面截图。该条目的主页链接指向 shujin97 在 DeviantArt 发布的原始作品。首次发布日期仍待核实。",
+    "zh-TW": "Softpedia 將 1.0 版的更新日期標為 2013 年 5 月 5 日，並附有桌面截圖。該條目的首頁連結指向 shujin97 在 DeviantArt 發布的原始作品。首次發布日期仍待查證。",
+    "ja": "Softpedia はバージョン 1.0 の更新日を 2013 年 5 月 5 日と記し、デスクトップの画像を掲載しています。掲載先のホームページリンクは DeviantArt の shujin97 による元の投稿を指しています。初回公開日は未確認です。",
+    "es": "Softpedia indica que la versión 1.0 se actualizó el 5 de mayo de 2013 e incluye una captura del escritorio. El enlace de la ficha apunta a la publicación original de shujin97 en DeviantArt. La fecha de estreno sigue sin confirmar.",
+    "fr": "Softpedia date la mise à jour de la version 1.0 du 5 mai 2013 et fournit une capture du bureau. Le lien de la fiche renvoie à la publication originale de shujin97 sur DeviantArt. La date de sortie initiale reste à confirmer."
+  },
+  "references": [
+    "https://linux.softpedia.com/get/Desktop-Environment/Cinnamon-Themes/Rainbow-Dash-Shujin-99007.shtml",
+    "https://linux-cdn.softpedia.com/screenshots/Rainbow-Dash-Shujin_1.png",
+    "https://shujin97.deviantart.com/art/Cinnamon-Theme-Rainbow-Dash-1-0-333921371"
+  ],
+  "evidence": [
+    {
+      "kind": "independent",
+      "url": "https://linux.softpedia.com/get/Desktop-Environment/Cinnamon-Themes/Rainbow-Dash-Shujin-99007.shtml"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://shujin97.deviantart.com/art/Cinnamon-Theme-Rainbow-Dash-1-0-333921371",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "independent",
+      "url": "https://linux-cdn.softpedia.com/screenshots/Rainbow-Dash-Shujin_1.png",
+      "accessUnconfirmed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "url": "https://linux.softpedia.com/get/Desktop-Environment/Cinnamon-Themes/Rainbow-Dash-Shujin-99007.shtml",
+      "credit": "Shujin / Softpedia",
+      "captions": {
+        "en": "Cinnamon desktop using the Rainbow Dash 1.0 theme.",
+        "zh-CN": "应用 Rainbow Dash 1.0 主题的 Cinnamon 桌面。",
+        "zh-TW": "套用 Rainbow Dash 1.0 主題的 Cinnamon 桌面。",
+        "ja": "Rainbow Dash 1.0 テーマを適用した Cinnamon デスクトップ。",
+        "es": "Escritorio Cinnamon con el tema Rainbow Dash 1.0.",
+        "fr": "Bureau Cinnamon avec le thème Rainbow Dash 1.0."
+      }
+    }
+  ],
+  "developerUrl": "https://www.deviantart.com/shujin97",
+  "officialWebsite": "https://shujin97.deviantart.com/art/Cinnamon-Theme-Rainbow-Dash-1-0-333921371"
+}

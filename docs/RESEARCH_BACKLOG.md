@@ -8,6 +8,8 @@ Reviewed on 2026-11-25. A lead on this page is not a catalog record.
 | Martine OS 1.0 “Equestria” beta | [A 2021 creator post on SuprBay](https://pirates-forum.org/Thread-Martine-OS-1-0-Equestria-beta-ISO?pid=344903) describes an Ubuntu remaster and links screenshots. | Confirm that the “Equestria” name reflects a My Little Pony theme. Keep this lead distinct from the Arch-based Equestria OS. Download provenance and redistribution rights also need review. |
 | My Little Pony Linux (Friendship Edition) | [A community announcement](https://www.reddit.com/r/LinuxCirclejerk/comments/1vmtypa/introducing_my_little_pony_linux_friendship/) surfaced in the search. | Find a traceable project repository or versioned release and establish the nature of the customization. |
 | Ponysay | [Project documentation](https://erkin.party/ponysay/pages/ponysay/Terminology.html) describes the command-line pony-art utility. | A standalone utility is outside the present OS and desktop-customization scope. Look for a separately documented distribution or system customization built around it. |
+| Fluttershy Rainmeter Skinpack | [Equestria Daily’s November 17, 2011 roundup](https://www.equestriadaily.com/2011/11/nightly-roundup-157.html) reports the skin pack and links to the DeviantArt account `sonicpants`. The published heading says “Nightly Roundup #159.” | Verify the creator credit on the original submission or a preserved copy, and recover an attributable screenshot and the original download reference. |
+| Pinkie Pie Rainmeter Skinpack | [Equestria Daily’s November 29, 2011 roundup](https://www.equestriadaily.com/2011/11/nightly-roundup-171-ponies.html) reports the pack and also links to `sonicpants`. The published heading says “Nightly Roundup #172 - Ponies.” | Confirm the creator credit and locate an attributable preview or archive of the original submission. |
 
 ## Gaps in published records
 
@@ -34,6 +36,24 @@ Reviewed on 2026-11-25. A lead on this page is not a catalog record.
   not a creation date. Find a creator-attributed early screenshot and verify
   its usage terms before recording an image. Document the original development
   credits in more detail if contemporaneous sources are recovered.
+- **Rainbow Dash 1.0 (Cinnamon):** Softpedia credits Shujin, lists a May 5,
+  2013 update, and reports one screenshot. The direct preview URL could not
+  be confirmed in the audit. The listing is the fallback for viewing it.
+  Softpedia’s homepage redirect identifies Shujin’s DeviantArt submission
+  and account, but the original page and its publication date could not be
+  checked directly.
+- **Equestria Digital:** The [2012 community article](https://www.equestriadaily.com/2012/01/pony-customization-compilation.html)
+  links to the same DeviantArt work ID as Winter Release. The
+  [2013 article](https://www.equestriadaily.com/2013/04/equestria-digital-massive-windows.html)
+  documents a separate pack and credits the group. Recover attributable
+  previews and original download information for both packs.
+- **High-Res Pony Icon Set:** The 2011 report names the creator and links to
+  the original gallery. The gallery could not be opened in the audit. Seek an
+  accessible copy with attributable previews.
+- **Pony Meter and Rainbow Dash Rainmeter Skin:** VisualSkins lists and
+  credits both skins, and its three preview URLs were retrievable. The dates
+  are catalog additions. Original publication dates, downloads, and permission
+  to embed the previews remain unverified.
 
 No ISO or ZIP was mirrored or executed during this research. No independently
 measured file size or SHA-256 digest was recorded.

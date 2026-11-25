@@ -155,5 +155,15 @@
   "heroImageAlt": "Evan, un unicornio alado con melena azul y dorada, junto a un ordenador antiguo y varios libros en una biblioteca iluminada por la luna.",
   "authorBlog": "Blog del autor",
   "notFoundTitle": "Página no encontrada",
-  "notFoundMeta": "La página puede haberse movido o la dirección puede ser incorrecta."
+  "notFoundMeta": "La página puede haberse movido o la dirección puede ser incorrecta.",
+  "projectPlatform": "Plataforma",
+  "projectCreatorGroup": "Colectivo creador",
+  "catalog-date": "Fecha en el catálogo",
+  "report-date": "Fecha de la reseña",
+  "screenshotOpen": "Abrir la vista previa original",
+  "screenshotUnavailable": "Vista previa no disponible",
+  "screenshotRights": "Las vistas previas enlazan a sus fuentes. My Little Pony y las obras relacionadas pertenecen a sus respectivos titulares, entre ellos Hasbro.",
+  "download-unknown": "La disponibilidad de la descarga aún no se ha verificado.",
+  "download-unavailable": "En este momento no hay ninguna descarga disponible.",
+  "sourceAccessUnconfirmed": "Acceso sin confirmar"
 }

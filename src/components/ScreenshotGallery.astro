@@ -1,0 +1,45 @@
+---
+import type { Project } from '../data/projects';
+import { translate, type Locale } from '../i18n';
+import { formatArchiveDate, localizedArchiveText } from '../i18n/archive';
+
+interface Props {
+  project: Project;
+  locale: Locale;
+}
+
+const { project, locale } = Astro.props;
+const t = translate(locale);
+const screenshots = project.screenshots ?? [];
+---
+
+{screenshots.length ? (
+  <ul class="screenshot-gallery">
+    {screenshots.map((item) => {
+      const caption = localizedArchiveText(item.captions ?? {}, locale, project.originalLanguage) ?? {
+        text: item.alt ?? t('projectScreenshot'),
+        language: item.alt ? item.language ?? project.originalLanguage : locale,
+      };
+      return (
+        <li class="screenshot-frame">
+          <figure>
+            {item.embed && <img src={item.url} alt={caption.text} lang={caption.language} loading="lazy" decoding="async" />}
+            <figcaption>
+              <p lang={caption.language}>{caption.text}</p>
+              {item.description && <p lang={item.language ?? project.originalLanguage}>{item.description}</p>}
+              <p>{t('screenshotCredit')} {item.credit}</p>
+              {item.license && <p>{t('projectLicense')} {item.license}</p>}
+              {item.capturedAt && <p><time datetime={item.capturedAt.value}>{formatArchiveDate(item.capturedAt, locale)}</time></p>}
+              <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`${t('screenshotOpen')} · ${caption.text}`}>
+                {t('screenshotOpen')} <span aria-hidden="true">↗</span>
+              </a>
+              {item.sourceUrl && item.sourceUrl !== item.url && (
+                <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">{t('projectSource')} <span aria-hidden="true">↗</span></a>
+              )}
+            </figcaption>
+          </figure>
+        </li>
+      );
+    })}
+  </ul>
+) : <p class="screenshot-frame">{t('screenshotsIncomplete')}</p>}
