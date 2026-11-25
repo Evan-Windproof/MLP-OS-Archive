@@ -5,7 +5,7 @@ import { projectCategoryLabels, translate, type Locale } from '../i18n';
 import { categoryPath, pagePath } from '../i18n/routes';
 import ArchiveTimeline from './ArchiveTimeline.astro';
 import ProjectCreator from './ProjectCreator.astro';
-import ScreenshotGallery from './ScreenshotGallery.astro';
+import ScreenshotRecords from './ScreenshotRecords.astro';
 import SourceLinks from './SourceLinks.astro';
 
 interface Props {
@@ -96,11 +96,7 @@ const projectLinks = [
     {project.events?.length ? <ArchiveTimeline {locale} projectId={project.id} /> : !history && <p>{t('timelineEmpty')}</p>}
   </section>
 
-  <section class="feature-panel" id="screenshots">
-    <h2>{t('projectScreenshots')}</h2>
-    <ScreenshotGallery {project} {locale} />
-    {project.screenshots?.length && project.screenshots.some((item) => !item.embed) && <p>{t('screenshotRights')}</p>}
-  </section>
+  <ScreenshotRecords {project} {locale} />
 
   <section class="feature-panel">
     <h2>{t('projectReleases')}</h2>

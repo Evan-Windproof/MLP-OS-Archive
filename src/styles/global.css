@@ -433,7 +433,7 @@ img { display: block; max-width: 100%; }
   gap: 1.15rem;
 }
 .project-record { overflow-wrap: anywhere; }
-.project-record dl { margin-block: 1rem; }
+.project-record dl { margin-block: 1rem 0; }
 .project-record dt { font-weight: 700; }
 .project-record dd { margin-inline-start: 0; color: var(--muted); }
 .project-record dd + dt { margin-top: .4rem; }
@@ -451,24 +451,13 @@ img { display: block; max-width: 100%; }
 .archive-facts dd { margin: 0 0 .6rem; }
 .archive-items { margin: 1rem 0 0; padding: 0; list-style: none; }
 .archive-items > li + li { border-top: 1px solid var(--line); margin-top: 1.15rem; padding-top: 1.15rem; }
-.screenshot-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
-  padding: 0;
-  list-style: none;
+.feature-panel .screenshot-rights {
+  margin-top: 1.15rem;
+  padding-top: .85rem;
+  border-top: 1px solid var(--line);
+  max-width: none;
+  font-size: .9rem;
 }
-.screenshot-frame {
-  padding: .85rem 1rem;
-  border: 1px solid var(--line);
-  border-radius: .75rem;
-  overflow-wrap: anywhere;
-}
-.screenshot-frame figure { margin: 0; }
-.screenshot-frame img,
-img.screenshot-frame { display: block; width: 100%; height: auto; }
-.screenshot-frame figcaption a { display: inline-block; margin-inline-end: 1rem; }
 .project-detail .record-links { margin-top: .65rem; }
 
 .category-link {
