@@ -1,7 +1,7 @@
 ---
 import type { Project } from '../data/projects';
 import { translate, type Locale } from '../i18n';
-import { formatArchiveDate, localizedArchiveText } from '../i18n/archive';
+import ScreenshotRecord from './ScreenshotRecord.astro';
 
 interface Props {
   project: Project;
@@ -11,42 +11,109 @@ interface Props {
 const { project, locale } = Astro.props;
 const t = translate(locale);
 const screenshots = project.screenshots ?? [];
+const images = screenshots.filter((item) => item.embed);
+const references = screenshots.filter((item) => !item.embed);
+const { originalLanguage } = project;
 ---
 
 {screenshots.length > 0 && (
   <section class="feature-panel" id="screenshots" aria-labelledby="screenshot-records-title">
-    <h2 id="screenshot-records-title">{t('projectScreenshots')}</h2>
-    <ul class="archive-items" role="list">
-      {screenshots.map((item) => {
-        const caption = localizedArchiveText(item.captions ?? {}, locale, project.originalLanguage) ?? {
-          text: item.alt ?? t('projectScreenshot'),
-          language: item.alt ? item.language ?? project.originalLanguage : locale,
-        };
-        return (
-          <li>
-            <h3 lang={caption.language}>{caption.text}</h3>
-            {item.description && <p lang={item.language ?? project.originalLanguage}>{item.description}</p>}
-            <p>{t('screenshotCredit')} {item.credit}</p>
-            {item.license && <p>{t('projectLicense')} {item.license}</p>}
-            {item.capturedAt && <p><time datetime={item.capturedAt.value}>{formatArchiveDate(item.capturedAt, locale)}</time></p>}
-            <ul class="record-links">
-              <li>
-                <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`${t('screenshotOpen')} · ${caption.text}`}>
-                  {t('screenshotOpen')} <span aria-hidden="true">↗</span>
-                </a>
-              </li>
-              {item.sourceUrl && item.sourceUrl !== item.url && (
-                <li>
-                  <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={`${t('projectSource')} · ${caption.text}`}>
-                    {t('projectSource')} <span aria-hidden="true">↗</span>
-                  </a>
-                </li>
-              )}
-            </ul>
-          </li>
-        );
-      })}
-    </ul>
+    <h2 id="screenshot-records-title">{t(images.length ? 'screenshotGallery' : 'projectScreenshots')}</h2>
+    {images.length > 0 && (
+      <>
+        <ul class="screenshot-grid" role="list">
+          {images.map((item) => <ScreenshotRecord {item} {locale} {originalLanguage} />)}
+        </ul>
+        <dialog class="screenshot-lightbox" aria-label={t('screenshotGallery')}>
+          <form method="dialog">
+            <button autofocus>{t('screenshotClose')}</button>
+          </form>
+          <img alt="" referrerpolicy="no-referrer" decoding="async" hidden />
+          <p role="status" data-loading>{t('screenshotLoading')}</p>
+          <p role="status" data-image-error hidden>{t('screenshotLoadError')}</p>
+          <div class="screenshot-lightbox-links">
+            {images.length > 1 && <button type="button" data-step="-1">{t('screenshotPrevious')}</button>}
+            <a data-original target="_blank" rel="noopener noreferrer">{t('screenshotOpen')} <span aria-hidden="true">↗</span></a>
+            {images.length > 1 && <button type="button" data-step="1">{t('screenshotNext')}</button>}
+          </div>
+        </dialog>
+      </>
+    )}
+    {references.length > 0 && (
+      <div class="screenshot-references">
+        <h3>{t('screenshotReferences')}</h3>
+        <ul class="archive-items" role="list">
+          {references.map((item) => <ScreenshotRecord {item} {locale} {originalLanguage} />)}
+        </ul>
+      </div>
+    )}
     <p class="screenshot-rights">{t('screenshotRights')}</p>
   </section>
 )}
+
+<script>
+  const section = document.querySelector('#screenshots');
+  const dialog = section?.querySelector<HTMLDialogElement>('.screenshot-lightbox');
+  if (section && dialog) {
+    const links = Array.from(section.querySelectorAll<HTMLAnchorElement>('.screenshot-image'));
+    const image = dialog.querySelector('img')!;
+    const loading = dialog.querySelector<HTMLElement>('[data-loading]')!;
+    const error = dialog.querySelector<HTMLElement>('[data-image-error]')!;
+    const original = dialog.querySelector<HTMLAnchorElement>('[data-original]')!;
+    let current = 0;
+    let opener: HTMLAnchorElement | undefined;
+
+    function show(index: number) {
+      current = (index + links.length) % links.length;
+      const link = links[current];
+      const thumbnail = link.querySelector('img')!;
+      original.href = link.href;
+      image.hidden = true;
+      loading.hidden = false;
+      error.hidden = true;
+      image.alt = thumbnail.alt;
+      image.lang = thumbnail.lang;
+      image.src = link.href;
+      if (image.complete) updateLightbox();
+    }
+
+    function updateLightbox() {
+      image.hidden = image.naturalWidth === 0;
+      error.hidden = !image.hidden;
+      loading.hidden = true;
+    }
+
+    image.addEventListener('load', updateLightbox);
+    image.addEventListener('error', updateLightbox);
+
+    links.forEach((link, index) => {
+      const thumbnail = link.querySelector('img')!;
+      function hideFailedImage() {
+        link.hidden = true;
+        const status = link.nextElementSibling as HTMLElement;
+        status.hidden = false;
+      }
+
+      thumbnail.addEventListener('error', hideFailedImage);
+      if (thumbnail.complete && !thumbnail.naturalWidth) hideFailedImage();
+      link.addEventListener('click', (event) => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        opener = link;
+        show(index);
+        dialog.showModal();
+      });
+    });
+
+    dialog.querySelectorAll<HTMLButtonElement>('[data-step]').forEach((button) => {
+      button.addEventListener('click', () => show(current + Number(button.dataset.step)));
+    });
+    dialog.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        show(current + (event.key === 'ArrowLeft' ? -1 : 1));
+      }
+    });
+    dialog.addEventListener('close', () => opener?.focus());
+  }
+</script>

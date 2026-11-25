@@ -451,6 +451,58 @@ img { display: block; max-width: 100%; }
 .archive-facts dd { margin: 0 0 .6rem; }
 .archive-items { margin: 1rem 0 0; padding: 0; list-style: none; }
 .archive-items > li + li { border-top: 1px solid var(--line); margin-top: 1.15rem; padding-top: 1.15rem; }
+.screenshot-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+.screenshot-grid > li { min-width: 0; }
+.screenshot-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: .65rem;
+  border-radius: .5rem;
+}
+.screenshot-references { margin-top: 1rem; }
+.screenshot-lightbox {
+  box-sizing: border-box;
+  width: min(72rem, calc(100% - 2rem));
+  max-height: calc(100% - 2rem);
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+}
+.screenshot-lightbox::backdrop { background: rgb(18 11 25 / 83%); }
+.screenshot-lightbox form { margin-bottom: .75rem; text-align: end; }
+.screenshot-lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: 70dvh;
+  margin-inline: auto;
+  object-fit: contain;
+}
+.screenshot-lightbox img[hidden] { display: none; }
+.screenshot-lightbox-links { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1rem; margin-top: .75rem; }
+.screenshot-lightbox button {
+  padding: .35rem .65rem;
+  border: 1px solid var(--line);
+  border-radius: .45rem;
+  background: var(--lavender);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+@media (min-width: 40rem) {
+  .screenshot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 65rem) {
+  .screenshot-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .feature-panel .screenshot-rights {
   margin-top: 1.15rem;
   padding-top: .85rem;

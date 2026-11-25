@@ -119,10 +119,17 @@ export const projectSchema = z.strictObject({
     alt: text.optional(),
     captions: localizedText.optional(),
     embed: z.literal(true).optional(),
+    imageSize: z.strictObject({
+      width: z.number().int().positive(),
+      height: z.number().int().positive(),
+    }).optional(),
     sourceUrl: webUrl.optional(),
     capturedAt: date.optional(),
     description: text.optional(),
     language: languageTag.optional(),
+  }).refine((item) => !item.embed || item.imageSize, {
+    path: ['imageSize'],
+    message: 'Record the original image dimensions before embedding.',
   })).optional(),
   releases: z.array(release).optional(),
   events: z.array(event).optional(),

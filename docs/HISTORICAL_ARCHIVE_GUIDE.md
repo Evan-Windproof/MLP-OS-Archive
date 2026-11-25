@@ -42,10 +42,12 @@ with unknown availability.
 Record the original screenshot URL, source page, creator or publisher
 credit, accessible description, known permission terms, and capture date
 when supported. Use `captions` for localized screenshot descriptions. The
-gallery links to the original preview by default. Set `embed` only when
-the host and rights holder permit embedding. Get permission or verify the
-applicable license before copying an image, ISO, or other binary into archive
-storage.
+gallery displays images after the direct URL and embedding permission are
+verified. Set `embed` with the image's original dimensions in `imageSize`.
+Keep the source page in `sourceUrl` when it differs from the image URL. An
+unavailable or unapproved image stays in the references list. Get permission
+or verify the applicable license before copying an image, ISO, or other
+binary into archive storage.
 
 Use `developerUrl` for a profile tied to the credited creator through
 project evidence. Use `developerIsGroup` for a credited collective. A
