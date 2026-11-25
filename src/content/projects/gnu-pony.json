@@ -1,0 +1,84 @@
+{
+  "id": "gnu-pony",
+  "name": "GNU/Pony",
+  "category": "linux-distribution",
+  "originalLanguage": "en",
+  "description": {
+    "en": "An experimental, independent source-based GNU/Linux distribution started in Sweden for My Little Pony fans. Its design drew inspiration from Arch Linux, Gentoo Linux and Source Mage GNU/Linux.",
+    "zh-CN": "面向《小马宝莉》爱好者的实验性独立 GNU/Linux 发行版，发起于瑞典，采用源码构建，设计受 Arch Linux、Gentoo Linux 和 Source Mage GNU/Linux 启发。",
+    "zh-TW": "面向《彩虹小馬》愛好者的實驗性獨立 GNU/Linux 發行版，發起於瑞典，以原始碼建置，設計受 Arch Linux、Gentoo Linux 和 Source Mage GNU/Linux 啟發。",
+    "ja": "スウェーデンで始まった、『マイリトルポニー』ファン向けの独立したソースベースの実験的GNU/Linuxディストリビューション。Arch Linux、Gentoo Linux、Source Mage GNU/Linuxの影響を受けています。",
+    "es": "Distribución experimental e independiente de GNU/Linux compilada desde el código fuente, iniciada en Suecia para aficionados a My Little Pony e inspirada en Arch Linux, Gentoo Linux y Source Mage GNU/Linux.",
+    "fr": "Distribution GNU/Linux indépendante et expérimentale, compilée depuis les sources et lancée en Suède pour les fans de My Little Pony. Sa conception s’inspirait d’Arch Linux, de Gentoo Linux et de Source Mage GNU/Linux."
+  },
+  "localizedHistory": {
+    "en": "The README dates development to December 13, 2012 and calls development version 0.1 “überponypower” pre-alpha. It describes community package repositories, Git-based package management and source builds, with rolling releases and a live USB build workflow rather than a conventional installation CD. The info repository was last updated in 2019 and other organization repositories show activity in 2020. The info repository has no GitHub Releases, and no official release or public ISO has been verified.",
+    "zh-CN": "README 将开发起始日记为 2012 年 12 月 13 日，将开发版本 0.1 “überponypower” 标为 pre-alpha。文档描述了社区维护的软件包仓库、基于 Git 的包管理和源码构建，并规划滚动发布及自建 Live USB，未记载常规安装 CD。info 仓库最后更新于 2019 年，组织内其他仓库在 2020 年仍有活动。info 仓库没有 GitHub Releases，官方发行版及公开 ISO 均未核实。",
+    "zh-TW": "README 將開發起始日記為 2012 年 12 月 13 日，並將開發版本 0.1 “überponypower” 標為 pre-alpha。文件描述社群維護的套件儲存庫、以 Git 為基礎的套件管理及原始碼建置，並規劃滾動發行和自行建置 Live USB，未記載傳統安裝 CD。info 儲存庫最後更新於 2019 年，組織的其他儲存庫在 2020 年仍有活動。info 儲存庫沒有 GitHub Releases，官方發行版和公開 ISO 均未查證。",
+    "ja": "READMEによると開発開始は2012年12月13日で、開発版0.1 “überponypower”はpre-alphaでした。コミュニティ運営のリポジトリ、Gitベースのパッケージ管理、ソースからのビルドが記載され、ローリングリリースとLive USBの作成が計画されていました。一般的なインストールCDの記載はありません。infoリポジトリの最終更新は2019年で、組織の他のリポジトリには2020年の活動記録があります。infoにGitHub Releasesはなく、公式リリースや公開ISOは確認されていません。",
+    "es": "El README sitúa el inicio el 13 de diciembre de 2012 y describe la versión de desarrollo 0.1 “überponypower” como pre-alpha. Documenta repositorios comunitarios, gestión de paquetes con Git y compilación desde el código fuente. Preveía actualizaciones continuas y la creación de un USB en vivo, sin citar un CD de instalación convencional. El repositorio info se actualizó por última vez en 2019 y otros repositorios de la organización registran actividad en 2020. Info no tiene GitHub Releases y no se ha verificado ninguna versión oficial ni ISO pública.",
+    "fr": "Le README situe le début du développement au 13 décembre 2012 et qualifie la version de développement 0.1 “überponypower” de pre-alpha. Il décrit des dépôts communautaires, une gestion des paquets fondée sur Git et la compilation depuis les sources. Le projet prévoyait une publication continue et la création d’une clé USB autonome, sans documenter de CD d’installation classique. Le dépôt info a été mis à jour pour la dernière fois en 2019, et d’autres dépôts de l’organisation montrent une activité en 2020. Le dépôt info ne propose aucune GitHub Release. Aucune version officielle ni ISO publique n’a été vérifiée."
+  },
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://github.com/GNU-Pony/info"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/GNU-Pony/live-medium"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/GNU-Pony/info/releases"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/GNU-Pony/info/commit/9ed331bca708b2b25fb32d4366d64cb2bd0eedf0"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/GNU-Pony/live-medium/commits"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/orgs/GNU-Pony/repositories"
+    }
+  ],
+  "references": [
+    "https://github.com/GNU-Pony/info",
+    "https://github.com/GNU-Pony/live-medium",
+    "https://github.com/GNU-Pony/info/releases",
+    "https://github.com/GNU-Pony/info/commit/9ed331bca708b2b25fb32d4366d64cb2bd0eedf0",
+    "https://github.com/GNU-Pony/live-medium/commits",
+    "https://github.com/orgs/GNU-Pony/repositories"
+  ],
+  "developer": "maandree",
+  "developerUrl": "https://github.com/maandree",
+  "kernel": "Linux",
+  "baseSystem": "GNU/Linux",
+  "platform": "GNU/Linux",
+  "sourceCodeUrl": "https://github.com/GNU-Pony/info",
+  "lastUpdated": "2019-06-05",
+  "developmentYear": 2012,
+  "developmentStatus": "experimental",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "first-party",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "events": [
+    {
+      "category": "project-created",
+      "title": "Development started",
+      "description": "The project README dates the start of development to this day.",
+      "date": {
+        "precision": "day",
+        "value": "2012-12-13"
+      },
+      "references": [
+        "https://github.com/GNU-Pony/info"
+      ]
+    }
+  ]
+}

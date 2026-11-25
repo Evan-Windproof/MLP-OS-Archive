@@ -1,10 +1,14 @@
 # Historical research backlog
 
-Reviewed on 2026-11-25. A lead on this page is not a catalog record.
+Reviewed on 2026-11-26. A lead on this page is not a catalog record.
 
 | Lead | Evidence reviewed | Open question |
 | --- | --- | --- |
 | Dash Linux | Exact-name, Rainbow Dash, Ubuntu, ISO, and archive searches turned up no identifiable original distribution page, repository, release, or screenshot. | Establish the original name and obtain a project announcement or archived download page before attributing an Ubuntu base or calling it discontinued. |
+| Ponix | The reported name, Debian 6 base, XFCE desktop, and 2011–2012 dates lack a reliable primary source. | Find original documentation for the project and its lineage. |
+| Ubuntu Pony Edition | Early Ubuntu desktop customization is documented. | Find a primary source for a distinct Ubuntu 12.04 distribution under this name. |
+| EquiOS | No primary source establishes an MLP-related project under this name or a connection to GNU/Pony. | Verify the project's identity from an original announcement, repository, or release. |
+| NCGAS/PonyLinux | [The project's README](https://github.com/NCGAS/PonyLinux) identifies it as an interactive Bash teaching game. | The project is outside the operating-system catalog scope. |
 | Martine OS 1.0 “Equestria” beta | [A 2021 creator post on SuprBay](https://pirates-forum.org/Thread-Martine-OS-1-0-Equestria-beta-ISO?pid=344903) describes an Ubuntu remaster and links screenshots. | Confirm that the “Equestria” name reflects a My Little Pony theme. Keep this lead distinct from the Arch-based Equestria OS. Download provenance and redistribution rights also need review. |
 | My Little Pony Linux (Friendship Edition) | [A community announcement](https://www.reddit.com/r/LinuxCirclejerk/comments/1vmtypa/introducing_my_little_pony_linux_friendship/) surfaced in the search. | Find a traceable project repository or versioned release and establish the nature of the customization. |
 | Ponysay | [Project documentation](https://erkin.party/ponysay/pages/ponysay/Terminology.html) describes the command-line pony-art utility. | A standalone utility is outside the present OS and desktop-customization scope. Look for a separately documented distribution or system customization built around it. |

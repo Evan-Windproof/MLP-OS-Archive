@@ -1,0 +1,69 @@
+{
+  "id": "windows-7-pony-edition-2015",
+  "name": "Windows 7 Pony Edition 2015",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "An English-language x64 Windows 7 SP1 installation image customized by Crash King for TeamOS. The My Little Pony theming covers setup, login and the desktop.",
+    "zh-CN": "Crash King 为 TeamOS 制作的英文 x64 Windows 7 SP1 定制安装镜像。《小马宝莉》主题覆盖安装程序、登录界面和桌面。",
+    "zh-TW": "Crash King 為 TeamOS 製作的英文 x64 Windows 7 SP1 自訂安裝映像。《彩虹小馬》主題涵蓋安裝程式、登入畫面和桌面。",
+    "ja": "Crash KingがTeamOS向けに作成した英語版x64 Windows 7 SP1の改変インストールイメージ。セットアップ、ログイン、デスクトップが『マイリトルポニー』仕様です。",
+    "es": "Imagen de instalación de Windows 7 SP1 x64 en inglés, personalizada por Crash King para TeamOS. La temática de My Little Pony abarca la instalación, el inicio de sesión y el escritorio.",
+    "fr": "Image d’installation personnalisée de Windows 7 SP1 x64 en anglais, créée par Crash King pour TeamOS. Le thème My Little Pony couvre l’installation, la connexion et le bureau."
+  },
+  "localizedHistory": {
+    "en": "The secondary archive CrustyWindows gives May 10, 2015 as the release date and reports an ISO size of 6.5 GiB. It documents changes to setup, pre-OOBE, OOBE and login, plus a new default theme and wallpaper, 43 themes, new icons, interface changes and bundled software. It lists RT 7 Lite and WinToolkit as the tools used. The original TeamOS download and an author profile remain unverified.",
+    "zh-CN": "二手档案 CrustyWindows 将发布日期记为 2015 年 5 月 10 日，报告 ISO 约为 6.5 GiB。它记录了对安装、首次开机设置前后（pre-OOBE 和 OOBE）及登录画面的修改，以及新默认主题和壁纸、43 套主题、新图标、界面改动和捆绑软件。档案列出的制作工具是 RT 7 Lite 和 WinToolkit。TeamOS 原始下载地址及作者个人主页仍未核实。",
+    "zh-TW": "二手檔案 CrustyWindows 將發布日期記為 2015 年 5 月 10 日，報告 ISO 約為 6.5 GiB。檔案記錄了安裝、首次開機設定前與設定期間（pre-OOBE 和 OOBE）及登入畫面的修改，以及新預設主題與桌布、43 套主題、新圖示、介面改動和隨附軟體。列出的製作工具為 RT 7 Lite 和 WinToolkit。TeamOS 原始下載連結及作者個人頁面仍未查證。",
+    "ja": "二次資料のCrustyWindowsでは、公開日は2015年5月10日、ISOの容量は6.5 GiBとされています。セットアップ、pre-OOBE、OOBE、ログイン画面のほか、既定のテーマと壁紙、43種類のテーマ、新しいアイコン、変更されたUI、同梱ソフトが記録されています。使用ツールはRT 7 LiteとWinToolkitです。TeamOSの元のダウンロード先と作者のプロフィールは未確認です。",
+    "es": "El archivo secundario CrustyWindows sitúa el lanzamiento el 10 de mayo de 2015 e indica un tamaño de 6.5 GiB para la ISO. Documenta cambios en la instalación, pre-OOBE, OOBE e inicio de sesión, un nuevo tema y fondo predeterminados, 43 temas, nuevos iconos, cambios de interfaz y software incluido. Cita RT 7 Lite y WinToolkit como herramientas de creación. La descarga original de TeamOS y el perfil del autor siguen sin verificarse.",
+    "fr": "L’archive secondaire CrustyWindows date la sortie du 10 mai 2015 et indique une taille d’ISO de 6.5 GiB. Elle décrit les changements apportés à l’installation, au pré-OOBE, à l’OOBE et à la connexion, ainsi qu’un nouveau thème et fond d’écran par défaut, 43 thèmes, de nouvelles icônes, une interface remaniée et des logiciels intégrés. Elle cite RT 7 Lite et WinToolkit comme outils de création. Le téléchargement TeamOS d’origine et le profil de l’auteur restent à vérifier."
+  },
+  "evidence": [
+    {
+      "kind": "archived",
+      "url": "https://crustywindo.ws/Windows_7_Pony_Edition_2015",
+      "accessUnconfirmed": true
+    }
+  ],
+  "references": [
+    "https://crustywindo.ws/Windows_7_Pony_Edition_2015"
+  ],
+  "developer": "Crash King",
+  "baseSystem": "Windows 7 SP1",
+  "platform": "x64",
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "archived-historical",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "releases": [
+    {
+      "version": "Windows 7 Pony Edition 2015",
+      "date": {
+        "precision": "day",
+        "value": "2015-05-10"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://crustywindo.ws/Windows_7_Pony_Edition_2015"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "category": "other",
+      "title": "Release date reported by CrustyWindows",
+      "description": "The secondary archive dates this edition to May 10, 2015.",
+      "date": {
+        "precision": "day",
+        "value": "2015-05-10"
+      },
+      "references": [
+        "https://crustywindo.ws/Windows_7_Pony_Edition_2015"
+      ]
+    }
+  ]
+}

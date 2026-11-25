@@ -1,0 +1,89 @@
+{
+  "id": "ponydos",
+  "name": "PonyDOS",
+  "category": "independent-os",
+  "originalLanguage": "en",
+  "description": {
+    "en": "An independent hobby operating system for x86 real mode, written in assembly with a custom 512-byte kernel. It began as a parody of PonyOS.",
+    "zh-CN": "用汇编编写的独立 x86 实模式业余操作系统，使用自研的 512 字节内核，最初是对 PonyOS 的戏仿。",
+    "zh-TW": "以組合語言編寫的獨立 x86 實模式業餘作業系統，採用自行開發的 512 位元組核心，最初是對 PonyOS 的戲仿。",
+    "ja": "独自の512バイトのカーネルを持つ、アセンブリで書かれたx86リアルモード向けの自作OS。PonyOSのパロディとして始まりました。",
+    "es": "Sistema operativo independiente para el modo real de x86, escrito en ensamblador con un núcleo propio de 512 bytes. Nació como parodia de PonyOS.",
+    "fr": "Système d’exploitation indépendant pour le mode réel x86, écrit en assembleur avec un noyau maison de 512 octets. Il est né comme une parodie de PonyOS."
+  },
+  "localizedHistory": {
+    "en": "shikhin announced PonyDOS on OSDev on March 31, 2023. The kernel targets 80286-compatible CPUs and applications target the 8086. The repository documents booting a live floppy image in QEMU and describes no installation option. Its latest observed commit is dated May 11, 2023. The original screenshot files ponydos.png and ponydos-viewer.png remain listed in the repository.",
+    "zh-CN": "shikhin 于 2023 年 3 月 31 日在 OSDev 公布 PonyDOS。内核面向兼容 80286 的处理器，应用程序面向 8086。仓库记录了用 QEMU 引导软盘镜像的方法，未记载安装选项。最后可见提交日期为 2023 年 5 月 11 日。仓库仍列有原始截图文件 ponydos.png 和 ponydos-viewer.png。",
+    "zh-TW": "shikhin 於 2023 年 3 月 31 日在 OSDev 公布 PonyDOS。核心以相容 80286 的處理器為目標，應用程式則以 8086 為目標。儲存庫記載了用 QEMU 啟動軟碟映像的方法，未記載安裝選項。最後可見提交日期為 2023 年 5 月 11 日。儲存庫仍列有原始截圖 ponydos.png 和 ponydos-viewer.png。",
+    "ja": "shikhinは2023年3月31日にOSDevでPonyDOSを発表しました。カーネルは80286互換CPU、アプリケーションは8086を対象としています。リポジトリにはQEMUでフロッピーイメージを起動する手順があり、インストール方法の記載はありません。最後に確認できたコミットは2023年5月11日です。元の画像ファイルponydos.pngとponydos-viewer.pngも掲載されています。",
+    "es": "shikhin anunció PonyDOS en OSDev el 31 de marzo de 2023. El núcleo está destinado a CPU compatibles con el 80286 y las aplicaciones, al 8086. El repositorio documenta el arranque de una imagen de disquete en QEMU y no describe una opción de instalación. El último commit observado es del 11 de mayo de 2023. El repositorio conserva los archivos ponydos.png y ponydos-viewer.png.",
+    "fr": "shikhin a annoncé PonyDOS sur OSDev le 31 mars 2023. Le noyau vise les processeurs compatibles 80286 et les applications ciblent le 8086. Le dépôt décrit le démarrage d’une image de disquette dans QEMU et ne documente aucune option d’installation. Le dernier commit observé date du 11 mai 2023. Les fichiers ponydos.png et ponydos-viewer.png figurent toujours dans le dépôt."
+  },
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://ahti.space/git/offtopia/ponydos"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://forum.osdev.org/viewtopic.php?t=38635",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "developer-history",
+      "url": "https://ahti.space/~crazyettin/",
+      "note": "CrazyEttin",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "developer-history",
+      "url": "https://ahti.space/~nortti",
+      "note": "nortti",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "developer-history",
+      "url": "https://shikhin.in/",
+      "note": "shikhin"
+    },
+    {
+      "kind": "developer-history",
+      "url": "https://oriole.systems/",
+      "note": "wolf"
+    }
+  ],
+  "references": [
+    "https://ahti.space/git/offtopia/ponydos",
+    "https://forum.osdev.org/viewtopic.php?t=38635",
+    "https://ahti.space/~crazyettin/",
+    "https://ahti.space/~nortti",
+    "https://shikhin.in/",
+    "https://oriole.systems/"
+  ],
+  "developer": "CrazyEttin, nortti, shikhin, wolf",
+  "developerIsGroup": true,
+  "platform": "x86 (80286 / 8086)",
+  "kernel": "PonyDOS (512 bytes)",
+  "sourceCodeUrl": "https://ahti.space/git/offtopia/ponydos",
+  "license": "CC0-1.0",
+  "lastUpdated": "2023-05-11",
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "documented",
+  "evidenceProvenance": "first-party",
+  "testingStatus": "not-tested",
+  "events": [
+    {
+      "category": "other",
+      "title": "Public OSDev announcement",
+      "description": "shikhin introduced PonyDOS on the OSDev forum.",
+      "date": {
+        "precision": "day",
+        "value": "2023-03-31"
+      },
+      "references": [
+        "https://forum.osdev.org/viewtopic.php?t=38635"
+      ]
+    }
+  ]
+}
