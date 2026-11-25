@@ -1,0 +1,25 @@
+---
+import { translate, type Locale } from '../i18n';
+import { pagePath } from '../i18n/routes';
+import PageLayout from '../layouts/PageLayout.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = translate(locale);
+---
+
+<PageLayout {locale} page="notFound">
+  <section class="page-banner">
+    <div class="shell">
+      <h1>{t('notFoundTitle')}</h1>
+      <p>{t('notFoundMeta')}</p>
+      <div class="actions">
+        <a class="button" href={pagePath(locale, 'home')}>{t('home')}</a>
+        <a class="button button-secondary" href={pagePath(locale, 'catalog')}>{t('catalog')}</a>
+      </div>
+    </div>
+  </section>
+</PageLayout>

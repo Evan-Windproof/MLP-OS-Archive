@@ -152,5 +152,8 @@
   "screenshotsIncomplete": "No se han recuperado capturas de procedencia identificable. El archivo de capturas está incompleto.",
   "projectPageTitle": "{project} · Ficha del proyecto",
   "projectMeta": "Consulta la ficha de {project}, con su historial de desarrollo, su estado de verificación y las fuentes que se conservan.",
-  "heroImageAlt": "Evan, un unicornio alado con melena azul y dorada, junto a un ordenador antiguo y varios libros en una biblioteca iluminada por la luna."
+  "heroImageAlt": "Evan, un unicornio alado con melena azul y dorada, junto a un ordenador antiguo y varios libros en una biblioteca iluminada por la luna.",
+  "authorBlog": "Blog del autor",
+  "notFoundTitle": "Página no encontrada",
+  "notFoundMeta": "La página puede haberse movido o la dirección puede ser incorrecta."
 }

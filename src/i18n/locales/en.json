@@ -152,5 +152,8 @@
   "screenshotsIncomplete": "No attributable screenshots have been recovered. The screenshot archive is incomplete.",
   "projectPageTitle": "{project} · Project record",
   "projectMeta": "Explore the archive record for {project}, including its development history, verification status, and surviving sources.",
-  "heroImageAlt": "Evan, a winged unicorn with a blue and gold mane, beside a vintage computer and books in a moonlit library."
+  "heroImageAlt": "Evan, a winged unicorn with a blue and gold mane, beside a vintage computer and books in a moonlit library.",
+  "authorBlog": "Author's Blog",
+  "notFoundTitle": "Page not found",
+  "notFoundMeta": "The page you requested may have moved or the address may be incorrect."
 }

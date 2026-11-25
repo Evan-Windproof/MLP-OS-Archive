@@ -69,17 +69,22 @@ and were not visible in the available Cloudflare account during the audit.
 Confirm those settings in the production account before making any changes.
 The archive currently requires only static assets.
 
+The static build includes localized `404.html` files. Configure the existing
+Worker with `assets.not_found_handling = "404-page"` to serve the closest
+localized error document with HTTP 404. Verify this on the production domain
+after an authorized deployment.
+
 ## Repository structure
 
 ```text
 public/             Static assets
 src/
-  components/       Page content, category cards, and the CSS illustration
+  components/       Page content, category cards, and the homepage illustration
   content/projects/ Reviewed project records as JSON
   data/             Site constants, project validation, and record loading
   i18n/             Locale registry, dictionaries, and localized route definitions
   layouts/          Shared navigation, footer, and metadata
-  pages/            Prerendered pages, robots.txt, and sitemap.xml
+  pages/            Prerendered pages, localized 404s, robots.txt, and sitemap.xml
   styles/           Shared responsive styles
 astro.config.mjs    Static build and production site configuration
 ```
@@ -94,9 +99,13 @@ localized descriptions and verification status.
 1. Establish the multilingual website and static build, page foundations, and SEO metadata.
 2. Establish the archive’s visual identity and static deployment configuration.
 3. Add multilingual submission forms, contribution review, and catalog records.
-
 4. Publish source-backed project profiles, release records, screenshot links,
    and an evidence-dated historical timeline.
+5. Complete the six-language presentation and add the supplied Evan artwork.
+6. Verify launch readiness and document ongoing archive maintenance.
+
+See the [changelog](CHANGELOG.md), [v1.0.0 release notes draft](docs/RELEASE_NOTES_v1.0.0.md),
+and [maintenance process](.github/CONTRIBUTING.md#ongoing-maintenance).
 
 The catalog counts reviewed records in each category and links to six-language
 project pages. The History page lists sourced events chronologically and shows

@@ -3,7 +3,7 @@ description: "Propón un proyecto inspirado en My Little Pony para el archivo."
 body:
   - type: markdown
     attributes:
-      value: "Se admiten proyectos históricos, abandonados, incompletos y experimentales. Usa el idioma original y deja en blanco los campos opcionales si hay dudas. Las propuestas son públicas. Comparte solo enlaces y materiales aptos para su difusión pública."
+      value: "Se admiten proyectos históricos, abandonados, incompletos y experimentales. Usa el idioma original y deja en blanco los campos opcionales si hay dudas. Las propuestas son públicas. Comparte solo enlaces y materiales aptos para su difusión pública. Para corregir una ficha o aportar documentación histórica, indica el nombre del proyecto existente y explica en la descripción qué debe actualizarse."
   - type: input
     id: name
     attributes:

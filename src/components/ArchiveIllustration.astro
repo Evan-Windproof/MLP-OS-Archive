@@ -8,4 +8,13 @@ interface Props {
 const t = translate(Astro.props.locale);
 ---
 
-<img class="archive-art" src="/evan-archive.webp" width="1448" height="1086" alt={t('heroImageAlt')} fetchpriority="high" />
+<img
+  class="archive-art"
+  src="/evan-archive.webp"
+  srcset="/evan-archive-480.webp 480w, /evan-archive-880.webp 880w, /evan-archive.webp 1448w"
+  sizes="(max-width: 34rem) calc(100vw - 2rem), (max-width: 47rem) min(100vw - 3rem, 36rem), (max-width: 81rem) 50vw, 42rem"
+  width="1448"
+  height="1086"
+  alt={t('heroImageAlt')}
+  fetchpriority="high"
+/>

@@ -3,7 +3,7 @@ description: "Propose a My Little Pony-themed project for the archive."
 body:
   - type: markdown
     attributes:
-      value: "Historical, discontinued, incomplete, and experimental projects are welcome. Use the original language and leave optional fields blank when details are uncertain. Issues are public. Only share links and material you can share publicly."
+      value: "Historical, discontinued, incomplete, and experimental projects are welcome. Use the original language and leave optional fields blank when details are uncertain. Issues are public. Only share links and material you can share publicly. For a correction or new historical evidence, enter the existing project name and explain what the archive should update in the description."
   - type: input
     id: name
     attributes:

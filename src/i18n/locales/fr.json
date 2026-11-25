@@ -152,5 +152,8 @@
   "screenshotsIncomplete": "Aucune capture dont la provenance est identifiable n’a été retrouvée. Les archives de captures sont incomplètes.",
   "projectPageTitle": "{project} · Fiche du projet",
   "projectMeta": "Consultez la fiche de {project}, son historique de développement, son état de vérification et les sources conservées.",
-  "heroImageAlt": "Evan, une licorne ailée à la crinière bleue et dorée, aux côtés d’un ordinateur ancien et de livres dans une bibliothèque au clair de lune."
+  "heroImageAlt": "Evan, une licorne ailée à la crinière bleue et dorée, aux côtés d’un ordinateur ancien et de livres dans une bibliothèque au clair de lune.",
+  "authorBlog": "Blog de l’auteur",
+  "notFoundTitle": "Page introuvable",
+  "notFoundMeta": "La page a peut-être été déplacée ou l’adresse est incorrecte."
 }
