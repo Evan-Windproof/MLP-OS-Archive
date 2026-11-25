@@ -13,10 +13,10 @@ interface Props {
 
 const { locale, page } = Astro.props;
 const t = translate(locale);
-const submissions = ['submissionOs', 'submissionLinux', 'submissionDesktop', 'submissionHistory', 'submissionMedia', 'submissionCorrections'] as const;
+const submissions = ['submissionOs', 'linuxName', 'submissionDesktop', 'submissionHistory', 'submissionMedia', 'submissionCorrections'] as const;
 const introductions = {
-  catalog: 'catalogIntroPage',
-  history: 'historyIntro',
+  catalog: 'catalogMeta',
+  history: 'historyMeta',
   contribute: 'contributeIntro',
   about: 'aboutIntro',
 } as const;
@@ -35,7 +35,7 @@ const introductions = {
             <a class="button button-secondary" href={pagePath(locale, 'contribute')}>{t('contributeLink')}</a>
           </div>
         </div>
-        <ArchiveIllustration />
+        <ArchiveIllustration {locale} />
       </div>
     </section>
 
@@ -102,7 +102,7 @@ const introductions = {
             <section class="feature-panel">
               <h2>{t('pullRequestTitle')}</h2>
               <p>{t('pullRequestBody')}</p>
-              <a class="button button-secondary" href={`${repositoryUrl}/blob/main/docs/PROJECT_SUBMISSION_GUIDE.md`}>
+              <a class="button button-secondary" href={`${repositoryUrl}/blob/main/docs/PROJECT_SUBMISSION_GUIDE.md`} hreflang="en">
                 {t('pullRequestLink')}
               </a>
             </section>

@@ -25,17 +25,18 @@ export const projectCategoryLabels = {
   'desktop-customization': 'desktop',
 } as const satisfies Record<ProjectCategory, string>;
 
-type Messages = Partial<Record<keyof typeof en, string>>;
+type MessageKey = keyof typeof en;
+type Messages = Record<MessageKey, string>;
 
-const messages: Record<Locale, Messages> = {
+const messages = {
   en,
   'zh-CN': zhCN,
   'zh-TW': zhTW,
   ja,
   es,
   fr,
-};
+} satisfies Record<Locale, Messages>;
 
 export function translate(locale: Locale) {
-  return (key: keyof typeof en) => messages[locale]?.[key] || en[key];
+  return (key: MessageKey) => messages[locale]?.[key]?.trim() || en[key];
 }

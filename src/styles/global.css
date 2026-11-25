@@ -61,8 +61,8 @@
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; }
 main { flex: 1; }
-h1, h2, h3, p { margin: 0; }
-h1, h2, h3 { line-height: 1.13; text-wrap: balance; }
+h1, h2, h3, h4, p { margin: 0; }
+h1, h2, h3, h4 { line-height: 1.13; text-wrap: balance; }
 h1, h2 { font-family: Georgia, "Times New Roman", "Noto Serif CJK SC", serif; }
 html[lang="zh-TW"] { --east-asian: "Noto Serif CJK TC"; }
 html[lang="ja"] { --east-asian: "Noto Serif CJK JP"; }
@@ -439,7 +439,7 @@ img { display: block; max-width: 100%; }
 .catalog-empty p:first-child { margin-top: 0; }
 .timeline-group > :first-child { margin-bottom: .85rem; }
 .timeline-group .feature-panel > p:first-child { margin-top: 0; }
-.timeline-group .feature-panel h3, .timeline-group .record-links { margin-top: .65rem; }
+.timeline-group .feature-panel :is(h3, h4), .timeline-group .record-links { margin-top: .65rem; }
 .project-detail { overflow-wrap: anywhere; }
 .project-detail .timeline-group { margin-top: 1.25rem; }
 .archive-facts { margin: 1rem 0; }

@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
 import type { Project, ProjectCategory } from '../data/projects';
-import { projectDescription } from '../i18n/archive';
 import { siteName } from '../data/site';
 import { defaultLocale, languages, type Locale, projectCategoryLabels, translate } from '../i18n';
 import { categoryPath, pagePath, pages, projectPath, publicRoutes, type Page } from '../i18n/routes';
@@ -16,8 +15,10 @@ interface Props {
 const { locale, page, project, category } = Astro.props;
 const t = translate(locale);
 const categoryLabel = category && projectCategoryLabels[category];
-const title = `${project?.name ?? (categoryLabel ? t(`${categoryLabel}Name`) : t(`${page}Title`))} | ${siteName}`;
-const description = project ? projectDescription(project, locale).text
+const pageTitle = project ? t('projectPageTitle').replace('{project}', () => project.name)
+  : categoryLabel ? t(`${categoryLabel}Name`) : t(`${page}Title`);
+const title = `${pageTitle} | ${siteName}`;
+const description = project ? t('projectMeta').replace('{project}', () => project.name)
   : categoryLabel ? t(`${categoryLabel}Description`) : t(`${page}Meta`);
 const currentPath = (target: Locale) => {
   if (project) return projectPath(target, project.id);

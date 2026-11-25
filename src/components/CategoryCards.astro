@@ -20,15 +20,17 @@ const Heading = landing ? 'h2' : 'h3';
   {projectCategories.map((category) => {
     const prefix = projectCategoryLabels[category];
     const labelId = `category-title-${category}`;
+    const descriptionId = `category-description-${category}`;
+    const countId = `category-count-${category}`;
     return (
       <li>
-        <a class:list={['category-card', 'category-link', category]} href={categoryPath(locale, category)} aria-labelledby={labelId}>
+        <a class:list={['category-card', 'category-link', category]} href={categoryPath(locale, category)} aria-labelledby={labelId} aria-describedby={landing ? `${descriptionId} ${countId}` : descriptionId}>
           <span class="category-icon"><CategoryIcon {category} /></span>
           <Heading id={labelId}>{t(`${prefix}Name`)}</Heading>
-          <p>{t(`${prefix}Description`)}</p>
+          <p id={descriptionId}>{t(`${prefix}Description`)}</p>
           {landing && (
             <div class="category-card-footer">
-              <span>{formatProjectCount(projectsByCategory[category].length, locale)}</span>
+              <span id={countId}>{formatProjectCount(projectsByCategory[category].length, locale)}</span>
               <span class="category-browse">{t('browseCategory')}</span>
             </div>
           )}
