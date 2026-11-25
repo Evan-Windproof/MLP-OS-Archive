@@ -15,16 +15,16 @@ const caption = localizedArchiveText(item.captions ?? {}, locale, originalLangua
   text: item.alt ?? t('projectScreenshot'),
   language: item.alt ? item.language ?? originalLanguage : locale,
 };
-const imageSize = item.embed && item.imageSize;
-const Heading = imageSize ? 'h3' : 'h4';
+const Heading = item.embed ? 'h3' : 'h4';
+const originalLinkLabel = t(item.embedUnavailable === 'page-only' ? 'projectSource' : 'screenshotOpen');
 ---
 
 <li>
-  {imageSize && (
+  {item.embed && (
     <>
       <a class="screenshot-image" href={item.url} target="_blank" rel="noopener noreferrer"
         aria-label={`${t('screenshotOpen')} · ${caption.text}`}>
-        <img src={item.url} width={imageSize.width} height={imageSize.height}
+        <img src={item.url} width={item.imageSize?.width} height={item.imageSize?.height}
           loading="lazy" decoding="async" referrerpolicy="no-referrer"
           alt={item.alt ?? caption.text} lang={item.alt ? item.language ?? originalLanguage : caption.language} />
       </a>
@@ -32,14 +32,15 @@ const Heading = imageSize ? 'h3' : 'h4';
     </>
   )}
   <Heading lang={caption.language}>{caption.text}</Heading>
+  {!item.embed && item.embedUnavailable && <p>{t(`screenshot-${item.embedUnavailable}`)}</p>}
   {item.description && <p lang={item.language ?? originalLanguage}>{item.description}</p>}
   <p>{t('screenshotCredit')} {item.credit}</p>
   {item.license && <p>{t('projectLicense')} {item.license}</p>}
   {item.capturedAt && <p><time datetime={item.capturedAt.value}>{formatArchiveDate(item.capturedAt, locale)}</time></p>}
   <ul class="record-links">
     <li>
-      <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`${t('screenshotOpen')} · ${caption.text}`}>
-        {t('screenshotOpen')} <span aria-hidden="true">↗</span>
+      <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`${originalLinkLabel} · ${caption.text}`}>
+        {originalLinkLabel} <span aria-hidden="true">↗</span>
       </a>
     </li>
     {item.sourceUrl && item.sourceUrl !== item.url && (

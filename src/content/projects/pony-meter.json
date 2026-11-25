@@ -46,7 +46,7 @@
   "developerUrl": "https://www.deviantart.com/really-unimportant",
   "screenshots": [
     {
-      "url": "https://visualskins.com/i/c/600x400/media/p/494/pony-meter-rainmeter.jpg",
+      "url": "https://visualskins.com/media/p/494/pony-meter-rainmeter.jpg",
       "credit": "Really-unimportant / VisualSkins",
       "sourceUrl": "https://visualskins.com/skin/pony-meter",
       "captions": {
@@ -56,10 +56,11 @@
         "ja": "Pony Meter のキャラクターウィジェットとシステム表示のデスクトッププレビュー。",
         "es": "Vista del escritorio con los widgets de personajes y los indicadores del sistema de Pony Meter.",
         "fr": "Aperçu du bureau avec les widgets de personnages et les indicateurs système de Pony Meter."
-      }
+      },
+      "embed": true
     },
     {
-      "url": "https://visualskins.com/i/c/600x400/media/p/494/pony-meter-rainmeter-2.jpg",
+      "url": "https://visualskins.com/media/p/494/pony-meter-rainmeter-2.jpg",
       "credit": "Really-unimportant / VisualSkins",
       "sourceUrl": "https://visualskins.com/skin/pony-meter",
       "captions": {
@@ -69,7 +70,8 @@
         "ja": "Pony Meter のウィジェット配置を示す二枚目のデスクトップ画像。",
         "es": "Segunda vista del escritorio con la disposición de widgets de Pony Meter.",
         "fr": "Seconde vue du bureau montrant la disposition des widgets de Pony Meter."
-      }
+      },
+      "embed": true
     }
   ]
 }

@@ -119,6 +119,7 @@ export const projectSchema = z.strictObject({
     alt: text.optional(),
     captions: localizedText.optional(),
     embed: z.literal(true).optional(),
+    embedUnavailable: z.enum(['image-unverified', 'page-only', 'restricted']).optional(),
     imageSize: z.strictObject({
       width: z.number().int().positive(),
       height: z.number().int().positive(),
@@ -127,9 +128,9 @@ export const projectSchema = z.strictObject({
     capturedAt: date.optional(),
     description: text.optional(),
     language: languageTag.optional(),
-  }).refine((item) => !item.embed || item.imageSize, {
-    path: ['imageSize'],
-    message: 'Record the original image dimensions before embedding.',
+  }).refine((item) => !item.embed || !item.embedUnavailable, {
+    path: ['embedUnavailable'],
+    message: 'Use an unavailable reason for link-only records.',
   })).optional(),
   releases: z.array(release).optional(),
   events: z.array(event).optional(),

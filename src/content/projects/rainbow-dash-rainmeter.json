@@ -46,7 +46,7 @@
   "developerUrl": "https://www.deviantart.com/snx11",
   "screenshots": [
     {
-      "url": "https://visualskins.com/i/c/600x400/media/p/252/rainbow-dash-rainmeter.jpg",
+      "url": "https://visualskins.com/media/p/252/rainbow-dash-rainmeter.jpg",
       "credit": "SNX11 / VisualSkins",
       "sourceUrl": "https://visualskins.com/skin/rainbow-dash",
       "captions": {
@@ -56,7 +56,8 @@
         "ja": "風景の壁紙に重ねたレインボーダッシュのカレンダー。",
         "es": "Widget de calendario de Rainbow Dash sobre un fondo de paisaje.",
         "fr": "Widget de calendrier Rainbow Dash sur un fond d’écran de paysage."
-      }
+      },
+      "embed": true
     }
   ]
 }

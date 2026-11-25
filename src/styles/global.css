@@ -494,6 +494,7 @@ img { display: block; max-width: 100%; }
   list-style: none;
 }
 .screenshot-grid > li { min-width: 0; }
+.screenshot-grid:has(> :only-child) { grid-template-columns: minmax(0, 46rem); }
 .screenshot-image img {
   display: block;
   width: 100%;
@@ -536,7 +537,7 @@ img { display: block; max-width: 100%; }
   .screenshot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (min-width: 65rem) {
-  .screenshot-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .screenshot-grid:has(> :nth-child(3)) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 .feature-panel .screenshot-rights {
   margin-top: 1.15rem;

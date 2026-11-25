@@ -27,19 +27,22 @@
       "url": "https://psyche-games.com/Pictures/Equestria-OS/software-center-current-en.webp",
       "sourceUrl": "https://psyche-games.com/equestria-os.php",
       "credit": "Equestria OS project website",
-      "alt": "Equestria OS Software Center in English"
+      "alt": "Equestria OS Software Center in English",
+      "embed": true
     },
     {
       "url": "https://psyche-games.com/Pictures/Equestria-OS/installer-rainbow.webp",
       "sourceUrl": "https://psyche-games.com/equestria-os.php",
       "credit": "Equestria OS project website",
-      "alt": "Equestria OS AppInstaller in the Rainbow Dash theme"
+      "alt": "Equestria OS AppInstaller in the Rainbow Dash theme",
+      "embedUnavailable": "image-unverified"
     },
     {
       "url": "https://psyche-games.com/Pictures/Equestria-OS/packages-twilight.webp",
       "sourceUrl": "https://psyche-games.com/equestria-os.php",
       "credit": "Equestria OS project website",
-      "alt": "Equestria OS Package Manager in the Twilight Sparkle theme"
+      "alt": "Equestria OS Package Manager in the Twilight Sparkle theme",
+      "embedUnavailable": "image-unverified"
     }
   ],
   "releases": [
