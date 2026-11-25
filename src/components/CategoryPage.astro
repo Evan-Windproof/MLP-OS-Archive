@@ -1,0 +1,45 @@
+---
+import { projectsByCategory } from '../data/project-records';
+import type { ProjectCategory } from '../data/projects';
+import { formatProjectCount } from '../i18n/archive';
+import { projectCategoryLabels, translate, type Locale } from '../i18n';
+import { pagePath } from '../i18n/routes';
+import CategoryIcon from './CategoryIcon.astro';
+import ProjectCatalog from './ProjectCatalog.astro';
+
+interface Props {
+  locale: Locale;
+  category: ProjectCategory;
+}
+
+const { locale, category } = Astro.props;
+const t = translate(locale);
+const prefix = projectCategoryLabels[category];
+const title = t(`${prefix}Name`);
+const catalog = pagePath(locale, 'catalog');
+---
+
+<header class="page-banner banner-catalog">
+  <div class="shell">
+    <nav class="breadcrumbs" aria-label={t('breadcrumbs')}>
+      <ol>
+        <li><a href={pagePath(locale, 'home')}>{t('home')}</a></li>
+        <li><a href={catalog}>{t('catalog')}</a></li>
+        <li aria-current="page">{title}</li>
+      </ol>
+    </nav>
+    <div class:list={['category-heading', category]}>
+      <span class="category-icon"><CategoryIcon {category} /></span>
+      <h1>{title}</h1>
+    </div>
+    <p>{t(`${prefix}Description`)}</p>
+  </div>
+</header>
+
+<div class="shell page-content">
+  <section aria-labelledby="category-records">
+    <h2 id="category-records">{formatProjectCount(projectsByCategory[category].length, locale)}</h2>
+    <ProjectCatalog {locale} {category} />
+  </section>
+  <p><a class="text-link" href={catalog}>{t('backToCatalog')}</a></p>
+</div>

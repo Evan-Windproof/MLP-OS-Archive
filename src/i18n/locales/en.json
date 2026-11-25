@@ -11,7 +11,7 @@
   "homeTitle": "Preserving the history of pony computing.",
   "homeMeta": "Explore an independent archive for My Little Pony-themed operating systems, Linux distributions, and desktop customizations.",
   "catalogTitle": "Project catalog",
-  "catalogMeta": "Browse reviewed projects by category, with development status and links to their historical records.",
+  "catalogMeta": "Choose a category to explore reviewed projects, releases, and historical records.",
   "historyTitle": "Historical archive",
   "historyMeta": "Follow documented releases and project milestones. Dates reflect the precision available in the sources.",
   "contributeTitle": "Contribute to the archive",
@@ -34,7 +34,7 @@
   "communityTitle": "Help preserve a project",
   "communityBody": "Know of a pony-themed operating system, or have an old screenshot or project link? Sharing it can help document a piece of the community’s history.",
   "contributeLink": "How to contribute",
-  "catalogIntroPage": "Browse reviewed projects by category, with development status and links to their historical records.",
+  "catalogIntroPage": "Choose a category to explore reviewed projects, releases, and historical records.",
   "historyIntro": "Follow documented releases and project milestones. Dates reflect the precision available in the sources.",
   "historyPreserveTitle": "What we aim to preserve",
   "historyPreserveBody": "Discontinued projects, historical releases, screenshots, and surviving documentation can help establish what was built and how it changed.",
@@ -120,5 +120,13 @@
   "verification-note-unverified": "The archive has not yet corroborated this record.",
   "verification-note-partially-verified": "Sources support some claims. Other details remain uncertain.",
   "verification-note-verified": "Sources support the project identity and the material claims in this record.",
-  "verification-note-unable-to-verify": "Available evidence was insufficient to corroborate the record."
+  "verification-note-unable-to-verify": "Available evidence was insufficient to corroborate the record.",
+  "browseCategory": "Browse category",
+  "breadcrumbs": "Breadcrumbs",
+  "backToCatalog": "Back to catalog",
+  "projectCountOne": "{count} project",
+  "projectCountOther": "{count} projects",
+  "documentedPeriod": "Documented period",
+  "verificationScope": "Archive verification evaluates evidence for the project’s identity and historical record. The status does not certify independent testing on physical hardware.",
+  "sharedMaintainerEvidence": "{project} and this archive are maintained under the same GitHub account, {account}. Its source repository and release records are first-party evidence. Independent corroboration remains limited."
 }

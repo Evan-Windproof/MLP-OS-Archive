@@ -11,7 +11,7 @@
   "homeTitle": "留存小马计算项目的历史。",
   "homeMeta": "探索记录《小马宝莉》主题操作系统、Linux 发行版和桌面定制项目的独立档案。",
   "catalogTitle": "项目目录",
-  "catalogMeta": "按类别浏览已审核的项目，查看开发状态和历史档案链接。",
+  "catalogMeta": "选择一个分类，浏览已审核的项目、版本及历史记录。",
   "historyTitle": "历史档案",
   "historyMeta": "浏览有资料佐证的版本发布和项目里程碑。日期精度以来源为准。",
   "contributeTitle": "为档案贡献资料",
@@ -34,7 +34,7 @@
   "communityTitle": "帮助保存一个项目",
   "communityBody": "知道某个小马主题操作系统，或手头有旧截图、项目链接？分享它们，就能帮助记录这段社群历史。",
   "contributeLink": "了解如何贡献",
-  "catalogIntroPage": "按类别浏览已审核的项目，查看开发状态和历史档案链接。",
+  "catalogIntroPage": "选择一个分类，浏览已审核的项目、版本及历史记录。",
   "historyIntro": "浏览有资料佐证的版本发布和项目里程碑。日期精度以来源为准。",
   "historyPreserveTitle": "我们希望保存什么",
   "historyPreserveBody": "停更项目、历史版本、截图和留存的文档，都有助于确认项目的内容和演变过程。",
@@ -120,5 +120,13 @@
   "verification-note-unverified": "档案尚未核实这条记录。",
   "verification-note-partially-verified": "来源支持部分说法，其余细节仍不确定。",
   "verification-note-verified": "来源支持项目身份和记录中的主要说法。",
-  "verification-note-unable-to-verify": "现有证据不足以核实这条记录。"
+  "verification-note-unable-to-verify": "现有证据不足以核实这条记录。",
+  "browseCategory": "浏览此分类",
+  "breadcrumbs": "面包屑导航",
+  "backToCatalog": "返回目录",
+  "projectCountOne": "{count} 个项目",
+  "projectCountOther": "{count} 个项目",
+  "documentedPeriod": "有记录的时期",
+  "verificationScope": "档案核实评估项目身份及历史记录的证据。此状态不代表项目已通过独立的实体硬件测试。",
+  "sharedMaintainerEvidence": "{project} 和本档案由同一 GitHub 账号 {account} 维护。其源码仓库和发布记录属于第一方证据，独立佐证仍然有限。"
 }

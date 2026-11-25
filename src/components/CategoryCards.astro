@@ -1,23 +1,38 @@
 ---
-import CategoryIcon from './CategoryIcon.astro';
+import { projectsByCategory } from '../data/project-records';
 import { projectCategories } from '../data/projects';
+import { formatProjectCount } from '../i18n/archive';
 import { type Locale, projectCategoryLabels, translate } from '../i18n';
+import { categoryPath } from '../i18n/routes';
+import CategoryIcon from './CategoryIcon.astro';
 
 interface Props {
   locale: Locale;
+  landing?: boolean;
 }
 
-const t = translate(Astro.props.locale);
+const { locale, landing = false } = Astro.props;
+const t = translate(locale);
+const Heading = landing ? 'h2' : 'h3';
 ---
 
-<ul class="category-grid">
+<ul class:list={['category-grid', 'category-links', { 'category-landing': landing }]}>
   {projectCategories.map((category) => {
     const prefix = projectCategoryLabels[category];
+    const labelId = `category-title-${category}`;
     return (
-      <li class:list={['category-card', category]}>
-        <span class="category-icon"><CategoryIcon {category} /></span>
-        <h3>{t(`${prefix}Name`)}</h3>
-        <p>{t(`${prefix}Description`)}</p>
+      <li>
+        <a class:list={['category-card', 'category-link', category]} href={categoryPath(locale, category)} aria-labelledby={labelId}>
+          <span class="category-icon"><CategoryIcon {category} /></span>
+          <Heading id={labelId}>{t(`${prefix}Name`)}</Heading>
+          <p>{t(`${prefix}Description`)}</p>
+          {landing && (
+            <div class="category-card-footer">
+              <span>{formatProjectCount(projectsByCategory[category].length, locale)}</span>
+              <span class="category-browse">{t('browseCategory')}</span>
+            </div>
+          )}
+        </a>
       </li>
     );
   })}

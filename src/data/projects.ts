@@ -76,6 +76,7 @@ export const projectSchema = z.strictObject({
   lastUpdated: z.iso.date().optional(),
   developmentStatus: z.enum(developmentStatuses),
   verificationStatus: z.enum(verificationStatuses),
+  sharedMaintainerAccount: text.optional(),
   sourceCodeUrl: webUrl.optional(),
   officialWebsite: webUrl.optional(),
   downloadUrl: webUrl.optional(),

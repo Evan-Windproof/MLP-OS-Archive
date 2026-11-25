@@ -11,7 +11,7 @@
   "homeTitle": "Preservamos la historia de la informática poni.",
   "homeMeta": "Explora un archivo independiente de sistemas operativos, distribuciones Linux y personalizaciones de escritorio inspirados en My Little Pony.",
   "catalogTitle": "Catálogo de proyectos",
-  "catalogMeta": "Explora los proyectos revisados por categoría y consulta su estado y sus fichas históricas.",
+  "catalogMeta": "Elige una categoría para explorar los proyectos revisados, sus versiones y sus registros históricos.",
   "historyTitle": "Archivo histórico",
   "historyMeta": "Consulta versiones e hitos documentados. Las fechas reflejan la precisión de las fuentes.",
   "contributeTitle": "Contribuye al archivo",
@@ -34,7 +34,7 @@
   "communityTitle": "Ayuda a preservar un proyecto",
   "communityBody": "¿Conoces un sistema operativo de temática poni o conservas una captura antigua o un enlace? Al compartirlo puedes ayudar a documentar la historia de la comunidad.",
   "contributeLink": "Cómo contribuir",
-  "catalogIntroPage": "Explora los proyectos revisados por categoría y consulta su estado y sus fichas históricas.",
+  "catalogIntroPage": "Elige una categoría para explorar los proyectos revisados, sus versiones y sus registros históricos.",
   "historyIntro": "Consulta versiones e hitos documentados. Las fechas reflejan la precisión de las fuentes.",
   "historyPreserveTitle": "Qué queremos preservar",
   "historyPreserveBody": "Los proyectos abandonados, las versiones históricas, las capturas y la documentación que se conserva ayudan a saber qué se creó y cómo evolucionó.",
@@ -120,5 +120,13 @@
   "verification-note-unverified": "El archivo aún no ha corroborado esta ficha.",
   "verification-note-partially-verified": "Las fuentes respaldan algunos datos. Otros siguen siendo inciertos.",
   "verification-note-verified": "Las fuentes respaldan la identidad del proyecto y los datos principales de la ficha.",
-  "verification-note-unable-to-verify": "Las pruebas disponibles no permitieron corroborar la ficha."
+  "verification-note-unable-to-verify": "Las pruebas disponibles no permitieron corroborar la ficha.",
+  "browseCategory": "Explorar la categoría",
+  "breadcrumbs": "Ruta de navegación",
+  "backToCatalog": "Volver al catálogo",
+  "projectCountOne": "{count} proyecto",
+  "projectCountOther": "{count} proyectos",
+  "documentedPeriod": "Período documentado",
+  "verificationScope": "La verificación del archivo evalúa las pruebas sobre la identidad y el historial del proyecto. El estado no certifica pruebas independientes en hardware físico.",
+  "sharedMaintainerEvidence": "{project} y este archivo se mantienen desde la misma cuenta de GitHub, {account}. El repositorio de código y el historial de versiones son fuentes del propio proyecto. La corroboración independiente sigue siendo limitada."
 }

@@ -1,4 +1,4 @@
-import { projectSchema } from './projects';
+import { projectCategories, projectSchema } from './projects';
 
 const files = import.meta.glob('../content/projects/*.json', {
   eager: true,
@@ -22,6 +22,10 @@ export const projects = Object.entries(files).map(([path, data]) => {
   ids.add(record.data.id);
   return record.data;
 }).sort((a, b) => a.id.localeCompare(b.id, 'en'));
+
+export const projectsByCategory = Object.fromEntries(
+  projectCategories.map((category) => [category, projects.filter((project) => project.category === category)]),
+) as Record<(typeof projectCategories)[number], typeof projects>;
 
 export const historicalEvents = projects.flatMap((project) =>
   (project.events ?? []).map((event) => ({

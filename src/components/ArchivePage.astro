@@ -5,7 +5,6 @@ import { pagePath, type Page } from '../i18n/routes';
 import ArchiveTimeline from './ArchiveTimeline.astro';
 import ArchiveIllustration from './ArchiveIllustration.astro';
 import CategoryCards from './CategoryCards.astro';
-import ProjectCatalog from './ProjectCatalog.astro';
 
 interface Props {
   locale: Locale;
@@ -71,7 +70,7 @@ const introductions = {
     </header>
 
     <div class:list={['shell page-content', `content-${page}`]}>
-      {page === 'catalog' && <ProjectCatalog {locale} />}
+      {page === 'catalog' && <CategoryCards {locale} landing />}
 
       {page === 'history' && (
         <>

@@ -1,4 +1,5 @@
 import { projects } from '../data/project-records';
+import { projectCategories, type Project, type ProjectCategory } from '../data/projects';
 import { defaultLocale, locales, type Locale } from './index';
 
 export const pages = ['home', 'catalog', 'history', 'contribute', 'about'] as const;
@@ -27,8 +28,28 @@ export function projectPath(locale: Locale, id: string) {
   return `${pagePath(locale, 'catalog')}${id}/`;
 }
 
-export const publicRoutes = [
-  ...sectionRoutes.map((route) => ({ ...route, project: undefined })),
+export function categoryPath(locale: Locale, category: ProjectCategory) {
+  return `${pagePath(locale, 'catalog')}category/${category}/`;
+}
+
+interface PublicRoute {
+  locale: Locale;
+  page: Page;
+  segments: string[];
+  path: string;
+  project?: Project;
+  category?: ProjectCategory;
+}
+
+export const publicRoutes: PublicRoute[] = [
+  ...sectionRoutes,
+  ...locales.flatMap((locale) => projectCategories.map((category) => ({
+    locale,
+    page: 'catalog' as const,
+    segments: [...(locale === defaultLocale ? [] : [locale]), 'catalog', 'category', category],
+    path: categoryPath(locale, category),
+    category,
+  }))),
   ...locales.flatMap((locale) => projects.map((project) => ({
     locale,
     page: 'catalog' as const,

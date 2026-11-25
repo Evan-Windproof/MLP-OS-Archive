@@ -11,7 +11,7 @@
   "homeTitle": "保存小馬電腦專案的歷史。",
   "homeMeta": "探索記錄《彩虹小馬》主題作業系統、Linux 發行版與桌面自訂專案的獨立檔案庫。",
   "catalogTitle": "專案目錄",
-  "catalogMeta": "依類別瀏覽已審查的專案，查看開發狀態與歷史檔案連結。",
+  "catalogMeta": "選擇一個類別，瀏覽已審查的專案、版本與歷史紀錄。",
   "historyTitle": "歷史檔案",
   "historyMeta": "瀏覽有資料佐證的版本發布與專案里程碑。日期精度以來源為準。",
   "contributeTitle": "為檔案庫貢獻資料",
@@ -34,7 +34,7 @@
   "communityTitle": "幫忙保存一個專案",
   "communityBody": "知道某個小馬主題作業系統，或手邊有舊的螢幕擷取畫面或專案連結嗎？分享這些資料，就能協助記錄這段社群歷史。",
   "contributeLink": "瞭解如何貢獻",
-  "catalogIntroPage": "依類別瀏覽已審查的專案，查看開發狀態與歷史檔案連結。",
+  "catalogIntroPage": "選擇一個類別，瀏覽已審查的專案、版本與歷史紀錄。",
   "historyIntro": "瀏覽有資料佐證的版本發布與專案里程碑。日期精度以來源為準。",
   "historyPreserveTitle": "我們希望保存什麼",
   "historyPreserveBody": "已停更的專案、歷史版本、螢幕擷取畫面與留存的文件，都有助於確認專案的內容及其演變。",
@@ -120,5 +120,13 @@
   "verification-note-unverified": "檔案庫尚未查證這筆紀錄。",
   "verification-note-partially-verified": "來源支持部分說法，其餘細節仍不確定。",
   "verification-note-verified": "來源支持專案身分與紀錄中的主要說法。",
-  "verification-note-unable-to-verify": "現有證據不足以查證這筆紀錄。"
+  "verification-note-unable-to-verify": "現有證據不足以查證這筆紀錄。",
+  "browseCategory": "瀏覽此類別",
+  "breadcrumbs": "頁面路徑",
+  "backToCatalog": "返回目錄",
+  "projectCountOne": "{count} 個專案",
+  "projectCountOther": "{count} 個專案",
+  "documentedPeriod": "有紀錄的時期",
+  "verificationScope": "檔案庫查證評估專案身分及歷史紀錄的證據。此狀態不表示專案已通過獨立的實體硬體測試。",
+  "sharedMaintainerEvidence": "{project} 和本檔案庫由同一 GitHub 帳號 {account} 維護。其原始碼存放庫與發布紀錄屬於第一方證據，獨立佐證仍然有限。"
 }

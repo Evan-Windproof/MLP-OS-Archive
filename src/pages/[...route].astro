@@ -1,19 +1,22 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import ProjectDetail from '../components/ProjectDetail.astro';
+import CategoryPage from '../components/CategoryPage.astro';
 import ArchivePage from '../components/ArchivePage.astro';
 import { publicRoutes } from '../i18n/routes';
 
 export function getStaticPaths() {
-  return publicRoutes.map(({ segments, locale, page, project }) => ({
+  return publicRoutes.map(({ segments, locale, page, project, category }) => ({
     params: { route: segments.join('/') || undefined },
-    props: { locale, page, project },
+    props: { locale, page, project, category },
   }));
 }
 
-const { locale, page, project } = Astro.props;
+const { locale, page, project, category } = Astro.props;
 ---
 
-<PageLayout {locale} {page} {project}>
-  {project ? <ProjectDetail {locale} {project} /> : <ArchivePage {locale} {page} />}
+<PageLayout {locale} {page} {project} {category}>
+  {project && <ProjectDetail {locale} {project} />}
+  {category && <CategoryPage {locale} {category} />}
+  {!project && !category && <ArchivePage {locale} {page} />}
 </PageLayout>

@@ -11,7 +11,7 @@
   "homeTitle": "Préserver l’histoire de l’informatique poney.",
   "homeMeta": "Découvrez des archives indépendantes consacrées aux systèmes d’exploitation, distributions Linux et bureaux personnalisés inspirés de My Little Pony.",
   "catalogTitle": "Catalogue de projets",
-  "catalogMeta": "Parcourez les projets examinés par catégorie et consultez leur état et leurs fiches historiques.",
+  "catalogMeta": "Choisissez une catégorie pour découvrir les projets examinés, leurs versions et leurs archives.",
   "historyTitle": "Archives historiques",
   "historyMeta": "Consultez les versions et les étapes documentées. Les dates reflètent la précision des sources.",
   "contributeTitle": "Contribuer aux archives",
@@ -34,7 +34,7 @@
   "communityTitle": "Aidez à préserver un projet",
   "communityBody": "Vous connaissez un système sur le thème des poneys, ou vous avez conservé une ancienne capture d’écran ou un lien ? En le partageant, vous pouvez aider à documenter l’histoire de la communauté.",
   "contributeLink": "Comment contribuer",
-  "catalogIntroPage": "Parcourez les projets examinés par catégorie et consultez leur état et leurs fiches historiques.",
+  "catalogIntroPage": "Choisissez une catégorie pour découvrir les projets examinés, leurs versions et leurs archives.",
   "historyIntro": "Consultez les versions et les étapes documentées. Les dates reflètent la précision des sources.",
   "historyPreserveTitle": "Ce que nous souhaitons préserver",
   "historyPreserveBody": "Les projets abandonnés, les anciennes versions, les captures d’écran et la documentation conservée aident à comprendre ce qui a été créé et comment ces projets ont évolué.",
@@ -120,5 +120,13 @@
   "verification-note-unverified": "Les archives n’ont pas encore corroboré cette fiche.",
   "verification-note-partially-verified": "Les sources confirment certains éléments. D’autres restent incertains.",
   "verification-note-verified": "Les sources confirment l’identité du projet et les principaux éléments de la fiche.",
-  "verification-note-unable-to-verify": "Les preuves disponibles ne permettent pas de corroborer cette fiche."
+  "verification-note-unable-to-verify": "Les preuves disponibles ne permettent pas de corroborer cette fiche.",
+  "browseCategory": "Parcourir la catégorie",
+  "breadcrumbs": "Fil d’Ariane",
+  "backToCatalog": "Retour au catalogue",
+  "projectCountOne": "{count} projet",
+  "projectCountOther": "{count} projets",
+  "documentedPeriod": "Période documentée",
+  "verificationScope": "La vérification des archives évalue les preuves relatives à l’identité et à l’historique du projet. Ce statut ne certifie pas des essais indépendants sur du matériel physique.",
+  "sharedMaintainerEvidence": "{project} et ces archives sont maintenus par le même compte GitHub, {account}. Le dépôt de code et l’historique des versions sont des sources du projet lui-même. La corroboration indépendante reste limitée."
 }

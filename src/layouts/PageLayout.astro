@@ -1,24 +1,33 @@
 ---
 import '../styles/global.css';
-import type { Project } from '../data/projects';
+import type { Project, ProjectCategory } from '../data/projects';
 import { projectDescription } from '../i18n/archive';
 import { siteName } from '../data/site';
-import { defaultLocale, languages, type Locale, translate } from '../i18n';
-import { pagePath, pages, projectPath, publicRoutes, type Page } from '../i18n/routes';
+import { defaultLocale, languages, type Locale, projectCategoryLabels, translate } from '../i18n';
+import { categoryPath, pagePath, pages, projectPath, publicRoutes, type Page } from '../i18n/routes';
 
 interface Props {
   locale: Locale;
   page: Page;
   project?: Project;
+  category?: ProjectCategory;
 }
 
-const { locale, page, project } = Astro.props;
+const { locale, page, project, category } = Astro.props;
 const t = translate(locale);
-const title = `${project?.name ?? t(`${page}Title`)} | ${siteName}`;
-const description = project ? projectDescription(project, locale).text : t(`${page}Meta`);
-const currentPath = (target: Locale) => project ? projectPath(target, project.id) : pagePath(target, page);
+const categoryLabel = category && projectCategoryLabels[category];
+const title = `${project?.name ?? (categoryLabel ? t(`${categoryLabel}Name`) : t(`${page}Title`))} | ${siteName}`;
+const description = project ? projectDescription(project, locale).text
+  : categoryLabel ? t(`${categoryLabel}Description`) : t(`${page}Meta`);
+const currentPath = (target: Locale) => {
+  if (project) return projectPath(target, project.id);
+  if (category) return categoryPath(target, category);
+  return pagePath(target, page);
+};
 const canonical = new URL(currentPath(locale), Astro.site);
-const alternates = publicRoutes.filter((route) => route.page === page && route.project?.id === project?.id);
+const alternates = publicRoutes.filter((route) =>
+  route.page === page && route.project?.id === project?.id && route.category === category);
+const navCurrent = (item: Page) => item === page ? (project || category ? 'location' : 'page') : undefined;
 const openGraphLocales = {
   en: 'en_US', 'zh-CN': 'zh_CN', 'zh-TW': 'zh_TW', ja: 'ja_JP', es: 'es_ES', fr: 'fr_FR',
 } satisfies Record<Locale, string>;
@@ -62,7 +71,7 @@ const openGraphLocales = {
         </a>
         <nav class="primary-nav" aria-label={t('primaryNav')}>
           {pages.map((item) => (
-            <a href={pagePath(locale, item)} aria-current={item === page ? 'page' : undefined}>{t(item)}</a>
+            <a href={pagePath(locale, item)} aria-current={navCurrent(item)}>{t(item)}</a>
           ))}
         </nav>
         <details class="language-picker">
@@ -97,7 +106,7 @@ const openGraphLocales = {
         </div>
         <nav aria-label={t('footerNavigation')}>
           {pages.slice(1).map((item) => (
-            <a href={pagePath(locale, item)} aria-current={item === page ? 'page' : undefined}>{t(item)}</a>
+            <a href={pagePath(locale, item)} aria-current={navCurrent(item)}>{t(item)}</a>
           ))}
         </nav>
       </div>

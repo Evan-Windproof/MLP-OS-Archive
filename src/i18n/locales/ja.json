@@ -11,7 +11,7 @@
   "homeTitle": "ポニーとコンピューティングの歴史を残す。",
   "homeMeta": "『マイリトルポニー』をテーマにしたOS、Linuxディストリビューション、デスクトップのカスタマイズを記録する独立アーカイブです。",
   "catalogTitle": "プロジェクトカタログ",
-  "catalogMeta": "審査済みのプロジェクトを分野ごとに閲覧し、開発状況や歴史資料を確認できます。",
+  "catalogMeta": "分野を選んで、審査済みのプロジェクト、リリース、歴史資料をご覧ください。",
   "historyTitle": "歴史アーカイブ",
   "historyMeta": "資料で確認できるリリースや節目をたどります。日付は出典で確認できる精度で表示します。",
   "contributeTitle": "アーカイブに協力する",
@@ -34,7 +34,7 @@
   "communityTitle": "プロジェクトの保存に協力する",
   "communityBody": "ポニーをテーマにしたOSをご存じですか。昔のスクリーンショットやリンクを共有することも、コミュニティの歴史を記録する助けになります。",
   "contributeLink": "協力方法を見る",
-  "catalogIntroPage": "審査済みのプロジェクトを分野ごとに閲覧し、開発状況や歴史資料を確認できます。",
+  "catalogIntroPage": "分野を選んで、審査済みのプロジェクト、リリース、歴史資料をご覧ください。",
   "historyIntro": "資料で確認できるリリースや節目をたどります。日付は出典で確認できる精度で表示します。",
   "historyPreserveTitle": "保存を目指す資料",
   "historyPreserveBody": "開発終了プロジェクト、過去のリリース、スクリーンショット、残存する文書から、どのようなものが作られ、どう変化していったかをたどれます。",
@@ -120,5 +120,13 @@
   "verification-note-unverified": "この記録はまだ検証されていません。",
   "verification-note-partially-verified": "一部の内容は資料で確認できましたが、詳細には不明な点があります。",
   "verification-note-verified": "プロジェクトの同一性と記録の主な内容が資料で確認されています。",
-  "verification-note-unable-to-verify": "入手できた資料では記録を確認できませんでした。"
+  "verification-note-unable-to-verify": "入手できた資料では記録を確認できませんでした。",
+  "browseCategory": "この分野を見る",
+  "breadcrumbs": "パンくずリスト",
+  "backToCatalog": "カタログに戻る",
+  "projectCountOne": "{count} 件のプロジェクト",
+  "projectCountOther": "{count} 件のプロジェクト",
+  "documentedPeriod": "資料で確認できる期間",
+  "verificationScope": "アーカイブの検証では、プロジェクトの同一性と歴史的な記録を裏付ける資料を評価します。この状態は、実機で第三者が動作確認したことを保証するものではありません。",
+  "sharedMaintainerEvidence": "{project} とこのアーカイブは、同じ GitHub アカウント（{account}）が管理しています。ソースリポジトリとリリース記録は当事者による資料であり、独立した裏付けは限られています。"
 }
