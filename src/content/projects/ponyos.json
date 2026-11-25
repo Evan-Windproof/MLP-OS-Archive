@@ -1,0 +1,71 @@
+{
+  "id": "ponyos",
+  "name": "PonyOS",
+  "category": "independent-os",
+  "originalLanguage": "en",
+  "description": {
+    "en": "K. Lange’s pony-themed hobby variant of ToaruOS. It uses the ToaruOS kernel and userland lineage instead of a Linux distribution base."
+  },
+  "developer": "K. Lange (klange)",
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "references": [
+    "https://ponyos.org/",
+    "https://github.com/klange/ponyos",
+    "https://forum.osdev.org/viewtopic.php?p=221347",
+    "https://github.com/klange/ponyos/releases/tag/v9.0"
+  ],
+  "baseSystem": "ToaruOS",
+  "kernel": "ToaruOS kernel (Misaka in PonyOS 9.0)",
+  "officialWebsite": "https://ponyos.org/",
+  "sourceCodeUrl": "https://github.com/klange/ponyos",
+  "downloadUrl": "https://github.com/klange/ponyos/releases",
+  "lastUpdated": "2026-04-01",
+  "historicalNotes": "The original forum announcement is displayed on 31 March 2013 in the forum’s rendered timezone. The author explained that the April Fools release was timed in UTC, so the timeline records the year rather than choosing a local calendar day. Current maintenance policy is undocumented.",
+  "releases": [
+    {
+      "version": "9.0",
+      "date": {
+        "precision": "day",
+        "value": "2026-04-01"
+      },
+      "type": "stable",
+      "fileName": "image.iso",
+      "originalDownloadUrl": "https://github.com/klange/ponyos/releases/download/v9.0/image.iso",
+      "availability": "available",
+      "references": [
+        "https://github.com/klange/ponyos/releases/tag/v9.0",
+        "https://github.com/klange/ponyos/releases/expanded_assets/v9.0"
+      ],
+      "notes": "The original release also lists a separate AArch64 package."
+    }
+  ],
+  "events": [
+    {
+      "category": "first-release",
+      "title": "PonyOS first release announcement",
+      "description": "K. Lange announced the first public PonyOS release on the OSDev forum and pointed readers to a QEMU-bootable disk image.",
+      "references": [
+        "https://forum.osdev.org/viewtopic.php?p=221347",
+        "https://ponyos.org/"
+      ],
+      "date": {
+        "precision": "year",
+        "value": "2013"
+      }
+    },
+    {
+      "category": "major-release",
+      "title": "PonyOS 9.0",
+      "description": "The publisher released v9.0 and documented AArch64 support and a NetSurf browser port.",
+      "references": [
+        "https://github.com/klange/ponyos/releases/tag/v9.0",
+        "https://github.com/klange/ponyos/releases/expanded_assets/v9.0"
+      ],
+      "date": {
+        "precision": "day",
+        "value": "2026-04-01"
+      }
+    }
+  ]
+}

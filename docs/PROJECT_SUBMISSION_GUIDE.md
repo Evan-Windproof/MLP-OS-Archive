@@ -7,7 +7,7 @@ experimental work.
 
 ## Submit a GitHub Issue
 
-1. Open the [issue form chooser](https://github.com/Evan-Windproof/MLP-OS-collect/issues/new/choose)
+1. Open the [issue form chooser](https://github.com/Evan-Windproof/MLP-OS-Archive/issues/new/choose)
    or use the form linked from the archive's Contribute page in your language.
 2. Enter the project name, category, and short description. Include at least
    one public HTTP or HTTPS source, such as an original release, repository,
@@ -54,7 +54,11 @@ Optional fields include `aliases` (array of names), `developer`, `baseSystem`,
 `kernel`, `developmentYear` (integer), `lastUpdated` (ISO `YYYY-MM-DD`),
 `sourceCodeUrl`, `officialWebsite`, `downloadUrl`, `documentation` (array
 of URLs), `license`, `screenshots` (array of objects with `url`, `credit`
-and optional `license`), and `historicalNotes`. Omit undocumented details.
+and optional `license`, `alt`, `sourceUrl`, `capturedAt`, `description`, and
+`language`), and `historicalNotes`. Use the
+[historical archive guide](HISTORICAL_ARCHIVE_GUIDE.md) for structured
+`releases` and `events`, date precision, and checksum provenance. Omit
+undocumented details.
 For a partial date, record the supported detail in `historicalNotes` instead
 of guessing the rest.
 

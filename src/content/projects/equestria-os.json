@@ -1,0 +1,163 @@
+{
+  "id": "equestria-os",
+  "name": "Equestria OS",
+  "category": "linux-distribution",
+  "originalLanguage": "en",
+  "description": {
+    "en": "An Arch Linux distribution with a customized KDE Plasma 6 desktop, graphical system utilities, and themes inspired by My Little Pony and Equestria Girls."
+  },
+  "developer": "Lucia7Lunadottir (lucia7lokidottr on SourceForge)",
+  "developmentStatus": "active",
+  "verificationStatus": "verified",
+  "references": [
+    "https://psyche-games.com/equestria-os.php",
+    "https://github.com/Lucia7Lunadottir/equestria-os-packages",
+    "https://sourceforge.net/projects/equestria-os/files/",
+    "https://www.linuxlinks.com/equestria-os-arch-linux-based-distribution/"
+  ],
+  "baseSystem": "Arch Linux",
+  "kernel": "Linux",
+  "officialWebsite": "https://psyche-games.com/equestria-os.php",
+  "sourceCodeUrl": "https://github.com/Lucia7Lunadottir/equestria-os-packages",
+  "downloadUrl": "https://sourceforge.net/projects/equestria-os/files/",
+  "lastUpdated": "2026-11-05",
+  "historicalNotes": "The project website describes a solo project. The repository linked from that site contains its packages and installer-related material. The November ISO is the newest listed in the SourceForge file index reviewed for this record.",
+  "screenshots": [
+    {
+      "url": "https://psyche-games.com/Pictures/Equestria-OS/software-center-current-en.webp",
+      "sourceUrl": "https://psyche-games.com/equestria-os.php",
+      "credit": "Equestria OS project website",
+      "alt": "Equestria OS Software Center in English"
+    },
+    {
+      "url": "https://psyche-games.com/Pictures/Equestria-OS/installer-rainbow.webp",
+      "sourceUrl": "https://psyche-games.com/equestria-os.php",
+      "credit": "Equestria OS project website",
+      "alt": "Equestria OS AppInstaller in the Rainbow Dash theme"
+    },
+    {
+      "url": "https://psyche-games.com/Pictures/Equestria-OS/packages-twilight.webp",
+      "sourceUrl": "https://psyche-games.com/equestria-os.php",
+      "credit": "Equestria OS project website",
+      "alt": "Equestria OS Package Manager in the Twilight Sparkle theme"
+    }
+  ],
+  "releases": [
+    {
+      "version": "2026.11.05",
+      "date": {
+        "precision": "day",
+        "value": "2026-11-05"
+      },
+      "type": "unknown",
+      "fileName": "equestria-os-2026.11.05-x86_64.iso",
+      "originalDownloadUrl": "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.11.05-x86_64.iso/download",
+      "availability": "available",
+      "references": [
+        "https://sourceforge.net/projects/equestria-os/files/",
+        "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.11.05-x86_64.iso/download"
+      ]
+    },
+    {
+      "version": "2026.10.28",
+      "date": {
+        "precision": "day",
+        "value": "2026-10-28"
+      },
+      "type": "unknown",
+      "fileName": "equestria-os-2026.10.28-x86_64.iso",
+      "originalDownloadUrl": "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.10.28-x86_64.iso/download",
+      "availability": "available",
+      "references": [
+        "https://sourceforge.net/projects/equestria-os/files/",
+        "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.10.28-x86_64.iso/download"
+      ]
+    },
+    {
+      "version": "2026.07.15",
+      "date": {
+        "precision": "day",
+        "value": "2026-07-15"
+      },
+      "type": "unknown",
+      "fileName": "equestria-os-2026.07.15-x86_64.iso",
+      "originalDownloadUrl": "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.07.15-x86_64.iso/download",
+      "availability": "available",
+      "references": [
+        "https://sourceforge.net/projects/equestria-os/files/",
+        "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.07.15-x86_64.iso/download"
+      ]
+    },
+    {
+      "version": "2026.07.14",
+      "date": {
+        "precision": "day",
+        "value": "2026-07-14"
+      },
+      "type": "unknown",
+      "fileName": "equestria-os-2026.07.14-x86_64.iso",
+      "originalDownloadUrl": "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.07.14-x86_64.iso/download",
+      "availability": "available",
+      "references": [
+        "https://sourceforge.net/projects/equestria-os/files/",
+        "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.07.14-x86_64.iso/download"
+      ]
+    },
+    {
+      "version": "2026.05.31",
+      "date": {
+        "precision": "day",
+        "value": "2026-05-31"
+      },
+      "type": "unknown",
+      "fileName": "equestria-os-2026.05.31-x86_64.iso",
+      "originalDownloadUrl": "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.05.31-x86_64.iso/download",
+      "availability": "available",
+      "references": [
+        "https://sourceforge.net/projects/equestria-os/files/",
+        "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.05.31-x86_64.iso/download"
+      ]
+    },
+    {
+      "version": "2026.05.27",
+      "date": {
+        "precision": "day",
+        "value": "2026-05-27"
+      },
+      "type": "unknown",
+      "fileName": "equestria-os-2026.05.27-x86_64.iso",
+      "originalDownloadUrl": "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.05.27-x86_64.iso/download",
+      "availability": "unknown",
+      "references": [
+        "https://sourceforge.net/projects/equestria-os/files/equestria-os-2026.05.27-x86_64.iso/download"
+      ],
+      "notes": "An older publisher download page survives. This image was absent from the November file index."
+    }
+  ],
+  "events": [
+    {
+      "category": "other",
+      "title": "Public coverage of Equestria OS",
+      "description": "LinuxLinks described the Arch Linux base and customized KDE Plasma desktop while an ISO download was still forthcoming.",
+      "references": [
+        "https://www.linuxlinks.com/equestria-os-arch-linux-based-distribution/"
+      ],
+      "date": {
+        "precision": "day",
+        "value": "2026-05-26"
+      }
+    },
+    {
+      "category": "major-release",
+      "title": "November 2026 ISO",
+      "description": "The project published the 2026.11.05 x86-64 ISO and documented changes to its installer, Software Center, and language support.",
+      "references": [
+        "https://sourceforge.net/projects/equestria-os/files/"
+      ],
+      "date": {
+        "precision": "day",
+        "value": "2026-11-05"
+      }
+    }
+  ]
+}

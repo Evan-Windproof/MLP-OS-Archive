@@ -2,6 +2,7 @@
 import { repositoryUrl, siteName } from '../data/site';
 import { translate, type Locale } from '../i18n';
 import { pagePath, type Page } from '../i18n/routes';
+import ArchiveTimeline from './ArchiveTimeline.astro';
 import ArchiveIllustration from './ArchiveIllustration.astro';
 import CategoryCards from './CategoryCards.astro';
 import ProjectCatalog from './ProjectCatalog.astro';
@@ -70,27 +71,16 @@ const introductions = {
     </header>
 
     <div class:list={['shell page-content', `content-${page}`]}>
-      {page === 'catalog' && (
-        <>
-          <section aria-labelledby="catalog-categories">
-            <h2 id="catalog-categories">{t('catalogSection')}</h2>
-            <CategoryCards {locale} />
-          </section>
-          <ProjectCatalog {locale} />
-        </>
-      )}
+      {page === 'catalog' && <ProjectCatalog {locale} />}
 
       {page === 'history' && (
-        <ol class="archive-timeline">
-          <li class="feature-panel">
+        <>
+          <section class="feature-panel">
             <h2>{t('historyPreserveTitle')}</h2>
             <p>{t('historyPreserveBody')}</p>
-          </li>
-          <li class="feature-panel">
-            <h2>{t('historyTimelineTitle')}</h2>
-            <p>{t('historyTimelineBody')}</p>
-          </li>
-        </ol>
+          </section>
+          <ArchiveTimeline {locale} />
+        </>
       )}
 
       {page === 'contribute' && (

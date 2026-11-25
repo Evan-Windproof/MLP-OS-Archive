@@ -9,5 +9,5 @@ their known usage terms.
 
 ## Checks
 
-- [ ] Project JSON, filenames, and verification status follow the [submission guide](https://github.com/Evan-Windproof/MLP-OS-collect/blob/main/docs/PROJECT_SUBMISSION_GUIDE.md), where applicable.
+- [ ] Project JSON, filenames, and verification status follow the [submission guide](https://github.com/Evan-Windproof/MLP-OS-Archive/blob/main/docs/PROJECT_SUBMISSION_GUIDE.md), where applicable.
 - [ ] I ran `npm run check` and `npm run build`.

@@ -1,0 +1,15 @@
+---
+import { translate, type Locale } from '../i18n';
+
+interface Props {
+  locale: Locale;
+  urls: string[];
+}
+
+const { locale, urls } = Astro.props;
+const t = translate(locale);
+---
+
+<ul class="record-links">
+  {urls.map((url, index) => <li><a href={url}>{t('projectSource')} {index + 1} <small>({new URL(url).hostname})</small></a></li>)}
+</ul>

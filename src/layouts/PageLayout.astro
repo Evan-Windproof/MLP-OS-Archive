@@ -1,20 +1,24 @@
 ---
 import '../styles/global.css';
+import type { Project } from '../data/projects';
+import { projectDescription } from '../i18n/archive';
 import { siteName } from '../data/site';
 import { defaultLocale, languages, type Locale, translate } from '../i18n';
-import { pagePath, pages, publicRoutes, type Page } from '../i18n/routes';
+import { pagePath, pages, projectPath, publicRoutes, type Page } from '../i18n/routes';
 
 interface Props {
   locale: Locale;
   page: Page;
+  project?: Project;
 }
 
-const { locale, page } = Astro.props;
+const { locale, page, project } = Astro.props;
 const t = translate(locale);
-const title = `${t(`${page}Title`)} | ${siteName}`;
-const description = t(`${page}Meta`);
-const canonical = new URL(pagePath(locale, page), Astro.site);
-const alternates = publicRoutes.filter((route) => route.page === page);
+const title = `${project?.name ?? t(`${page}Title`)} | ${siteName}`;
+const description = project ? projectDescription(project, locale).text : t(`${page}Meta`);
+const currentPath = (target: Locale) => project ? projectPath(target, project.id) : pagePath(target, page);
+const canonical = new URL(currentPath(locale), Astro.site);
+const alternates = publicRoutes.filter((route) => route.page === page && route.project?.id === project?.id);
 const openGraphLocales = {
   en: 'en_US', 'zh-CN': 'zh_CN', 'zh-TW': 'zh_TW', ja: 'ja_JP', es: 'es_ES', fr: 'fr_FR',
 } satisfies Record<Locale, string>;
@@ -29,7 +33,7 @@ const openGraphLocales = {
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="canonical" href={canonical.href} />
-    <link rel="alternate" hreflang="x-default" href={new URL(pagePath(defaultLocale, page), Astro.site).href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(currentPath(defaultLocale), Astro.site).href} />
     {alternates.map(({ locale, path }) => (
       <link rel="alternate" hreflang={locale} href={new URL(path, Astro.site).href} />
     ))}

@@ -51,9 +51,18 @@ npm run build
 npm run preview
 ```
 
-The static output lives in `dist/`. For a future Cloudflare Pages deployment,
-set the build command to `npm run build` and the output directory to `dist`.
-The configured production origin is `https://mlpos.evanwindproof.top/`.
+## Production deployment
+
+The production host is Cloudflare Workers Static Assets at
+<https://mlpos.evanwindproof.top/>. Astro uses that origin for canonical
+URLs and generates the site into `dist/` with `npm run build`.
+The pull-request validation workflow checks and builds the site.
+
+The production Worker's identifier, trigger and publish command are managed
+in the existing Cloudflare project. They are not recorded in the repository
+and were not visible in the available Cloudflare account during the audit.
+Confirm those settings in the production account before making any changes.
+The archive currently requires only static assets.
 
 ## Repository structure
 
@@ -81,7 +90,15 @@ localized descriptions and verification status.
 2. Establish the archive’s visual identity and static deployment configuration.
 3. Add multilingual submission forms, contribution review, and catalog records.
 
-Detailed historical timelines are planned as sources and release dates are verified.
+4. Publish source-backed project profiles, release records, screenshot links,
+   and an evidence-dated historical timeline.
+
+The catalog counts reviewed records in each category and links to six-language
+project pages. The History page lists sourced events chronologically and shows
+events without dates separately. The
+[historical archive guide](docs/HISTORICAL_ARCHIVE_GUIDE.md) documents the
+evidence and verification standards. Unresolved leads are tracked in the
+[research backlog](docs/RESEARCH_BACKLOG.md).
 
 This is an unofficial, independently maintained fan project. It is not affiliated
 with, endorsed by, or sponsored by Hasbro or its subsidiaries.
@@ -90,6 +107,6 @@ See [LICENSE](LICENSE) for repository licensing.
 ## 简体中文
 
 MLP OS Archive 是一个独立的社区档案项目，旨在记录和保存《小马宝莉》主题的
-独立操作系统、Linux 发行版、桌面环境与主题。第一阶段提供六种语言的网站与
-项目分类，后续将加入项目条目、搜索筛选和资料提交功能。本项目与孩之宝及其
+独立操作系统、Linux 发行版、桌面环境与主题。网站提供六种语言、项目目录、历史时间线与贡献入口。
+社区可以通过 GitHub 议题或拉取请求提供资料。本项目与孩之宝及其
 子公司无关联。

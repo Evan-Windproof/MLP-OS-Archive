@@ -1,0 +1,66 @@
+{
+  "id": "desktop-ponies",
+  "name": "Desktop Ponies",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A desktop customization application that places animated My Little Pony characters on the desktop. The .NET project documents support for Windows, macOS, and Linux."
+  },
+  "developer": "Desktop Ponies team (repository maintained by RoosterDragon)",
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "references": [
+    "https://github.com/RoosterDragon/Desktop-Ponies",
+    "https://sourceforge.net/projects/desktopponies/files/",
+    "https://github.com/RoosterDragon/Desktop-Ponies/releases/tag/v1.69"
+  ],
+  "baseSystem": "Windows, macOS, and Linux",
+  "sourceCodeUrl": "https://github.com/RoosterDragon/Desktop-Ponies",
+  "downloadUrl": "https://github.com/RoosterDragon/Desktop-Ponies/releases",
+  "lastUpdated": "2025-03-22",
+  "historicalNotes": "The 2012 SourceForge files document an early Windows build. The later repository describes cross-platform support. This record covers the desktop overlay, not the separately maintained browser and Linux reimplementations.",
+  "releases": [
+    {
+      "version": "1.69",
+      "date": {
+        "precision": "day",
+        "value": "2025-03-22"
+      },
+      "type": "stable",
+      "fileName": "Desktop.Ponies.v1.69.zip",
+      "originalDownloadUrl": "https://github.com/RoosterDragon/Desktop-Ponies/releases/download/v1.69/Desktop.Ponies.v1.69.zip",
+      "availability": "available",
+      "references": [
+        "https://github.com/RoosterDragon/Desktop-Ponies/releases/tag/v1.69",
+        "https://github.com/RoosterDragon/Desktop-Ponies/releases/expanded_assets/v1.69"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "category": "development-update",
+      "title": "Early Desktop Ponies test build",
+      "description": "The project’s SourceForge file index lists the Windows test build 1.42 TEST 1 in May 2012.",
+      "references": [
+        "https://sourceforge.net/projects/desktopponies/files/"
+      ],
+      "date": {
+        "precision": "month",
+        "value": "2012-05"
+      }
+    },
+    {
+      "category": "major-release",
+      "title": "Desktop Ponies 1.69",
+      "description": "The project’s GitHub repository published its 1.69 ZIP package.",
+      "references": [
+        "https://github.com/RoosterDragon/Desktop-Ponies/releases/tag/v1.69",
+        "https://github.com/RoosterDragon/Desktop-Ponies/releases/expanded_assets/v1.69"
+      ],
+      "date": {
+        "precision": "day",
+        "value": "2025-03-22"
+      }
+    }
+  ]
+}

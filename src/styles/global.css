@@ -431,3 +431,18 @@ img { display: block; max-width: 100%; }
 .project-record dd { margin-inline-start: 0; color: var(--muted); }
 .project-record dd + dt { margin-top: .4rem; }
 .record-links { display: flex; flex-wrap: wrap; gap: .3rem 1rem; margin: 0; padding: 0; list-style: none; }
+
+.catalog-count { color: var(--muted); font-size: .7em; }
+.catalog-records .catalog-empty { margin-top: .8rem; }
+.catalog-empty p:first-child { margin-top: 0; }
+.timeline-group > :first-child { margin-bottom: .85rem; }
+.timeline-group .feature-panel > p:first-child { margin-top: 0; }
+.timeline-group .feature-panel h3, .timeline-group .record-links { margin-top: .65rem; }
+.project-detail { overflow-wrap: anywhere; }
+.project-detail .timeline-group { margin-top: 1.25rem; }
+.archive-facts { margin: 1rem 0; }
+.archive-facts dt { font-weight: 700; }
+.archive-facts dd { margin: 0 0 .6rem; }
+.archive-items { margin: 1rem 0 0; padding: 0; list-style: none; }
+.archive-items > li + li { border-top: 1px solid var(--line); margin-top: 1.15rem; padding-top: 1.15rem; }
+.project-detail .record-links { margin-top: .65rem; }

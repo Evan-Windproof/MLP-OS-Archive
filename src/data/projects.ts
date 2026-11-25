@@ -26,6 +26,42 @@ const languageTag = text.refine((value) => {
   }
 }, 'Use a canonical language tag, such as en, zh-TW, or und.');
 
+export const eventCategories = [
+  'project-created', 'first-release', 'major-release', 'development-update',
+  'discontinued', 'archived', 'other',
+] as const;
+
+const date = z.discriminatedUnion('precision', [
+  z.strictObject({ precision: z.literal('year'), value: z.string().regex(/^(?!0000)[0-9]{4}$/) }),
+  z.strictObject({ precision: z.literal('month'), value: z.string().regex(/^(?!0000)[0-9]{4}-(0[1-9]|1[0-2])$/) }),
+  z.strictObject({ precision: z.literal('day'), value: z.iso.date().refine((value) => !value.startsWith('0000')) }),
+]);
+
+const release = z.strictObject({
+  version: text,
+  date: date.optional(),
+  type: z.enum(['stable', 'pre-release', 'unknown']),
+  originalDownloadUrl: webUrl.optional(),
+  archivedDownloadUrl: webUrl.optional(),
+  fileName: text.optional(),
+  fileSizeBytes: z.number().int().positive().optional(),
+  sha256: z.string().regex(/^[a-fA-F0-9]{64}$/).optional(),
+  availability: z.enum(['available', 'archived', 'unavailable', 'unknown']),
+  notes: text.optional(),
+  references: z.array(webUrl).min(1),
+});
+
+const event = z.strictObject({
+  category: z.enum(eventCategories),
+  title: text,
+  description: text,
+  language: languageTag.optional(),
+  date: date.optional(),
+  references: z.array(webUrl).min(1),
+});
+
+export type ArchiveDate = z.infer<typeof date>;
+
 export const projectSchema = z.strictObject({
   id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   name: text,
@@ -49,7 +85,14 @@ export const projectSchema = z.strictObject({
     url: webUrl,
     credit: text,
     license: text.optional(),
+    alt: text.optional(),
+    sourceUrl: webUrl.optional(),
+    capturedAt: date.optional(),
+    description: text.optional(),
+    language: languageTag.optional(),
   })).optional(),
+  releases: z.array(release).optional(),
+  events: z.array(event).optional(),
   references: z.array(webUrl).min(1),
   historicalNotes: text.optional(),
 }).refine((record) => Object.hasOwn(record.description, record.originalLanguage), {

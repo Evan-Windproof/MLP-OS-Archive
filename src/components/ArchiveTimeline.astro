@@ -1,0 +1,43 @@
+---
+import { historicalEvents } from '../data/project-records';
+import { formatArchiveDate } from '../i18n/archive';
+import { translate, type Locale } from '../i18n';
+import { projectPath } from '../i18n/routes';
+import SourceLinks from './SourceLinks.astro';
+
+interface Props {
+  locale: Locale;
+  projectId?: string;
+}
+const { locale, projectId } = Astro.props;
+const t = translate(locale);
+const records = projectId ? historicalEvents.filter((event) => event.projectId === projectId) : historicalEvents;
+const Heading = projectId ? 'h3' : 'h2';
+const EventHeading = projectId ? 'h4' : 'h3';
+const groups = [
+  { title: 'timelineDated', events: records.filter((event) => event.date) },
+  { title: 'timelineUndated', events: records.filter((event) => !event.date) },
+] as const;
+---
+
+{groups.map(({ title, events }) => (
+  <section class="timeline-group" aria-labelledby={title}>
+    <Heading id={title}>{t(title)}</Heading>
+    {events.length ? (
+      <ol class="archive-timeline">
+        {events.map((event) => (
+          <li class="feature-panel">
+            <p>
+              {event.date && <><time datetime={event.date.value}>{formatArchiveDate(event.date, locale)}</time> · </>}
+              {t(`event-${event.category}`)}
+            </p>
+            <EventHeading lang={event.language}>{event.title}</EventHeading>
+            <p lang={event.language}>{event.description}</p>
+            {!projectId && <p><a class="text-link" href={projectPath(locale, event.projectId)}>{event.projectName}</a></p>}
+            <SourceLinks {locale} urls={event.references} />
+          </li>
+        ))}
+      </ol>
+    ) : <p>{t('timelineEmpty')}</p>}
+  </section>
+))}

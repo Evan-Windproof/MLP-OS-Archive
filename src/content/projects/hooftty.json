@@ -1,0 +1,86 @@
+{
+  "id": "hooftty",
+  "name": "HoofTTY",
+  "category": "independent-os",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A My Little Pony-inspired experimental x86-64 hobby operating system with a text-first shell, built on the Kernseed OS Phase 7 kernel foundation."
+  },
+  "developer": "Evan Windproof",
+  "developmentStatus": "experimental",
+  "verificationStatus": "partially-verified",
+  "references": [
+    "https://github.com/Evan-Windproof/HoofTTY",
+    "https://github.com/Evan-Windproof/Kernseed_OS",
+    "https://github.com/Evan-Windproof/HoofTTY/releases/tag/first",
+    "https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0"
+  ],
+  "baseSystem": "Kernseed OS Phase 7",
+  "kernel": "Kernseed-derived x86-64 monolithic kernel",
+  "sourceCodeUrl": "https://github.com/Evan-Windproof/HoofTTY",
+  "downloadUrl": "https://github.com/Evan-Windproof/HoofTTY/releases",
+  "lastUpdated": "2026-11-18",
+  "license": "GPL-3.0-or-later (project-owned code at Beta 0.4.0)",
+  "historicalNotes": "The HoofTTY repository and this archive are maintained under the same GitHub account, Evan-Windproof. The release and source document the project, and its hardware compatibility has not been independently checked by the archive.",
+  "releases": [
+    {
+      "version": "Beta 0.4.0",
+      "date": {
+        "precision": "day",
+        "value": "2026-11-18"
+      },
+      "type": "pre-release",
+      "fileName": "hooftty.iso",
+      "originalDownloadUrl": "https://github.com/Evan-Windproof/HoofTTY/releases/download/beta0.4.0/hooftty.iso",
+      "availability": "available",
+      "references": [
+        "https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0",
+        "https://github.com/Evan-Windproof/HoofTTY/releases/expanded_assets/beta0.4.0"
+      ]
+    },
+    {
+      "version": "first",
+      "date": {
+        "precision": "day",
+        "value": "2026-11-14"
+      },
+      "type": "unknown",
+      "fileName": "kernseed.iso",
+      "originalDownloadUrl": "https://github.com/Evan-Windproof/HoofTTY/releases/download/first/kernseed.iso",
+      "availability": "available",
+      "references": [
+        "https://github.com/Evan-Windproof/HoofTTY/releases/tag/first",
+        "https://github.com/Evan-Windproof/HoofTTY/releases/expanded_assets/first"
+      ],
+      "notes": "The publisher used the tag first and retained the inherited kernseed.iso filename on this asset."
+    }
+  ],
+  "events": [
+    {
+      "category": "other",
+      "title": "Release tagged first",
+      "description": "The publisher lists an ISO on its first-tagged release page.",
+      "references": [
+        "https://github.com/Evan-Windproof/HoofTTY/releases/tag/first",
+        "https://github.com/Evan-Windproof/HoofTTY/releases/expanded_assets/first"
+      ],
+      "date": {
+        "precision": "day",
+        "value": "2026-11-14"
+      }
+    },
+    {
+      "category": "development-update",
+      "title": "HoofTTY Beta 0.4.0",
+      "description": "The release notes describe terminal interaction updates and additional display modes.",
+      "references": [
+        "https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0",
+        "https://github.com/Evan-Windproof/HoofTTY/releases/expanded_assets/beta0.4.0"
+      ],
+      "date": {
+        "precision": "day",
+        "value": "2026-11-18"
+      }
+    }
+  ]
+}
