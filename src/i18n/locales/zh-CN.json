@@ -159,6 +159,7 @@
   "projectPageTitle": "{project} · 项目档案",
   "projectMeta": "查看 {project} 的项目档案，了解其开发历史、核实状态和现存资料。",
   "heroImageAlt": "在月光下的图书馆里，长着翅膀、拥有蓝金色鬃毛的独角兽 Evan 坐在复古电脑与书籍旁。",
+  "repositoryLink": "GitHub 仓库",
   "authorBlog": "作者博客",
   "notFoundTitle": "找不到页面",
   "notFoundMeta": "你要访问的页面可能已移动，也可能是地址有误。",

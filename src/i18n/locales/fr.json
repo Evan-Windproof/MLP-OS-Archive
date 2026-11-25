@@ -159,6 +159,7 @@
   "projectPageTitle": "{project} · Fiche du projet",
   "projectMeta": "Consultez la fiche de {project}, son historique de développement, son état de vérification et les sources conservées.",
   "heroImageAlt": "Evan, une licorne ailée à la crinière bleue et dorée, aux côtés d’un ordinateur ancien et de livres dans une bibliothèque au clair de lune.",
+  "repositoryLink": "Dépôt GitHub",
   "authorBlog": "Blog de l’auteur",
   "notFoundTitle": "Page introuvable",
   "notFoundMeta": "La page a peut-être été déplacée ou l’adresse est incorrecte.",

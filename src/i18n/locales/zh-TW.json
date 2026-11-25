@@ -159,6 +159,7 @@
   "projectPageTitle": "{project} · 專案紀錄",
   "projectMeta": "查看 {project} 的典藏紀錄，瞭解其開發歷史、查證狀態和留存資料。",
   "heroImageAlt": "在月光下的圖書館裡，長著翅膀、擁有藍金色鬃毛的獨角獸 Evan 坐在復古電腦與書籍旁。",
+  "repositoryLink": "GitHub 儲存庫",
   "authorBlog": "作者部落格",
   "notFoundTitle": "找不到頁面",
   "notFoundMeta": "你要瀏覽的頁面可能已移動，也可能是網址有誤。",
