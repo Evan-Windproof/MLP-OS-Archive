@@ -1,0 +1,73 @@
+{
+  "id": "twibuntu",
+  "name": "Twibuntu",
+  "aliases": [
+    "Twibuntu (MLP Linux)"
+  ],
+  "category": "linux-distribution",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A complete 64-bit Ubuntu 14.04-based Linux distribution with a My Little Pony theme, announced by Brony Lounge in 2016 as a Pre-Alpha release.",
+    "zh-CN": "Brony Lounge 于 2016 年公布的《小马宝莉》主题 Linux 发行版。它是基于 Ubuntu 14.04 的完整 64 位系统，公布时处于 Pre-Alpha 阶段。",
+    "zh-TW": "Brony Lounge 於 2016 年公布的《彩虹小馬》主題 Linux 發行版。它是以 Ubuntu 14.04 為基礎的完整 64 位元系統，公布時處於 Pre-Alpha 階段。",
+    "ja": "Brony Lounge が2016年に Pre-Alpha として公開した、『マイリトルポニー』をテーマにした Ubuntu 14.04 ベースの完全な64ビット Linux ディストリビューションです。",
+    "es": "Distribución Linux completa de 64 bits, basada en Ubuntu 14.04 y ambientada en My Little Pony. Brony Lounge la anunció en 2016 en fase prealfa.",
+    "fr": "Distribution Linux complète de 64 bits, basée sur Ubuntu 14.04 et sur le thème de My Little Pony. Brony Lounge l’a annoncée en 2016 au stade pré-alpha."
+  },
+  "localizedHistory": {
+    "en": "The April 13, 2016 announcement linked a 64-bit Pre-Alpha build on Google Drive, now unavailable. Brony Lounge confirmed that Twibuntu was a complete distribution based on Ubuntu 14.04 and planned a move to Ubuntu 16.04. Themed icons were incomplete, some top-panel icons were broken or unsuitable, some wallpaper previews appeared black, and the Ubuntu boot logo was still in use. The developer asked for help with themes, icons, wallpapers and testing, and advised against installing the build on real hardware. The last identified author post in the thread is dated May 16, 2016. Current development status is unknown.",
+    "zh-CN": "2016 年 4 月 13 日的公告曾提供 Google Drive 上的 64 位 Pre-Alpha 构建，原下载现已失效。Brony Lounge 确认 Twibuntu 是基于 Ubuntu 14.04 的完整发行版，并计划迁移到 Ubuntu 16.04。当时的小马主题图标尚未完成，部分顶部面板图标出错或不合适，壁纸选择器会显示一些黑色预览，启动时仍使用 Ubuntu 标志。开发者征求主题、图标、壁纸与测试方面的协助，并建议不要在实体硬件上安装这个构建。该帖最后一条已确认的作者发言日期为 2016 年 5 月 16 日，目前的开发状态未知。",
+    "zh-TW": "2016 年 4 月 13 日的公告曾提供 Google Drive 上的 64 位元 Pre-Alpha 版本，原下載現已失效。Brony Lounge 確認 Twibuntu 是以 Ubuntu 14.04 為基礎的完整發行版，並計畫遷移至 Ubuntu 16.04。當時的小馬主題圖示尚未完成，部分頂端面板圖示損壞或不合適，桌布選擇器出現部分黑色預覽，開機時仍使用 Ubuntu 標誌。開發者徵求主題、圖示、桌布與測試方面的協助，並建議不要在實體硬體上安裝此版本。該討論串最後一則已確認的作者發言日期為 2016 年 5 月 16 日，目前開發狀態不明。",
+    "ja": "2016年4月13日の告知では Google Drive 上の64ビット版 Pre-Alpha が案内されましたが、現在は入手できません。Brony Lounge は Ubuntu 14.04 ベースの完全なディストリビューションであることを明言し、Ubuntu 16.04 への移行を計画していました。ポニーをテーマにしたアイコンは未完成で、上部パネルには壊れたアイコンや不適切なアイコンがあり、壁紙選択画面では一部のプレビューが黒く表示されました。起動ロゴも Ubuntu のままでした。開発者はテーマ、アイコン、壁紙、テストへの協力を募集し、実機へのインストールを控えるよう呼びかけました。このスレッドで確認できた作者の最後の投稿は2016年5月16日です。現在の開発状況は不明です。",
+    "es": "El anuncio del 13 de abril de 2016 enlazaba una compilación prealfa de 64 bits en Google Drive que ya no está disponible. Brony Lounge confirmó que era una distribución completa basada en Ubuntu 14.04 y que planeaba migrarla a Ubuntu 16.04. Faltaban iconos temáticos, algunos del panel superior eran incorrectos o no funcionaban, ciertas vistas previas de fondos aparecían en negro y se mantenía el logotipo de arranque de Ubuntu. El autor pidió ayuda con los temas, los iconos, los fondos y las pruebas, y desaconsejó instalar la compilación en hardware real. Su última intervención identificada en el hilo data del 16 de mayo de 2016. Se desconoce el estado actual del desarrollo.",
+    "fr": "L’annonce du 13 avril 2016 renvoyait vers une compilation pré-alpha 64 bits sur Google Drive, désormais indisponible. Brony Lounge a confirmé que Twibuntu était une distribution complète basée sur Ubuntu 14.04 et prévoyait de passer à Ubuntu 16.04. Les icônes à thème étaient incomplètes, certaines icônes du panneau supérieur étaient défectueuses ou mal choisies, plusieurs aperçus de fonds d’écran apparaissaient en noir, et le logo de démarrage d’Ubuntu était toujours utilisé. L’auteur a demandé de l’aide pour les thèmes, les icônes, les fonds d’écran et les tests, et a déconseillé l’installation sur du matériel réel. Sa dernière intervention identifiée dans le fil date du 16 mai 2016. L’état actuel du développement est inconnu."
+  },
+  "developer": "Brony Lounge",
+  "developerUrl": "https://mlpforums.com/profile/35039-brony-lounge/",
+  "platform": "x86-64",
+  "baseSystem": "Ubuntu 14.04",
+  "kernel": "Linux",
+  "developmentStatus": "unknown",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "first-party",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unavailable",
+  "releases": [
+    {
+      "version": "Pre-Alpha",
+      "date": {
+        "precision": "day",
+        "value": "2016-04-13"
+      },
+      "type": "pre-release",
+      "availability": "unavailable",
+      "references": [
+        "https://mlpforums.com/topic/150381-twibuntu-mlp-linux-pre-alpha-download/"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "category": "first-release",
+      "title": "Public Pre-Alpha announcement",
+      "description": "Brony Lounge announced Twibuntu and shared a 64-bit Pre-Alpha build for testing.",
+      "date": {
+        "precision": "day",
+        "value": "2016-04-13"
+      },
+      "references": [
+        "https://mlpforums.com/topic/150381-twibuntu-mlp-linux-pre-alpha-download/"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://mlpforums.com/topic/150381-twibuntu-mlp-linux-pre-alpha-download/"
+    }
+  ],
+  "references": [
+    "https://mlpforums.com/topic/150381-twibuntu-mlp-linux-pre-alpha-download/"
+  ]
+}
