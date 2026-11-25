@@ -50,7 +50,6 @@
   "aboutCommunityBody": "檔案庫服務《彩虹小馬》粉絲，以及對粉絲軟體感興趣的人。社群成員可以分享來源、推薦專案或修正紀錄。",
   "disclaimer": "本專案由粉絲獨立維護，屬非官方性質，與孩之寶及其子公司無關聯，亦未獲其認可或贊助。",
   "footerNote": "獨立粉絲檔案庫",
-  "socialImageAlt": "MLP OS Archive 字樣，旁邊是暮色中的魔法圖書館電腦、小馬與城堡",
   "submissionScope": "我們歡迎採用自行開發核心的專案，也歡迎主題 Linux 發行版。",
   "aboutNonCommercial": "本檔案庫是非商業性的資料保存專案。",
   "issueTitle": "提交專案",
@@ -153,5 +152,5 @@
   "screenshotsIncomplete": "尚未找回來源可辨識的螢幕擷取畫面，截圖檔案仍不完整。",
   "projectPageTitle": "{project} · 專案紀錄",
   "projectMeta": "查看 {project} 的典藏紀錄，瞭解其開發歷史、查證狀態和留存資料。",
-  "heroImageAlt": "一隻獨角獸站在電腦和書架旁，遠處有一座城堡。"
+  "heroImageAlt": "在月光下的圖書館裡，長著翅膀、擁有藍金色鬃毛的獨角獸 Evan 坐在復古電腦與書籍旁。"
 }

@@ -50,7 +50,6 @@
   "aboutCommunityBody": "The archive serves My Little Pony fans and anyone interested in fan-made software. Community members can help by sharing sources, suggesting projects, or correcting records.",
   "disclaimer": "This is an unofficial, independently maintained fan project. It is not affiliated with, endorsed by, or sponsored by Hasbro or its subsidiaries.",
   "footerNote": "An independent fan archive",
-  "socialImageAlt": "MLP OS Archive beside a magical library workstation, a pony, and a castle at twilight",
   "submissionScope": "Projects with independently developed kernels and themed Linux distributions are both welcome.",
   "aboutNonCommercial": "The archive is a non-commercial preservation project.",
   "issueTitle": "Submit a project",
@@ -153,5 +152,5 @@
   "screenshotsIncomplete": "No attributable screenshots have been recovered. The screenshot archive is incomplete.",
   "projectPageTitle": "{project} · Project record",
   "projectMeta": "Explore the archive record for {project}, including its development history, verification status, and surviving sources.",
-  "heroImageAlt": "An illustrated unicorn beside a computer and a bookcase, with a castle in the distance."
+  "heroImageAlt": "Evan, a winged unicorn with a blue and gold mane, beside a vintage computer and books in a moonlit library."
 }

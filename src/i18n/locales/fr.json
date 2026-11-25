@@ -50,7 +50,6 @@
   "aboutCommunityBody": "Les archives s’adressent aux fans de My Little Pony et aux personnes qui s’intéressent aux logiciels créés par des fans. La communauté peut partager des sources, proposer des projets ou corriger des fiches.",
   "disclaimer": "Ce projet non officiel est maintenu de façon indépendante par des fans. Il n’est ni affilié à Hasbro ou à ses filiales, ni approuvé ou parrainé par ces sociétés.",
   "footerNote": "Des archives indépendantes de fans",
-  "socialImageAlt": "MLP OS Archive à côté d’un ordinateur de bibliothèque magique, d’un poney et d’un château au crépuscule",
   "submissionScope": "Les projets dotés d’un noyau développé indépendamment et les distributions Linux thématiques sont les bienvenus.",
   "aboutNonCommercial": "Ces archives sont un projet de préservation à vocation non commerciale.",
   "issueTitle": "Proposer un projet",
@@ -153,5 +152,5 @@
   "screenshotsIncomplete": "Aucune capture dont la provenance est identifiable n’a été retrouvée. Les archives de captures sont incomplètes.",
   "projectPageTitle": "{project} · Fiche du projet",
   "projectMeta": "Consultez la fiche de {project}, son historique de développement, son état de vérification et les sources conservées.",
-  "heroImageAlt": "Une licorne illustrée près d’un ordinateur et d’une bibliothèque, avec un château au loin."
+  "heroImageAlt": "Evan, une licorne ailée à la crinière bleue et dorée, aux côtés d’un ordinateur ancien et de livres dans une bibliothèque au clair de lune."
 }
