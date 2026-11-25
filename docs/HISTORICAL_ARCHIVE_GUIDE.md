@@ -2,18 +2,40 @@
 
 ## Research and evidence
 
-Start with the creator's site, source tree, release notes, and file indexes.
-When a page has disappeared, look for an archive snapshot or an original
-announcement in a contemporary forum. Use independent reports to corroborate
-material claims. Record the URL that supports each claim and distinguish the
-date of a release from the date a file was mirrored or a page was captured.
-Search snippets are leads. Use [the research backlog](RESEARCH_BACKLOG.md) for
-unresolved identities, missing evidence, and proposed follow-up.
+Start with the creator's site, source tree, project announcement, release
+notes, and file indexes. Archived sites, historical forum posts, identifiable
+screenshots or videos, and contemporary community articles can also establish
+a project's history. Record what each source supports. For example, a file's
+mirror date, the date of a retrospective, and an original release date
+describe different events. Search snippets are leads. Use
+[the research backlog](RESEARCH_BACKLOG.md) for unresolved identities and
+missing evidence.
 
-Use the verification status to describe the evidence for the published
-record. Development status describes the project separately. Explain any
-maintainer relationship or reliance on first-party claims. Leave uncertain
-fields missing or select `unknown` where the schema supports it.
+## Inclusion and assessment
+
+Admit projects in scope when reasonable evidence supports their identity.
+First-party records can establish identity and documented history.
+Independent corroboration is welcome when available. Discontinuation,
+experimental or incomplete work, archive-maintainer involvement, and the
+absence of install media or hardware tests are compatible with inclusion.
+
+- **Inclusion** follows review and merge. **Record completeness** describes
+  how much of the story can be documented. Mark gaps explicitly.
+- **Development status** records the project's state.
+- **Verification** records how well sources support identity and material
+  claims. A verified record may rely on first-party evidence and have
+  missing details.
+- **Evidence provenance** identifies first-party, independent third-party,
+  archived historical, community, or mixed sourcing. Disclose shared
+  maintainers.
+- **Testing status** records what testing is documented. Use unknown when
+  the evidence is missing. State who performed a reported test and on
+  what platform when possible. Emulator results apply to that environment.
+
+Mark recollections as unverified and keep them distinct from evidence that
+establishes a claim. A working installer is unnecessary for inclusion. Label
+untested installer links found in old documentation as historical references
+with unknown availability.
 
 ## Screenshots and downloads
 

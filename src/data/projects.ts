@@ -60,6 +60,18 @@ const event = z.strictObject({
   references: z.array(webUrl).min(1),
 });
 
+const evidence = z.strictObject({
+  kind: z.enum([
+    'original-source', 'developer-history', 'official-release', 'independent',
+    'community', 'archived', 'historical-installer', 'recollection',
+  ]),
+  url: webUrl.optional(),
+  note: text.optional(),
+  language: languageTag.optional(),
+}).refine((source) => source.url || (source.kind === 'recollection' && source.note), {
+  message: 'Include a source URL or an explicitly unverified recollection.',
+});
+
 export type ArchiveDate = z.infer<typeof date>;
 
 export const projectSchema = z.strictObject({
@@ -76,6 +88,13 @@ export const projectSchema = z.strictObject({
   lastUpdated: z.iso.date().optional(),
   developmentStatus: z.enum(developmentStatuses),
   verificationStatus: z.enum(verificationStatuses),
+  recordCompleteness: z.enum(['documented', 'incomplete', 'unknown']).optional(),
+  evidenceProvenance: z.enum([
+    'first-party', 'independent-third-party', 'archived-historical', 'community', 'mixed', 'unknown',
+  ]).optional(),
+  testingStatus: z.enum(['not-tested', 'emulator-tested', 'physical-hardware-tested', 'unknown']).optional(),
+  testingNotes: z.record(languageTag, text).optional(),
+  evidence: z.array(evidence).optional(),
   sharedMaintainerAccount: text.optional(),
   sourceCodeUrl: webUrl.optional(),
   officialWebsite: webUrl.optional(),

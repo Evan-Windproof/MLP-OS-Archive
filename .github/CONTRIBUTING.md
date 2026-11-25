@@ -16,9 +16,11 @@ are welcome when available. Share material that can be discussed publicly and
 credit the original creators.
 
 An issue is a proposal. Maintainers review evidence, ask for missing information
-when needed, and use a pull request to add an accepted record. A record can be
-published with incomplete verification as long as its status and claims reflect
-the evidence. See the guide for the verification criteria and publication steps.
+when needed, and use a pull request to add an accepted record. A record
+can be included with missing details. First-party evidence can establish
+identity and documented history. See the
+[inclusion policy](../docs/HISTORICAL_ARCHIVE_GUIDE.md#inclusion-and-assessment)
+for separate verification, provenance, and testing criteria.
 
 For release history, dated events, screenshot rights, and checksums, see the
 [historical archive guide](../docs/HISTORICAL_ARCHIVE_GUIDE.md). Add unresolved

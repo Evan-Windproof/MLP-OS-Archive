@@ -1,0 +1,119 @@
+{
+  "id": "twili-linux",
+  "name": "Twili Linux",
+  "category": "linux-distribution",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A historical My Little Pony-related Linux distribution developed by Adrian Siekierka as an experimental Linux From Scratch project."
+  },
+  "developer": "Adrian Siekierka",
+  "baseSystem": "Linux From Scratch (LFS)",
+  "kernel": "Linux",
+  "developmentYear": 2012,
+  "lastUpdated": "2012-07-13",
+  "developmentStatus": "discontinued",
+  "verificationStatus": "verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "mixed",
+  "testingStatus": "unknown",
+  "sourceCodeUrl": "https://github.com/asiekierka/twili",
+  "historicalNotes": "The available records span approximately 2012–2013. The earliest and latest visible repository activity dates are July 10 and July 13, 2012. Siekierka retrospectively lists the project under 2013; that heading does not establish a later commit or a discontinuation date. The repository contains packaging and installation tooling. Its README describes installation through a chroot and lists non-kdrive X server support as unfinished. GitHub lists no official releases. The README’s chroot archive and installer URLs survive as historical references with unconfirmed availability.",
+  "events": [
+    {
+      "category": "other",
+      "title": "Community report on Twili Linux",
+      "description": "Equestria Daily described Twili Linux as a Linux distribution under development and suggested “TwiLinux” as an alternative name.",
+      "date": {
+        "precision": "month",
+        "value": "2012-04"
+      },
+      "references": [
+        "https://www.equestriadaily.com/2012/04/nightly-roundup-295.html"
+      ]
+    },
+    {
+      "category": "development-update",
+      "title": "Public source repository created",
+      "description": "The repository dates to July 10. The earliest visible commit also dates to this day.",
+      "date": {
+        "precision": "day",
+        "value": "2012-07-10"
+      },
+      "references": [
+        "https://github.com/asiekierka/twili",
+        "https://github.com/asiekierka/twili/commit/2ac423a192ea5d5845237b316caf7dd04a6a8037"
+      ]
+    },
+    {
+      "category": "development-update",
+      "title": "Last visible repository update",
+      "description": "The last visible code push and the tip of the public branch date to July 13.",
+      "date": {
+        "precision": "day",
+        "value": "2012-07-13"
+      },
+      "references": [
+        "https://github.com/asiekierka/twili",
+        "https://github.com/asiekierka/twili/commit/251be2a6206d05b814115159ef9c58a087629708"
+      ]
+    },
+    {
+      "category": "other",
+      "title": "Year listed in the developer’s retrospective",
+      "description": "Siekierka groups Twili Linux under 2013 in his project history and describes it as his first Linux From Scratch experiment. The year is a retrospective attribution, not a release date.",
+      "date": {
+        "precision": "year",
+        "value": "2013"
+      },
+      "references": [
+        "https://asie.pl/projects.html"
+      ]
+    }
+  ],
+  "references": [
+    "https://github.com/asiekierka/twili",
+    "https://github.com/asiekierka/twili/blob/251be2a6206d05b814115159ef9c58a087629708/README",
+    "https://asie.pl/projects.html",
+    "https://www.equestriadaily.com/2012/04/nightly-roundup-295.html",
+    "https://github.com/asiekierka/twili/releases",
+    "http://twi.asiekierka.pl/chroot2v1.tar.bz2",
+    "http://twi.asiekierka.pl/installer.tar.bz2"
+  ],
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://github.com/asiekierka/twili",
+      "note": "The public source tree contains package and installation tools."
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/asiekierka/twili/blob/251be2a6206d05b814115159ef9c58a087629708/README",
+      "note": "The surviving README describes the chroot installation workflow, identifies the two historical installer references, and records unfinished non-kdrive X server work."
+    },
+    {
+      "kind": "developer-history",
+      "url": "https://asie.pl/projects.html",
+      "note": "Adrian Siekierka lists Twili Linux under 2013 and identifies it as his first LFS experiment."
+    },
+    {
+      "kind": "community",
+      "url": "https://www.equestriadaily.com/2012/04/nightly-roundup-295.html",
+      "note": "The April 2012 roundup documents the project’s name and development in the My Little Pony community."
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/asiekierka/twili/releases",
+      "note": "No official GitHub releases are listed."
+    },
+    {
+      "kind": "historical-installer",
+      "url": "http://twi.asiekierka.pl/chroot2v1.tar.bz2",
+      "note": "Chroot archive cited by the README. Availability is unknown."
+    },
+    {
+      "kind": "historical-installer",
+      "url": "http://twi.asiekierka.pl/installer.tar.bz2",
+      "note": "Installer archive cited by the README. Availability is unknown."
+    }
+  ]
+}

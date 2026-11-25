@@ -8,7 +8,7 @@
   },
   "developer": "Evan Windproof",
   "developmentStatus": "experimental",
-  "verificationStatus": "partially-verified",
+  "verificationStatus": "verified",
   "sharedMaintainerAccount": "Evan-Windproof",
   "references": [
     "https://github.com/Evan-Windproof/HoofTTY",
@@ -22,7 +22,6 @@
   "downloadUrl": "https://github.com/Evan-Windproof/HoofTTY/releases",
   "lastUpdated": "2026-11-18",
   "license": "GPL-3.0-or-later (project-owned code at Beta 0.4.0)",
-  "historicalNotes": "The HoofTTY repository and this archive are maintained under the same GitHub account, Evan-Windproof. The release and source document the project, and its hardware compatibility has not been independently checked by the archive.",
   "releases": [
     {
       "version": "Beta 0.4.0",
@@ -82,6 +81,37 @@
         "precision": "day",
         "value": "2026-11-18"
       }
+    }
+  ],
+  "recordCompleteness": "documented",
+  "evidenceProvenance": "first-party",
+  "testingStatus": "emulator-tested",
+  "testingNotes": {
+    "en": "The developer reports QEMU demonstrations during development. Physical hardware compatibility has not been independently tested.",
+    "zh-CN": "开发者记录了开发过程中在 QEMU 中进行的演示。实体硬件兼容性尚未经过独立测试。",
+    "zh-TW": "開發者記錄了開發期間在 QEMU 中進行的展示。實體硬體相容性尚未經過獨立測試。",
+    "ja": "開発者は、開発中に QEMU で動作を実演したと報告しています。実機での互換性は独立した第三者によってテストされていません。",
+    "es": "El desarrollador documenta demostraciones en QEMU durante el desarrollo. La compatibilidad con hardware físico no ha sido probada de forma independiente.",
+    "fr": "Le développeur signale des démonstrations sous QEMU pendant le développement. La compatibilité avec le matériel physique n’a pas fait l’objet d’essais indépendants."
+  },
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://github.com/Evan-Windproof/HoofTTY",
+      "note": "The repository contains the project source, development documentation, and the developer’s account of QEMU demonstrations."
+    },
+    {
+      "kind": "original-source",
+      "url": "https://github.com/Evan-Windproof/Kernseed_OS",
+      "note": "Repository for Kernseed OS, the documented kernel foundation."
+    },
+    {
+      "kind": "official-release",
+      "url": "https://github.com/Evan-Windproof/HoofTTY/releases/tag/first"
+    },
+    {
+      "kind": "official-release",
+      "url": "https://github.com/Evan-Windproof/HoofTTY/releases/tag/beta0.4.0"
     }
   ]
 }

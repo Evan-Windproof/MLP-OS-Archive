@@ -16,15 +16,19 @@ const description = projectDescription(project, locale);
 const affiliation = project.sharedMaintainerAccount && t('sharedMaintainerEvidence')
   .replace('{project}', () => project.name)
   .replace('{account}', () => project.sharedMaintainerAccount ?? '');
+const testingLanguage = Object.hasOwn(project.testingNotes ?? {}, locale) ? locale : project.originalLanguage;
+const testingNote = project.testingNotes?.[testingLanguage];
+const evidence = project.evidence ?? [];
+const remainingReferences = project.references.filter((url) => !evidence.some((source) => source.url === url));
 const technical = [
-  { label: t('projectAliases'), value: project.aliases?.join(', ') },
+  ...(project.aliases?.length ? [{ label: t('projectAliases'), value: project.aliases.join(', ') }] : []),
   { label: t('projectDeveloper'), value: project.developer },
   { label: t('projectDevelopmentYear'), value: project.developmentYear?.toString() },
   { label: t('projectLastUpdated'), value: project.lastUpdated && formatArchiveDate({ precision: 'day', value: project.lastUpdated }, locale) },
   { label: t('projectBase'), value: project.baseSystem },
   { label: t('projectKernel'), value: project.kernel },
   { label: t('projectLicense'), value: project.license },
-].filter(({ value }) => value);
+];
 const projectLinks = [
   { label: t('projectWebsite'), url: project.officialWebsite },
   { label: t('projectRepository'), url: project.sourceCodeUrl },
@@ -52,6 +56,12 @@ const projectLinks = [
       <h3>{t('verificationLabel')} · {t(`status-${project.verificationStatus}`)}</h3>
       <p>{t(`verification-note-${project.verificationStatus}`)}</p>
       <p>{t('verificationScope')}</p>
+      <dl class="archive-facts">
+        <dt>{t('recordCompletenessLabel')}</dt><dd>{t(`record-${project.recordCompleteness ?? 'unknown'}`)}</dd>
+        <dt>{t('evidenceProvenanceLabel')}</dt><dd>{t(`provenance-${project.evidenceProvenance ?? 'unknown'}`)}</dd>
+        <dt>{t('testingStatusLabel')}</dt><dd>{t(`testing-${project.testingStatus ?? 'unknown'}`)}</dd>
+      </dl>
+      {testingNote && <p lang={testingLanguage}>{testingNote}</p>}
       {affiliation && <p>{affiliation}</p>}
     </div>
     {projectLinks.some(({ url }) => url) && (
@@ -63,11 +73,9 @@ const projectLinks = [
 
   <section class="feature-panel">
     <h2>{t('technicalInformation')}</h2>
-    {technical.length ? (
-      <dl class="archive-facts">
-        {technical.map(({ label, value }) => <><dt>{label}</dt><dd>{value}</dd></>)}
-      </dl>
-    ) : <p>{t('archiveEmpty')}</p>}
+    <dl class="archive-facts">
+      {technical.map(({ label, value }) => <><dt>{label}</dt><dd>{value ?? t('status-unknown')}</dd></>)}
+    </dl>
   </section>
 
   <section class="feature-panel">
@@ -91,7 +99,7 @@ const projectLinks = [
           </li>
         ))}
       </ul>
-    ) : <p>{t('archiveEmpty')}</p>}
+    ) : <p>{t('screenshotsIncomplete')}</p>}
   </section>
 
   <section class="feature-panel">
@@ -124,6 +132,18 @@ const projectLinks = [
 
   <section class="feature-panel">
     <h2>{t('projectReferences')}</h2>
-    <SourceLinks {locale} urls={project.references} />
+    {evidence.length > 0 && (
+      <ul class="archive-items">
+        {evidence.map(({ kind, url, note, language }) => (
+          <li>
+            {url
+              ? <a href={url}>{t(`evidence-${kind}`)} <small>({new URL(url).hostname})</small></a>
+              : <strong>{t(`evidence-${kind}`)}</strong>}
+            {note && <p lang={language ?? project.originalLanguage}>{note}</p>}
+          </li>
+        ))}
+      </ul>
+    )}
+    {remainingReferences.length > 0 && <SourceLinks {locale} urls={remainingReferences} />}
   </section>
 </div>

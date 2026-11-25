@@ -16,6 +16,11 @@ Project records appear in the catalog after repository review, merge, and a
 static build. Use the [contribution guide](.github/CONTRIBUTING.md) to submit
 a project through GitHub Issues or add a record through a pull request.
 
+Projects may be included on the strength of reasonable first-party or
+historical evidence. The [inclusion policy](docs/HISTORICAL_ARCHIVE_GUIDE.md#inclusion-and-assessment)
+treats record completeness, development status, evidence provenance, and
+testing as separate assessments.
+
 ## Languages and routes
 
 | Language | Locale | Home |

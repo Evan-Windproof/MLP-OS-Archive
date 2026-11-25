@@ -99,14 +99,29 @@ screenshots with attribution.
 3. Merging the record makes it eligible for publication. It appears in the
    catalog after the static site is rebuilt and deployed.
 
-Development status describes the project. Verification status describes the
-archive's evidence. A discontinued project can have a verified record.
+Evidence of project identity can come from an original repository, a developer
+history, an archived page, or other identifiable records. First-party sources
+are eligible on their own. Record completeness, development status, provenance,
+and testing are separate. See the
+[inclusion policy](HISTORICAL_ARCHIVE_GUIDE.md#inclusion-and-assessment).
 
-- **Unverified** means the record has not yet been corroborated.
+- **Unverified** means the material claims have not yet been established.
 - **Partially verified** means sources support some material claims.
 - **Verified** means reliable evidence supports the project identity and the
-  material claims being published. Omit or clearly qualify unresolved details.
-- **Unable to verify** means a review could not corroborate the record from
-  available evidence. Document what was checked and qualify any claims.
+  material claims being published.
+- **Unable to verify** means the available evidence was insufficient after
+  review. Document what was checked and qualify any claims.
+
+Optional fields include `recordCompleteness` (`documented`, `incomplete`,
+`unknown`), `evidenceProvenance` (`first-party`,
+`independent-third-party`, `archived-historical`, `community`, `mixed`,
+`unknown`), `testingStatus` (`not-tested`, `emulator-tested`,
+`physical-hardware-tested`, `unknown`), and `testingNotes` (notes keyed by language tag).
+Use `sharedMaintainerAccount` to disclose a shared GitHub maintainer.
+Use `evidence` to label individual references with a `kind`, an HTTP(S)
+`url`, and an optional `note` and `language`. The schema lists the
+allowed kinds. A recollection without a URL may be included with an explicit
+note and is displayed as unverified. Keep at least one public reference in
+`references`.
 
 An issue submission never publishes a record or assigns verification status.
