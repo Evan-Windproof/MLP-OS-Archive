@@ -4,6 +4,9 @@ body:
   - type: markdown
     attributes:
       value: "Se admiten proyectos históricos, abandonados, incompletos y experimentales. Usa el idioma original y deja en blanco los campos opcionales si hay dudas. Las propuestas son públicas. Comparte solo enlaces y materiales aptos para su difusión pública. Para corregir una ficha o aportar documentación histórica, indica el nombre del proyecto existente y explica en la descripción qué debe actualizarse."
+  - type: markdown
+    attributes:
+      value: "Política completa: https://github.com/Evan-Windproof/MLP-OS-Archive/blob/main/docs/INCLUSION_POLICY.md\n\nRequisitos: la experiencia real del sistema o escritorio debe incluir elementos sustanciales de MLP. No basta con cambiar el fondo de una distribución Linux ni con usar un nombre relacionado con MLP. Los proyectos históricos de terceros pueden estar inacabados o abandonados; los sistemas propios deben mostrar desarrollo real. También pueden admitirse colecciones independientes de temas de escritorio.\n\nPruebas: aporta fuentes públicas y rastreables. Deja en blanco los datos desconocidos; no los inventes. Comprueba si ya existe el proyecto o uno con el mismo nombre.\n\nDerechos: este archivo es un proyecto de fans no oficial y sin fines comerciales. Acredita a los creadores. No subas ni redistribuyas archivos, capturas, ilustraciones, ISO o temas de terceros sin licencia o permiso explícito."
   - type: input
     id: name
     attributes:
