@@ -1,0 +1,94 @@
+{
+  "id": "ponyos-ubuntu-edition",
+  "name": "PonyOS (Ubuntu Edition)",
+  "aliases": [
+    "PonyOS"
+  ],
+  "category": "linux-distribution",
+  "originalLanguage": "en",
+  "description": {
+    "en": "An early My Little Pony-themed Linux distribution concept started in January 2013 by Jared Allard (RainbowDashDC), based on Ubuntu Server with the GNOME desktop.",
+    "zh-CN": "Jared Allard（RainbowDashDC）于 2013 年 1 月发起的早期《小马宝莉》主题 Linux 发行版概念项目，以 Ubuntu Server 为基础并采用 GNOME 桌面。",
+    "zh-TW": "Jared Allard（RainbowDashDC）於 2013 年 1 月發起的早期《彩虹小馬》主題 Linux 發行版概念專案，以 Ubuntu Server 為基礎並採用 GNOME 桌面。",
+    "ja": "Jared Allard（RainbowDashDC）が2013年1月に始めた、『マイリトルポニー』を題材とする初期の Linux ディストリビューション構想です。Ubuntu Server をベースに GNOME デスクトップを採用しました。",
+    "es": "Proyecto temprano de distribución Linux con temática de My Little Pony, iniciado en enero de 2013 por Jared Allard (RainbowDashDC), con Ubuntu Server como base y GNOME como escritorio.",
+    "fr": "Projet précoce de distribution Linux sur le thème de My Little Pony, lancé en janvier 2013 par Jared Allard (RainbowDashDC), avec Ubuntu Server comme base et GNOME comme bureau."
+  },
+  "localizedHistory": {
+    "en": "The original Launchpad project record dates the start to January 23, 2013, records “ACTIVE DEVELOPMENT” on January 27, and gives February 5 as the registration date. It lists 0.1973 PRE-ALPHA, codename JEM, with no registered files. The proposal included character-specific editions, pony-themed commands, visual customization and features for developers. A Linux/Windows hybrid capable of running Windows applications was also proposed, with no verified implementation. Current maintenance status is unknown. No verified downloadable release is currently available in the archive. The other PonyOS in this catalog is K. Lange’s independent ToaruOS-based system with its own kernel and separate release history on x86-64 and AArch64. The target CPU architecture of Allard’s Ubuntu edition is unverified.",
+    "zh-CN": "原始 Launchpad 项目记录将启动日期记为 2013 年 1 月 23 日，1 月 27 日的状态为 “ACTIVE DEVELOPMENT”，2 月 5 日完成登记。记录列有 0.1973 PRE-ALPHA，代号 JEM，未登记可下载文件。项目计划包含角色专属版本、小马主题命令、视觉定制和面向开发者的功能，也曾提出运行 Windows 应用的 Linux/Windows 混合系统，实际实现尚未核实。目前维护状态未知，档案暂无经核实的可下载发行版。目录里的另一款 PonyOS 由 K. Lange 开发，基于 ToaruOS，使用自己的内核，在 x86-64 和 AArch64 上有独立的发布历史。Allard 的 Ubuntu 版目标处理器架构尚未核实。",
+    "zh-TW": "原始 Launchpad 專案記錄將啟動日期記為 2013 年 1 月 23 日，1 月 27 日的狀態為 “ACTIVE DEVELOPMENT”，2 月 5 日完成登記。記錄列有 0.1973 PRE-ALPHA，代號 JEM，未登記可下載檔案。專案規劃角色專屬版本、小馬主題指令、視覺自訂和開發者功能，也曾提出可執行 Windows 應用程式的 Linux/Windows 混合系統，實際實作尚未查證。目前維護狀態不明，檔案庫暫無經查證的可下載發行版。目錄中另一款 PonyOS 由 K. Lange 開發，以 ToaruOS 為基礎，使用自己的核心，在 x86-64 和 AArch64 上有獨立的發行歷史。Allard 的 Ubuntu 版目標處理器架構尚未查證。",
+    "ja": "Launchpad の元のプロジェクト記録では、開始日が2013年1月23日、1月27日時点の状態が “ACTIVE DEVELOPMENT”、登録日が2月5日です。コードネーム JEM の 0.1973 PRE-ALPHA が記載され、ダウンロードファイルの登録はありません。キャラクター別の版、ポニーを題材としたコマンド、外観のカスタマイズ、開発者向け機能が構想されました。Windows アプリを実行できる Linux/Windows 混合システムも提案されましたが、実装は確認されていません。現在の保守状況は不明です。アーカイブにダウンロード可能と確認された版はありません。同名の K. Lange の PonyOS は ToaruOS 系の独立した OS で、独自のカーネルと x86-64・AArch64 向けの別個のリリース履歴を持ちます。Allard の Ubuntu 版の対象 CPU アーキテクチャは未確認です。",
+    "es": "El registro original de Launchpad sitúa el inicio el 23 de enero de 2013, indica “ACTIVE DEVELOPMENT” el 27 de enero y fecha el registro el 5 de febrero. Enumera 0.1973 PRE-ALPHA, con nombre en clave JEM y sin archivos registrados. Se proponían ediciones por personaje, comandos temáticos, personalización visual y funciones para desarrolladores. También se planteó un híbrido Linux/Windows capaz de ejecutar aplicaciones de Windows, cuya implementación no se ha verificado. Se desconoce el estado actual de mantenimiento. El archivo no dispone de ninguna versión descargable verificada. El otro PonyOS del catálogo es un sistema independiente de K. Lange basado en ToaruOS, con núcleo propio e historial de publicaciones separado para x86-64 y AArch64. La arquitectura de CPU prevista para la edición de Allard sigue sin verificarse.",
+    "fr": "La fiche d’origine sur Launchpad date le début du projet du 23 janvier 2013, indique “ACTIVE DEVELOPMENT” le 27 janvier et situe l’enregistrement au 5 février. Elle mentionne 0.1973 PRE-ALPHA, nom de code JEM, sans fichier enregistré. Le projet prévoyait des éditions par personnage, des commandes thématiques, une personnalisation visuelle et des fonctions pour les développeurs. Un système hybride Linux/Windows capable d’exécuter des applications Windows a aussi été envisagé, sans réalisation vérifiée. L’état actuel de la maintenance reste inconnu. L’archive ne dispose d’aucune version téléchargeable vérifiée. L’autre PonyOS du catalogue est un système indépendant de K. Lange basé sur ToaruOS, avec son propre noyau et un historique de versions distinct pour x86-64 et AArch64. L’architecture de processeur visée par l’édition d’Allard reste à confirmer."
+  },
+  "developer": "Jared Allard (RainbowDashDC)",
+  "platform": "Linux / GNOME",
+  "baseSystem": "Ubuntu Server",
+  "kernel": "Linux",
+  "developmentYear": 2013,
+  "developmentStatus": "unknown",
+  "verificationStatus": "partially-verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "first-party",
+  "testingStatus": "unknown",
+  "downloadAvailability": "unavailable",
+  "releases": [
+    {
+      "version": "0.1973 PRE-ALPHA — JEM",
+      "type": "pre-release",
+      "availability": "unavailable",
+      "references": [
+        "https://launchpad.net/ponyos"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "category": "project-created",
+      "title": "Project start",
+      "description": "Start date recorded in Launchpad.",
+      "date": {
+        "precision": "day",
+        "value": "2013-01-23"
+      },
+      "references": [
+        "https://launchpad.net/ponyos"
+      ]
+    },
+    {
+      "category": "development-update",
+      "title": "ACTIVE DEVELOPMENT",
+      "description": "Historical development status recorded on this date.",
+      "date": {
+        "precision": "day",
+        "value": "2013-01-27"
+      },
+      "references": [
+        "https://launchpad.net/ponyos"
+      ]
+    },
+    {
+      "category": "other",
+      "title": "Launchpad registration",
+      "description": "The project was registered on Launchpad.",
+      "date": {
+        "precision": "day",
+        "value": "2013-02-05"
+      },
+      "references": [
+        "https://launchpad.net/ponyos"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://launchpad.net/ponyos",
+      "accessUnconfirmed": true
+    }
+  ],
+  "references": [
+    "https://launchpad.net/ponyos"
+  ]
+}
