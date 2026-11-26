@@ -4,6 +4,9 @@ body:
   - type: markdown
     attributes:
       value: "Historical, discontinued, incomplete, and experimental projects are welcome. Use the original language and leave optional fields blank when details are uncertain. Issues are public. Only share links and material you can share publicly. For a correction or new historical evidence, enter the existing project name and explain what the archive should update in the description."
+  - type: markdown
+    attributes:
+      value: "Read the full policy: https://github.com/Evan-Windproof/MLP-OS-Archive/blob/main/docs/INCLUSION_POLICY.md\n\nEligibility: the actual OS or desktop experience must contain substantive MLP elements. A wallpaper-only Linux respin or an MLP name alone is not enough. Third-party historical projects may be unfinished or discontinued; your own OS submission must show actual development work. Desktop theme packs can qualify independently.\n\nEvidence: provide traceable public sources. Unknown details may be left blank; do not guess. Check for duplicates and same-name projects.\n\nCopyright: this is an unofficial, non-commercial fan archive. Credit creators. Do not upload or redistribute third-party files, screenshots, artwork, ISO images, or theme packs unless the license or explicit permission allows it."
   - type: input
     id: name
     attributes:
