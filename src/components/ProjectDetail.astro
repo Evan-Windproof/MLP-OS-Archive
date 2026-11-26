@@ -1,8 +1,9 @@
 ---
 import type { Project } from '../data/projects';
+import { projects } from '../data/project-records';
 import { formatArchiveDate, localizedArchiveText, projectDescription } from '../i18n/archive';
 import { projectCategoryLabels, translate, type Locale } from '../i18n';
-import { categoryPath, pagePath } from '../i18n/routes';
+import { categoryPath, pagePath, projectPath } from '../i18n/routes';
 import ArchiveTimeline from './ArchiveTimeline.astro';
 import ProjectCreator from './ProjectCreator.astro';
 import ScreenshotRecords from './ScreenshotRecords.astro';
@@ -14,6 +15,9 @@ interface Props {
 }
 const { locale, project } = Astro.props;
 const t = translate(locale);
+const sameCreatorProjects = project.developerUrl
+  ? projects.filter((other) => other.id !== project.id && other.developerUrl === project.developerUrl)
+  : [];
 const description = projectDescription(project, locale);
 const history = localizedArchiveText(project.localizedHistory ?? {}, locale, project.originalLanguage);
 const historicalDate = project.historicalDate;
@@ -67,6 +71,14 @@ const projectLinks = [
       </dl>
       {testingNote && <p lang={testingLanguage}>{testingNote}</p>}
       {affiliation && <p>{affiliation}</p>}
+      {sameCreatorProjects.length > 0 && (
+        <div>
+          <p>{t('sameCreatorProjects')}</p>
+          <ul class="record-links">
+            {sameCreatorProjects.map((other) => <li><a href={projectPath(locale, other.id)}>{other.name}</a></li>)}
+          </ul>
+        </div>
+      )}
     </div>
     {projectLinks.some(({ url }) => url) && (
       <ul class="record-links">

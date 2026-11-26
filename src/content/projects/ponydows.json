@@ -1,0 +1,76 @@
+{
+  "id": "ponydows",
+  "name": "PonyDows",
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A Windows 7 customization project by Brony Lounge for My Little Pony fans. The initial forum announcement described the early alpha V1.3 Trusty Trixie.",
+    "zh-CN": "Brony Lounge 为《小马宝莉》爱好者制作的 Windows 7 定制项目。首篇论坛公告提到早期 Alpha 版本 V1.3 Trusty Trixie。",
+    "zh-TW": "Brony Lounge 為《彩虹小馬》愛好者製作的 Windows 7 自訂專案。首篇論壇公告提及早期 Alpha 版本 V1.3 Trusty Trixie。",
+    "ja": "Brony Lounge による『マイリトルポニー』ファン向けの Windows 7 カスタマイズ企画です。最初のフォーラム告知には、初期アルファ版 V1.3 Trusty Trixie が記載されています。",
+    "es": "Proyecto de personalización de Windows 7 creado por Brony Lounge para fans de My Little Pony. El primer anuncio del foro mencionaba la versión alfa temprana V1.3 Trusty Trixie.",
+    "fr": "Projet de personnalisation de Windows 7 créé par Brony Lounge pour les fans de My Little Pony. La première annonce sur le forum mentionnait la version alpha V1.3 Trusty Trixie."
+  },
+  "localizedHistory": {
+    "en": "The August 12, 2015 announcement requested help from theme creators. Research notes dated August 17 describe a restart using RT Seven Lite and proposed themed visuals, sounds and possibly applications. Brony Lounge reported slow solo progress, said beta testers were not yet needed, and planned to keep the project free and credit contributors. The notes attribute a thread lock to moderator Jeric, who cited an unvetted download and risks to forum members. On August 18, Brony Lounge reportedly described the build as virus-free but potentially unstable and advised against installing it on physical hardware. That safety claim was not independently tested. In the September 22–24, 2016 discussion, Flying Vantas reportedly suggested recruiting graphics contributors, and on September 24 Brony Lounge described the project as effectively canceled. The exact later thread URLs, any formal release and the precise end date remain unverified.",
+    "zh-CN": "2015 年 8 月 12 日的首帖征求主题制作者协助。8 月 17 日的研究笔记记载项目重启，使用 RT Seven Lite，规划主题视觉、音效，以及可能的主题应用。Brony Lounge 称独自开发进度缓慢，暂不招募 Beta 测试者，计划保持免费并署名感谢贡献者。笔记记载版主 Jeric 因下载未经审核及会员安全风险锁帖。8 月 18 日，据记载作者称构建无病毒但可能不稳定，并建议勿安装到实体硬件；其安全性未经独立测试。2016 年 9 月 22–24 日，据记载 Flying Vantas 建议招募图形贡献者，Brony Lounge 于 24 日表示项目实际上已近取消。后续帖子的确切网址、正式发行及确切结束日期仍未核实。",
+    "zh-TW": "2015 年 8 月 12 日的首帖徵求主題製作者協助。8 月 17 日的研究筆記記載專案重啟，使用 RT Seven Lite，規劃主題視覺、音效，以及可能的主題應用程式。Brony Lounge 稱獨自開發進度緩慢，暫不招募 Beta 測試者，計畫維持免費並為貢獻者署名。筆記記載版主 Jeric 因下載未經審核及會員安全風險鎖帖。8 月 18 日，據記載作者稱建置版本無病毒但可能不穩定，並建議勿安裝於實體硬體；其安全性未經獨立測試。2016 年 9 月 22–24 日，據記載 Flying Vantas 建議招募圖形貢獻者，Brony Lounge 於 24 日表示專案實際上已近取消。後續帖文確切網址、正式發行及確切結束日期仍未查證。",
+    "ja": "2015年8月12日の告知ではテーマ制作者の協力を求めていました。8月17日の調査メモには、RT Seven Lite を用いた再始動と、テーマに沿った外観、効果音、アプリの構想が記録されています。Brony Lounge は単独開発で進行が遅く、まだベータテスターは不要で、無料提供と貢献者のクレジット掲載を予定していると述べたとされています。モデレーターの Jeric は、ダウンロードの審査不足と利用者へのリスクを理由にスレッドをロックしたと記録されています。8月18日、作者はウイルスはないと述べる一方、不安定な可能性から実機への導入を控えるよう勧めたとされています。安全性の独立検証はありません。2016年9月22日から24日の議論では Flying Vantas がグラフィック担当者の募集を提案し、24日に Brony Lounge が事実上の中止を伝えたとされています。その後のスレッドの正確なURL、正式公開、終了日は未確認です。",
+    "es": "El anuncio del 12 de agosto de 2015 pidió ayuda a creadores de temas. Las notas de investigación del 17 de agosto registran un reinicio con RT Seven Lite y propuestas de gráficos y sonidos temáticos, además de posibles aplicaciones. Brony Lounge describió un avance lento en solitario, sin necesidad inmediata de probar la beta, y planeaba distribuir el proyecto gratis y acreditar a los colaboradores. Según las notas, el moderador Jeric cerró el hilo por la falta de revisión de la descarga y el riesgo para la comunidad. El 18 de agosto el autor afirmó que la compilación estaba libre de virus, aunque era potencialmente inestable, y desaconsejó instalarla en hardware físico. La seguridad carece de verificación independiente. Según las notas del 22 al 24 de septiembre de 2016, Flying Vantas sugirió reclutar a colaboradores gráficos y el día 24 Brony Lounge calificó el proyecto de prácticamente cancelado. Las URL exactas de los hilos posteriores, el lanzamiento formal y la fecha precisa de cierre siguen sin confirmarse.",
+    "fr": "L’annonce du 12 août 2015 sollicitait l’aide de créateurs de thèmes. Les notes de recherche du 17 août signalent une reprise avec RT Seven Lite et des projets de visuels, de sons et éventuellement d’applications à thème. Brony Lounge a évoqué des progrès lents en solo, aucun besoin immédiat de bêta-testeurs et le souhait de garder le projet gratuit et de créditer les contributeurs. Selon les notes, le modérateur Jeric a verrouillé le fil en invoquant une évaluation insuffisante du téléchargement et les risques pour les membres. Le 18 août, l’auteur aurait déclaré la compilation exempte de virus mais potentiellement instable et déconseillé son installation sur du matériel physique. La sécurité reste sans vérification indépendante. Selon les notes des 22–24 septembre 2016, Flying Vantas a suggéré de recruter des graphistes et le 24, Brony Lounge a décrit le projet comme pratiquement annulé. Les URL exactes des discussions ultérieures, une éventuelle sortie officielle et la date précise de fin restent à vérifier."
+  },
+  "developer": "Brony Lounge",
+  "developerUrl": "https://mlpforums.com/profile/35039-brony-lounge/",
+  "baseSystem": "Windows 7",
+  "platform": "Windows",
+  "lastUpdated": "2016-09-24",
+  "developmentStatus": "discontinued",
+  "verificationStatus": "partially-verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "mixed",
+  "testingStatus": "not-tested",
+  "releases": [
+    {
+      "version": "V1.3 Trusty Trixie",
+      "type": "pre-release",
+      "availability": "unavailable",
+      "references": [
+        "https://mlpforums.com/topic/135464-ponydows-help-required/"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "category": "other",
+      "title": "PonyDows, help required",
+      "description": "The initial announcement described an alpha and requested help with Windows themes.",
+      "date": {
+        "precision": "day",
+        "value": "2015-08-12"
+      },
+      "references": [
+        "https://mlpforums.com/topic/135464-ponydows-help-required/"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://mlpforums.com/topic/135464-ponydows-help-required/",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "original-source",
+      "url": "https://mlpforums.com/topic/150381-twibuntu-mlp-linux-pre-alpha-download/",
+      "note": "Twibuntu announcement by the same MLP Forums account."
+    },
+    {
+      "kind": "recollection",
+      "note": "The exact URLs of the August 17 restart and moderation, August 18 second request, and September 22–24, 2016 discussion remain unresolved."
+    }
+  ],
+  "references": [
+    "https://mlpforums.com/topic/135464-ponydows-help-required/",
+    "https://mlpforums.com/topic/150381-twibuntu-mlp-linux-pre-alpha-download/"
+  ]
+}

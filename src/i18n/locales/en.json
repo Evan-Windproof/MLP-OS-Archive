@@ -134,6 +134,7 @@
   "projectCountOther": "{count} projects",
   "documentedPeriod": "Documented period",
   "verificationScope": "Archive verification evaluates evidence for the project’s identity and historical record. The status does not certify independent testing on physical hardware.",
+  "sameCreatorProjects": "Other projects by the same account",
   "sharedMaintainerEvidence": "{project} and this archive are maintained under the same GitHub account, {account}.",
   "recordCompletenessLabel": "Record completeness",
   "evidenceProvenanceLabel": "Evidence provenance",

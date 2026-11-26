@@ -134,6 +134,7 @@
   "projectCountOther": "{count} 個專案",
   "documentedPeriod": "有紀錄的時期",
   "verificationScope": "檔案庫查證評估專案身分及歷史紀錄的證據。此狀態不表示專案已通過獨立的實體硬體測試。",
+  "sameCreatorProjects": "同一帳號發布的其他專案",
   "sharedMaintainerEvidence": "{project} 和本檔案庫由同一個 GitHub 帳號 {account} 維護。",
   "recordCompletenessLabel": "紀錄完整度",
   "evidenceProvenanceLabel": "證據來源",

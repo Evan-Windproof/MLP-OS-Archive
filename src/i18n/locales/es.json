@@ -134,6 +134,7 @@
   "projectCountOther": "{count} proyectos",
   "documentedPeriod": "Período documentado",
   "verificationScope": "La verificación del archivo evalúa las pruebas sobre la identidad y el historial del proyecto. El estado no certifica pruebas independientes en hardware físico.",
+  "sameCreatorProjects": "Otros proyectos de la misma cuenta",
   "sharedMaintainerEvidence": "{project} y este archivo se mantienen desde la misma cuenta de GitHub, {account}.",
   "recordCompletenessLabel": "Grado de documentación de la ficha",
   "evidenceProvenanceLabel": "Procedencia de las pruebas",

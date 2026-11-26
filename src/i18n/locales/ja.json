@@ -134,6 +134,7 @@
   "projectCountOther": "{count} 件のプロジェクト",
   "documentedPeriod": "資料で確認できる期間",
   "verificationScope": "アーカイブの検証では、プロジェクトの同一性と歴史的な記録を裏付ける資料を評価します。この状態は、実機で第三者が動作確認したことを保証するものではありません。",
+  "sameCreatorProjects": "同じアカウントによる別のプロジェクト",
   "sharedMaintainerEvidence": "{project} とこのアーカイブは、同じ GitHub アカウント（{account}）が管理しています。",
   "recordCompletenessLabel": "記録の充足度",
   "evidenceProvenanceLabel": "資料の出所",

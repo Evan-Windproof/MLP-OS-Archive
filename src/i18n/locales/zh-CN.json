@@ -134,6 +134,7 @@
   "projectCountOther": "{count} 个项目",
   "documentedPeriod": "有记录的时期",
   "verificationScope": "档案核实评估项目身份及历史记录的证据。此状态不代表项目已通过独立的实体硬件测试。",
+  "sameCreatorProjects": "同一账号发布的其他项目",
   "sharedMaintainerEvidence": "{project} 和本档案由同一 GitHub 账号 {account} 维护。",
   "recordCompletenessLabel": "记录完整度",
   "evidenceProvenanceLabel": "证据来源",

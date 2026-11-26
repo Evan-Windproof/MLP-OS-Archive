@@ -134,6 +134,7 @@
   "projectCountOther": "{count} projets",
   "documentedPeriod": "Période documentée",
   "verificationScope": "La vérification des archives évalue les preuves relatives à l’identité et à l’historique du projet. Ce statut ne certifie pas des essais indépendants sur du matériel physique.",
+  "sameCreatorProjects": "Autres projets du même compte",
   "sharedMaintainerEvidence": "{project} et ces archives sont maintenus par le même compte GitHub, {account}.",
   "recordCompletenessLabel": "Niveau de documentation de la fiche",
   "evidenceProvenanceLabel": "Provenance des preuves",
