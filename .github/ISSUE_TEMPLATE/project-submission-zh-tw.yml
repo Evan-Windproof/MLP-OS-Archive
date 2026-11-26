@@ -4,6 +4,9 @@ body:
   - type: markdown
     attributes:
       value: "歡迎歷史、已停止維護、未完成及實驗性專案。請使用原始語言，無法確認的選填資訊可留空。議題是公開的，請只分享可以公開的連結與資料。 如果要更正資料或補充歷史證據，請填寫現有專案名稱，並在說明中指出需要更新的內容。"
+  - type: markdown
+    attributes:
+      value: "完整規則：https://github.com/Evan-Windproof/MLP-OS-Archive/blob/main/docs/INCLUSION_POLICY.md\n\n收錄要求：專案的實際作業系統或桌面體驗必須包含實質的 MLP 元素。僅更換桌布的 Linux 發行版或只有 MLP 名稱的專案不符合要求。第三方歷史專案可以未完成或已停止維護；自行提交的作業系統必須已有實際開發成果。獨立桌面主題套件也可以收錄。\n\n證據：請提供可追溯的公開來源。未知資訊可以留空，不要猜測。提交前請檢查重複專案與同名專案。\n\n版權：本檔案庫是非官方、非商業粉絲專案。請標註創作者。除非授權條款或明確許可允許，否則請勿上傳或重新散布第三方檔案、截圖、插畫、ISO 或主題套件。"
   - type: input
     id: name
     attributes:
