@@ -174,5 +174,8 @@
   "screenshotRights": "预览链接指向原始来源。《小马宝莉》及相关作品的权利归 Hasbro 等各自权利人所有。",
   "download-unknown": "下载是否可用尚待核实。",
   "download-unavailable": "目前没有可用的下载。",
-  "sourceAccessUnconfirmed": "可访问性未确认"
+  "sourceAccessUnconfirmed": "可访问性未确认",
+  "policyLink": "阅读完整收录规则",
+  "eligibilitySummary": "项目的实际操作系统或桌面体验必须包含实质性的 MLP 元素。仅更换壁纸的 Linux 发行版或只有 MLP 名称的项目不符合要求。第三方历史项目可以未完成或已停更；自行提交的操作系统项目必须已经有实际开发成果。",
+  "copyrightSummary": "本档案为非官方、非商业项目。请提供公开来源并注明创作者。除非许可证或明确授权允许，否则不要上传或重新分发第三方文件与图片。"
 }
