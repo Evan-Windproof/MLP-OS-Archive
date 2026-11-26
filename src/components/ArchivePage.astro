@@ -90,6 +90,11 @@ const introductions = {
             <ul class="submission-list">
               {submissions.map((key) => <li>{t(key)}</li>)}
             </ul>
+            <p>{t('eligibilitySummary')}</p>
+            <p>{t('copyrightSummary')}</p>
+            <a class="text-link" href={`${repositoryUrl}/blob/main/docs/INCLUSION_POLICY.md`} hreflang="en">
+              {t('policyLink')}
+            </a>
           </section>
           <div class="contribution-methods">
             <section class="feature-panel contribution-panel">
