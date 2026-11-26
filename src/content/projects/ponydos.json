@@ -72,6 +72,18 @@
   "recordCompleteness": "documented",
   "evidenceProvenance": "first-party",
   "testingStatus": "not-tested",
+  "releases": [
+    {
+      "version": "master (source snapshot)",
+      "type": "unknown",
+      "originalDownloadUrl": "https://ahti.space/git/offtopia/ponydos/archive/master.zip",
+      "availability": "available",
+      "notes": "Automatically generated ZIP archive of the master branch source tree. This is not a prebuilt floppy-disk image; the repository README documents building the image from source with NASM, Python 3, and make.",
+      "references": [
+        "https://ahti.space/git/offtopia/ponydos"
+      ]
+    }
+  ],
   "events": [
     {
       "category": "other",
