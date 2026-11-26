@@ -1,0 +1,47 @@
+{
+  "id": "derpy-gnu-linux",
+  "name": "Derpy GNU/Linux",
+  "category": "linux-distribution",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A Gentoo-based distribution described on its project site as easy to install, focused on performance and made for personal use. The BonusSoda account links to the project; its exact role remains unverified.",
+    "zh-CN": "基于 Gentoo Linux 的发行版。项目网站称它面向个人使用，注重性能和易安装性。BonusSoda 账号链接到该项目，其具体角色尚未核实。",
+    "zh-TW": "以 Gentoo Linux 為基礎的發行版。專案網站稱它面向個人使用，著重效能和易安裝性。BonusSoda 帳號連結到該專案，其具體角色尚未查證。",
+    "ja": "Gentoo Linux ベースのディストリビューション。プロジェクトサイトでは個人利用向けで、性能と導入のしやすさを重視すると説明されています。BonusSoda アカウントからプロジェクトへのリンクが確認できますが、具体的な役割は未確認です。",
+    "es": "Distribución basada en Gentoo Linux que su sitio describe como fácil de instalar, orientada al rendimiento y pensada para uso personal. La cuenta BonusSoda enlaza al proyecto, aunque su función exacta sigue sin verificarse.",
+    "fr": "Distribution basée sur Gentoo Linux, présentée sur son site comme facile à installer, axée sur les performances et destinée à un usage personnel. Le compte BonusSoda renvoie au projet, mais son rôle précis reste à confirmer."
+  },
+  "localizedHistory": {
+    "en": "The project site announced the end of Derpy GNU/Linux and said development would continue under a new name with two additional contributors. The BonusSoda profile also links to the retirement announcement. The original project name was retired. The identity and release of the proposed successor, release versions and installation images remain unverified.",
+    "zh-CN": "项目网站宣布 Derpy GNU/Linux 结束，并称开发计划以新名称继续，由两位新贡献者加入。BonusSoda 的个人主页也链接到结束公告。原项目名称已停用，后续项目的身份及是否发布、具体发行版本和安装镜像仍未核实。",
+    "zh-TW": "專案網站宣布 Derpy GNU/Linux 結束，並稱開發計畫以新名稱繼續，由兩位新貢獻者加入。BonusSoda 的個人頁面也連結至結束公告。原專案名稱已停用，後續專案的身分及是否發布、具體發行版本和安裝映像仍未查證。",
+    "ja": "プロジェクトサイトは Derpy GNU/Linux の終了を告知し、2人の新しい貢献者を迎えて別の名称で開発を続ける予定と説明しました。BonusSoda のプロフィールからも終了告知にリンクされています。元の名称は廃止されました。後継の名称と公開の有無、リリースの版、インストールイメージは未確認です。",
+    "es": "El sitio anunció el fin de Derpy GNU/Linux y el plan de continuar con otro nombre y dos colaboradores más. El perfil de BonusSoda también enlaza al anuncio del cierre. Se retiró el nombre original. Siguen sin verificarse la identidad y la publicación del sucesor anunciado, las versiones y las imágenes de instalación.",
+    "fr": "Le site a annoncé la fin de Derpy GNU/Linux et prévoyait de poursuivre le développement sous un autre nom avec deux contributeurs supplémentaires. Le profil de BonusSoda renvoie aussi à cette annonce. Le nom d’origine a été abandonné. L’identité et la publication du successeur envisagé, les versions et les images d’installation restent à vérifier."
+  },
+  "verificationStatus": "partially-verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "first-party",
+  "testingStatus": "unknown",
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://derpygnulinux.neocities.org/",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "developer-history",
+      "url": "https://myspace.windows93.net/?id=227"
+    }
+  ],
+  "references": [
+    "https://derpygnulinux.neocities.org/",
+    "https://myspace.windows93.net/?id=227"
+  ],
+  "developer": "BonusSoda",
+  "developerUrl": "https://myspace.windows93.net/?id=227",
+  "officialWebsite": "https://derpygnulinux.neocities.org/",
+  "baseSystem": "Gentoo Linux",
+  "kernel": "Linux",
+  "developmentStatus": "discontinued"
+}

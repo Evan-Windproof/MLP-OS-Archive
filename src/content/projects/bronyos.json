@@ -1,0 +1,38 @@
+{
+  "id": "bronyos",
+  "name": "BronyOS (P-DOS Prototype)",
+  "category": "independent-os",
+  "originalLanguage": "en",
+  "description": {
+    "en": "An experimental independent operating system prototype documented by jmm98 in 2012. The discussion shows work on a C kernel, but a successful kernel boot has not been verified.",
+    "zh-CN": "jmm98 于 2012 年公开记录的实验性独立操作系统原型。讨论帖记录了 C 内核的开发过程，内核是否成功启动尚未核实。",
+    "zh-TW": "jmm98 於 2012 年公開記錄的實驗性獨立作業系統原型。討論串記錄了 C 核心的開發過程，核心是否成功啟動尚未查證。",
+    "ja": "jmm98 が2012年に記録した、実験的な独立系OSの試作版。スレッドには C カーネルの開発過程が残っていますが、カーネルの起動成功は確認されていません。",
+    "es": "Prototipo experimental de un sistema operativo independiente documentado por jmm98 en 2012. El hilo recoge el trabajo en un núcleo en C cuyo arranque aún no se ha verificado.",
+    "fr": "Prototype expérimental de système d’exploitation indépendant documenté par jmm98 en 2012. Le fil retrace le développement d’un noyau en C dont le démarrage n’a pas été confirmé."
+  },
+  "localizedHistory": {
+    "en": "The March 2012 forum thread shows a BronyOS project directory, the kernel source pony.c, the assembly entry point entry.asm and the intended output PONY.SYS. The C/C++ build discussion records compiler and linker errors. The code contains the startup message “Starting P-DOS...”. jmm98 reported that a floppy image using Bootf2 booted in VirtualBox. The report establishes neither execution of the kernel nor completion of the operating system.",
+    "zh-CN": "2012 年 3 月的论坛讨论记录了 BronyOS 项目目录、内核源码 pony.c、汇编入口 entry.asm 及预期输出 PONY.SYS。C/C++ 构建过程中出现了编译和链接错误。源码包含启动消息 “Starting P-DOS...”。jmm98 报告使用 Bootf2 的软盘镜像可在 VirtualBox 中引导，实际内核能否运行、系统是否完成仍无证据。",
+    "zh-TW": "2012 年 3 月的論壇討論記錄了 BronyOS 專案目錄、核心原始碼 pony.c、組合語言入口 entry.asm 與預期輸出 PONY.SYS。C/C++ 建置過程出現編譯與連結錯誤。原始碼包含啟動訊息 “Starting P-DOS...”。jmm98 回報使用 Bootf2 的軟碟映像可在 VirtualBox 中引導，實際核心能否執行、系統是否完成仍無證據。",
+    "ja": "2012年3月のスレッドには BronyOS のディレクトリ、カーネルのソース pony.c、アセンブリのエントリーポイント entry.asm、出力予定の PONY.SYS が記載されています。C/C++ のビルドではコンパイルとリンクのエラーが報告され、ソースには起動メッセージ “Starting P-DOS...” が含まれています。jmm98 は Bootf2 を使ったフロッピーイメージが VirtualBox で起動したと報告しました。カーネルの実行や OS の完成は確認されていません。",
+    "es": "El hilo de marzo de 2012 muestra el directorio BronyOS, el código del núcleo pony.c, el punto de entrada en ensamblador entry.asm y el archivo de salida previsto PONY.SYS. La compilación y el enlazado de C/C++ dieron errores. El código incluye el mensaje “Starting P-DOS...”. jmm98 informó de que una imagen de disquete con Bootf2 arrancó en VirtualBox. La ejecución del núcleo y la finalización del sistema siguen sin confirmarse.",
+    "fr": "Le fil de mars 2012 montre le dossier BronyOS, le fichier source du noyau pony.c, le point d’entrée en assembleur entry.asm et le fichier de sortie prévu PONY.SYS. La construction en C/C++ a donné lieu à des erreurs de compilation et d’édition de liens. Le code contient le message « Starting P-DOS... ». jmm98 a signalé qu’une image de disquette utilisant Bootf2 démarrait dans VirtualBox. L’exécution du noyau et l’achèvement du système restent à confirmer."
+  },
+  "verificationStatus": "partially-verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "first-party",
+  "testingStatus": "unknown",
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://www.minecraftforum.net/forums/off-topic/computer-science-and-technology/482296-annoying-c-problem-been-trying-to-solve-this"
+    }
+  ],
+  "references": [
+    "https://www.minecraftforum.net/forums/off-topic/computer-science-and-technology/482296-annoying-c-problem-been-trying-to-solve-this"
+  ],
+  "developer": "jmm98",
+  "developmentYear": 2012,
+  "developmentStatus": "experimental"
+}
