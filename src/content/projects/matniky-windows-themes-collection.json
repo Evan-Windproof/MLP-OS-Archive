@@ -1,0 +1,280 @@
+{
+  "id": "matniky-windows-themes-collection",
+  "name": "Matniky — My Little Pony Windows Theme Collection",
+  "aliases": [
+    "Matniky Windows 7 Themes",
+    "Matniky MLP Windows Themes",
+    "My Little Pony Windows Themes by Matniky"
+  ],
+  "category": "desktop-customization",
+  "originalLanguage": "en",
+  "description": {
+    "en": "A documented collection of My Little Pony character-themed desktop themes for Windows 7 and Windows XP published by DeviantArt creator Matniky, primarily during 2012–2013.",
+    "zh-CN": "DeviantArt 创作者 Matniky 于 2012—2013 年间发布的一组《小马宝莉》角色主题桌面定制作品，适用于 Windows 7 和 Windows XP。",
+    "zh-TW": "DeviantArt 創作者 Matniky 於 2012—2013 年間發布的一系列《彩虹小馬》角色主題桌面自訂作品，適用於 Windows 7 和 Windows XP。",
+    "ja": "DeviantArt の作者 Matniky が主に2012～2013年に公開した、『マイリトルポニー』のキャラクターを題材とする Windows 7 / Windows XP 向けデスクトップテーマ集です。",
+    "es": "Colección documentada de temas de escritorio de personajes de My Little Pony para Windows 7 y Windows XP, publicada por el creador de DeviantArt Matniky principalmente entre 2012 y 2013.",
+    "fr": "Collection documentée de thèmes de bureau Windows 7 et Windows XP inspirés des personnages de My Little Pony, publiée par le créateur DeviantArt Matniky principalement entre 2012 et 2013."
+  },
+  "developer": "Matniky",
+  "developerUrl": "https://www.deviantart.com/matniky",
+  "platform": "Windows 7; Windows XP",
+  "baseSystem": "Microsoft Windows 7 / Windows XP (desktop theme packages)",
+  "developmentYear": 2012,
+  "developmentStatus": "unknown",
+  "verificationStatus": "partially-verified",
+  "recordCompleteness": "incomplete",
+  "evidenceProvenance": "mixed",
+  "testingStatus": "not-tested",
+  "downloadAvailability": "unknown",
+  "license": "Several directly inspected DeviantArt entries display Creative Commons Attribution-NonCommercial-NoDerivatives 3.0 (CC BY-NC-ND 3.0). Verify the license on each individual work before reuse. This archive links to original pages and does not redistribute theme files.",
+  "historicalNotes": "This record groups 14 currently identified MLP-themed Windows theme works by Matniky; it is not a claim that these are the creator's complete gallery. The works are individual theme packages, not a standalone operating system or a single unified installer. The oldest directly dated item verified in this review is the Fluttershy Windows 7 theme (July 7, 2012); the latest directly dated item verified is Vinyl Scratch Wub the bass! V2 (January 1, 2013). Other exact publication dates remain unverified. Several directly inspected pages describe installation through UXTheme Multi Patcher and the Windows Resources/Themes directory. No package was downloaded or tested.",
+  "localizedHistory": {
+    "en": "This record groups 14 currently identified MLP-themed Windows theme works by Matniky; it is not a claim that these are the creator's complete gallery. The works are individual theme packages, not a standalone operating system or a single unified installer. The oldest directly dated item verified in this review is the Fluttershy Windows 7 theme (July 7, 2012); the latest directly dated item verified is Vinyl Scratch Wub the bass! V2 (January 1, 2013). Other exact publication dates remain unverified. Several directly inspected pages describe installation through UXTheme Multi Patcher and the Windows Resources/Themes directory. No package was downloaded or tested.",
+    "zh-CN": "本档案目前归集了 14 个能够追踪到的 Matniky《小马宝莉》主题 Windows 桌面主题作品；这不代表已经穷尽作者的全部作品。它们是分别发布的主题包，并非独立操作系统，也不是一个统一安装程序。本轮直接核实到的最早日期是 Fluttershy Windows 7 Theme（2012 年 7 月 7 日），最晚的已核实日期是 Vinyl Scratch Wub the bass! V2（2013 年 1 月 1 日）；其余作品的准确发布日期仍未确认。部分直接检查过的页面说明了通过 UXTheme Multi Patcher 和 Windows Resources/Themes 目录安装的方式。本档案没有下载或测试这些主题包。",
+    "zh-TW": "本檔案目前整理了 14 個可追溯的 Matniky《彩虹小馬》主題 Windows 桌面主題作品；這不代表已經完整涵蓋作者的所有作品。它們是分別發布的主題套件，並非獨立作業系統，也不是單一統一安裝程式。本輪直接核實到最早的日期是 Fluttershy Windows 7 Theme（2012 年 7 月 7 日），最晚的已核實日期是 Vinyl Scratch Wub the bass! V2（2013 年 1 月 1 日）；其餘作品的確切發布日期仍未確認。部分直接檢視的頁面說明了透過 UXTheme Multi Patcher 和 Windows Resources/Themes 目錄安裝的方式。本檔案沒有下載或測試這些主題套件。",
+    "ja": "この記録には、現時点で確認できた Matniky による『マイリトルポニー』テーマの Windows デスクトップテーマ作品を14件まとめています。作者の全作品を網羅したという意味ではありません。各作品は個別のテーマパッケージであり、独立したOSや単一の統合インストーラーではありません。今回直接確認できた最古の日付は Fluttershy Windows 7 Theme（2012年7月7日）、最も新しい日付は Vinyl Scratch Wub the bass! V2（2013年1月1日）です。その他の正確な公開日は未確認です。直接確認した複数のページには、UXTheme Multi Patcher と Windows Resources/Themes ディレクトリを使うインストール手順が記載されています。テーマファイルのダウンロードや動作テストは行っていません。",
+    "es": "Este registro reúne 14 temas de Windows relacionados con My Little Pony atribuidos a Matniky que se han podido identificar hasta ahora; no afirma que sean toda su galería. Son paquetes de temas individuales, no un sistema operativo independiente ni un instalador unificado. La fecha más antigua verificada directamente en esta revisión es la del tema de Fluttershy para Windows 7 (7 de julio de 2012), y la más reciente es Vinyl Scratch Wub the bass! V2 (1 de enero de 2013). Las fechas exactas de las demás obras siguen sin confirmarse. Varias páginas inspeccionadas describen la instalación mediante UXTheme Multi Patcher y el directorio Windows Resources/Themes. No se descargó ni probó ningún paquete.",
+    "fr": "Cette fiche regroupe 14 thèmes Windows liés à My Little Pony attribués à Matniky et identifiés à ce jour ; elle ne prétend pas représenter toute sa galerie. Il s’agit de paquets de thèmes individuels, et non d’un système d’exploitation autonome ou d’un installateur unifié. La date la plus ancienne directement vérifiée lors de cette recherche est celle du thème Fluttershy pour Windows 7 (7 juillet 2012), et la plus récente est celle de Vinyl Scratch Wub the bass! V2 (1er janvier 2013). Les dates exactes des autres œuvres restent inconnues. Plusieurs pages consultées décrivent une installation via UXTheme Multi Patcher et le dossier Windows Resources/Themes. Aucun paquet n’a été téléchargé ni testé."
+  },
+  "evidence": [
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/fluttershy-windows-7-theme-old-313058150"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Twilight-Sparkle-Windows-7-Theme-320999932"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Princess-Luna-Windows-7-theme-324962873"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Derpy-Hooves-windows-7-Theme-334561111"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Derpy-Windows-Xp-theme-339588678"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Fluttershy-s-Grace-Window-s-7-theme-V2-341754399"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Vinyl-Scratch-Wub-the-bass-V2-Windows-7-theme-346118681"
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Rainbow-Dash-Windows-7-theme-314378476",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Applejack-windows-7-theme-323376628",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Rarity-Windows-7-Theme-318010143",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Pinkie-Pie-windows-7-theme-322635456",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Vinyl-Scratch-Windows-7-theme-old-311601923",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Octavia-Windows-7-theme-V2-327022441",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "original-source",
+      "url": "https://www.deviantart.com/matniky/art/Queen-Chrysalis-Windows-7-theme-354054481",
+      "accessUnconfirmed": true
+    },
+    {
+      "kind": "independent",
+      "url": "https://mktar2.wordpress.com/2014/03/13/20-%D8%AB%D9%8A%D9%85-%D9%85%D9%86-%D8%A7%D8%AC%D9%85%D9%84-%D9%88%D8%A7%D8%B4%D9%87%D8%B1-%D8%AB%D9%8A%D9%85%D8%A7%D8%AA-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-7-%D9%84%D9%84%D8%AA%D8%AD%D9%85%D9%8A/"
+    },
+    {
+      "kind": "community",
+      "url": "https://www.bronies.de/showthread.php?pid=1331912&tid=118"
+    }
+  ],
+  "references": [
+    "https://www.deviantart.com/matniky/art/fluttershy-windows-7-theme-old-313058150",
+    "https://www.deviantart.com/matniky/art/Twilight-Sparkle-Windows-7-Theme-320999932",
+    "https://www.deviantart.com/matniky/art/Princess-Luna-Windows-7-theme-324962873",
+    "https://www.deviantart.com/matniky/art/Rainbow-Dash-Windows-7-theme-314378476",
+    "https://www.deviantart.com/matniky/art/Applejack-windows-7-theme-323376628",
+    "https://www.deviantart.com/matniky/art/Rarity-Windows-7-Theme-318010143",
+    "https://www.deviantart.com/matniky/art/Pinkie-Pie-windows-7-theme-322635456",
+    "https://www.deviantart.com/matniky/art/Derpy-Hooves-windows-7-Theme-334561111",
+    "https://www.deviantart.com/matniky/art/Derpy-Windows-Xp-theme-339588678",
+    "https://www.deviantart.com/matniky/art/Vinyl-Scratch-Windows-7-theme-old-311601923",
+    "https://www.deviantart.com/matniky/art/Vinyl-Scratch-Wub-the-bass-V2-Windows-7-theme-346118681",
+    "https://www.deviantart.com/matniky/art/Octavia-Windows-7-theme-V2-327022441",
+    "https://www.deviantart.com/matniky/art/Queen-Chrysalis-Windows-7-theme-354054481",
+    "https://www.deviantart.com/matniky/art/Fluttershy-s-Grace-Window-s-7-theme-V2-341754399",
+    "https://mktar2.wordpress.com/2014/03/13/20-%D8%AB%D9%8A%D9%85-%D9%85%D9%86-%D8%A7%D8%AC%D9%85%D9%84-%D9%88%D8%A7%D8%B4%D9%87%D8%B1-%D8%AB%D9%8A%D9%85%D8%A7%D8%AA-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-7-%D9%84%D9%84%D8%AA%D8%AD%D9%85%D9%8A/",
+    "https://www.bronies.de/showthread.php?pid=1331912&tid=118"
+  ],
+  "releases": [
+    {
+      "version": "Fluttershy Windows 7 Theme (original)",
+      "date": {
+        "precision": "day",
+        "value": "2012-07-07"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "notes": "The author described this edition as outdated and directed visitors to a newer version.",
+      "references": [
+        "https://www.deviantart.com/matniky/art/fluttershy-windows-7-theme-old-313058150"
+      ]
+    },
+    {
+      "version": "Twilight Sparkle Windows 7 Theme",
+      "date": {
+        "precision": "day",
+        "value": "2012-08-14"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "notes": "The author describes it as a custom Windows 7 theme inspired by My Little Pony and gives UXTheme Multi Patcher installation instructions.",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Twilight-Sparkle-Windows-7-Theme-320999932"
+      ]
+    },
+    {
+      "version": "Princess Luna Windows 7 Theme",
+      "date": {
+        "precision": "day",
+        "value": "2012-09-03"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "notes": "The page describes the Windows 7 theme and an accompanying Luna Start Orb credited to Peachspices.",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Princess-Luna-Windows-7-theme-324962873"
+      ]
+    },
+    {
+      "version": "Derpy Hooves Windows 7 Theme",
+      "date": {
+        "precision": "day",
+        "value": "2012-10-27"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "notes": "The author describes custom sounds and resource modifications carried over from earlier themes.",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Derpy-Hooves-windows-7-Theme-334561111"
+      ]
+    },
+    {
+      "version": "Derpy Windows XP Theme",
+      "date": {
+        "precision": "day",
+        "value": "2012-11-25"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "notes": "The author describes it as a commissioned Windows XP theme with custom sounds.",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Derpy-Windows-Xp-theme-339588678"
+      ]
+    },
+    {
+      "version": "Fluttershy's Grace Windows 7 Theme V2",
+      "date": {
+        "precision": "day",
+        "value": "2012-12-08"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "notes": "The author describes a remake with additional resources, changed backgrounds, custom sounds and wallpaper rotation.",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Fluttershy-s-Grace-Window-s-7-theme-V2-341754399"
+      ]
+    },
+    {
+      "version": "Vinyl Scratch Wub the bass! V2 Windows 7 Theme",
+      "date": {
+        "precision": "day",
+        "value": "2013-01-01"
+      },
+      "type": "unknown",
+      "availability": "unknown",
+      "notes": "The author describes it as a remade Vinyl Scratch theme with custom sounds and updated resources.",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Vinyl-Scratch-Wub-the-bass-V2-Windows-7-theme-346118681"
+      ]
+    },
+    {
+      "version": "Rainbow Dash Windows 7 Theme",
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Rainbow-Dash-Windows-7-theme-314378476"
+      ]
+    },
+    {
+      "version": "Applejack Windows 7 Theme",
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Applejack-windows-7-theme-323376628"
+      ]
+    },
+    {
+      "version": "Rarity Windows 7 Theme",
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Rarity-Windows-7-Theme-318010143"
+      ]
+    },
+    {
+      "version": "Pinkie Pie Windows 7 Theme",
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Pinkie-Pie-windows-7-theme-322635456"
+      ]
+    },
+    {
+      "version": "Vinyl Scratch Windows 7 Theme (original)",
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Vinyl-Scratch-Windows-7-theme-old-311601923"
+      ]
+    },
+    {
+      "version": "Octavia Windows 7 Theme V2",
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Octavia-Windows-7-theme-V2-327022441"
+      ]
+    },
+    {
+      "version": "Queen Chrysalis Windows 7 Theme",
+      "type": "unknown",
+      "availability": "unknown",
+      "references": [
+        "https://www.deviantart.com/matniky/art/Queen-Chrysalis-Windows-7-theme-354054481"
+      ]
+    }
+  ]
+}
