@@ -174,5 +174,8 @@
   "screenshotRights": "Las vistas previas enlazan a sus fuentes. My Little Pony y las obras relacionadas pertenecen a sus respectivos titulares, entre ellos Hasbro.",
   "download-unknown": "La disponibilidad de la descarga aún no se ha verificado.",
   "download-unavailable": "En este momento no hay ninguna descarga disponible.",
-  "sourceAccessUnconfirmed": "Acceso sin confirmar"
+  "sourceAccessUnconfirmed": "Acceso sin confirmar",
+  "policyLink": "Leer la política completa de inclusión",
+  "eligibilitySummary": "El proyecto debe incluir elementos sustanciales de MLP en la experiencia real del sistema operativo o del escritorio. No se aceptan distribuciones Linux que solo cambien el fondo ni proyectos cuyo único vínculo sea el nombre. Los proyectos históricos de terceros pueden estar incompletos o abandonados; los sistemas propios deben contar con desarrollo real.",
+  "copyrightSummary": "El archivo es independiente, no oficial y sin fines comerciales. Aporta fuentes públicas y acredita a sus creadores. No subas ni redistribuyas archivos o imágenes de terceros salvo que la licencia o un permiso explícito lo permita."
 }
